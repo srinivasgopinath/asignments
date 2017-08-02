@@ -1,0 +1,233 @@
+/* resizing property starts here*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+}
+body {
+    font-family: arial;
+    font-weight: 300;
+    background: #f4f4f4;
+}
+/* resizing property ends here */
+
+/* comman class property starts here */
+
+.fleft {
+    float: left;
+}
+.fright {
+    float: right;
+}
+.clearfix:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+.layout-container {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+/* comman class property ends here */
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: table;
+    position: absolute;
+}
+
+
+table.popup-table {
+    margin: 0 auto;
+    border-spacing: 0;
+    width: 600px;
+    border: 2px solid #00a1f8;
+}
+   .popup-table__download {
+    position: relative;
+}
+.popup-table tbody > tr > td {
+    font-weight: 600;
+}
+.popup-table tr th {
+    background: #00a1f8;
+    height: 50px;
+    color: #fff;
+}
+.popup-table tr th:first-child {
+    text-align: left;
+    padding: 0 0 0 15px;
+    border-right: 1px solid #fff;
+    width: 30%;
+}
+.popup-table tr td {
+    height: 40px;
+}
+.popup-table tbody > tr:nth-child(odd) {
+    background: #e8e8e8;
+}
+.popup-table tr td:first-child {
+    border-right: 2px solid #00a1f8;
+    color: #7f7e7e;
+    font-weight: 600;
+    padding: 0 0 0 15px;
+}
+.popup-table tr td:nth-child(2) {
+    color: #00a1f8;
+    font-weight: 500;
+    text-align: center;
+    text-decoration-color: #00a1f8;
+}
+.popup-table tr td:nth-child(2) a {
+    color: #00a1f8;
+    text-decoration-color: #00a1f8;
+    font-weight: 600;
+}
+[data-title]:after,[data-title]:before{
+
+    position: absolute;
+    z-index: 999;
+}
+[data-title]:hover::after{
+    content: attr(data-title);
+    padding: 8px 54px;
+    white-space: pre;
+    background: #000;
+    color: #fff;
+    opacity: 0.7;
+    border-radius: 6px;
+    left: 50%;
+    z-index: 999;
+    transform: translateX(-50%) translateY(100%);
+}
+
+[data-title]:hover::before {
+    content: '';
+    border-width: 7px;
+    border-color: transparent transparent rgba(0, 0, 0, 0.91) transparent;
+    position: absolute;
+    left: 50%;
+    opacity: 0.7;
+    border-style: solid;
+    transform: translateX(-50%) translateY(100%);
+    top: 0;
+    bottom: 0;
+}
+
+
+.right-tool[data-title]:hover::before {
+    border-color: transparent #000 transparent transparent;
+    left: 100%;
+    transform: translateX(11%) translateY(0%);
+    top: 0
+    right: 0
+    bottom: 0
+    z-index: 999;
+}
+
+.right-tool[data-title]:hover::after {
+    transform: translateX(10%) translateY(-28%);
+    left: 100%;
+}
+
+.top-tool[data-title]:hover::before{
+    border-color: #000 transparent transparent transparent;
+    bottom: 0;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) translateY(-72%);
+}
+.top-tool[data-title]:hover::after{
+    z-index: 999;
+    left: 50%;
+    transform: translateX(-50%) translateY(-135%);
+}
+.left-tool[data-title]:hover:after{
+    transform: translateX(-83%) translateY(-28%);
+    left: -50%;
+}
+.left-tool[data-title]:hover:before{
+        border-color: transparent transparent transparent #000;
+        transform: translateX(-382%) translateY(0);
+        left: 0
+        right: 0
+        left: 100%
+}
+/* overlay window property */
+.overlay-popup{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(89, 100, 106, 0.88);
+    display: none;
+    z-index: 999;   
+}
+.overlay-popup__window{
+    width: 446px;
+    height: 216px;
+    background: #fff;
+    margin: 0 auto;
+    position: relative;
+    top: 31%;
+}
+
+.overlay-popup__window::before {
+    content: '';
+    width: 100%;
+    background: #00a1f8;
+    height: 12px;
+    position: absolute;
+}
+
+
+.overlay-popup__window__heading {
+    text-align: center;
+    padding-top: 42px;
+    color: #5e5e5e;
+}
+
+.overlay-popup__btn-wrapper__window__button {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    padding: 12px 36px;
+}
+
+
+.overlay-popup__btn-wrapper {
+    margin: 58px auto;
+    height: 47px;
+    padding: 15px;
+    width: 138px;
+    text-align: center;
+    background: #00a1f8;
+}
+.overlay-popup{
+    display: none;
+}
+.fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* overlay windoe property ends here */ 

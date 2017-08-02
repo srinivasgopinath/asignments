@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    background: #e5e5e5;
+    font-family: arial;
+    color: #32424e;
+    font-weight: 400;
+}
+/*Resizing  property starts*/
+
+.fright {
+    float: right;
+}
+.fleft {
+    float: left;
+}
+.clearfix {
+    display: block;
+    clear: both;
+}
+.height-hundred {
+    height: 100%;
+}
+/*Resizing  property ends*/
+
+/*header property starts here*/
+.wrapper{
+    max-width:1000px;
+    min-height:100%;
+    background:#eee;
+    margin:0 auto;
+}
+.header{
+    height: 80px;
+  background: #32424e;
+}
+.header__logo-link{
+    display: inline-block;
+}
+.header__logo{
+     width: 300px;
+    margin: 9px auto;
+
+}
+.header__welcome-text {
+    color: #fff;
+    padding: 31px;
+}
+
+/*header property ends here*/
+
+/*navigation strats here*/
+.side-nav__link {
+    display: block;
+    height: 39px;
+    padding: 11px;
+    background:#485d6e;
+    color: #fff;
+    border-bottom: 1px solid #748491;
+    text-decoration: none;
+    font-weight: 600;
+}
+.side-nav__link:hover{
+       background: #00a3e8;
+    color: #fff;
+}
+.side-nav {
+    flex: 1;
+    background:#485d6e;
+}
+
+
+/*navigation ends here*/
+
+/*main content property starts here*/
+.content-wrapper {
+    flex: 1;
+    flex-flow: row wrap;
+    display: flex;
+}
+
+.main-content {
+    flex: 3;
+    background: #fff;
+    line-height: 25px;
+}
+.main-content__heading {
+    margin: 21px;
+    font-size: 36px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.main-content__paragraph {
+    padding: 17px;
+    text-align: justify;
+}
+
+.main-content {
+    flex: 3;
+    background: #fff;
+    line-height: 25px;
+}
+
+.ad-content {
+    flex: 1;
+}
+
+.ad-content__primary__ad-image{
+    width: 135px;
+}
+.ad-content__secondary__ad-image{
+        width: 185px;
+}
+
+.ad-content__primary,.ad-content__secondary{
+    text-align: center;
+    /*! margin: 10px0; */
+    /*! margin-top: 20px; */
+    background: #e7f2fa;
+    padding-top: 24px;
+}
+
+
+/*main content property ends here*/
+
+/*footer content property strats here*/
+
+.footer-section{
+         height: 40px;
+        background: #32424e;   
+}
+.footer-section__copyright{
+    color: #fff;  
+    padding: 10px;
+}
+
+/*footer content property ends here*/
