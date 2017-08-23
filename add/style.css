@@ -1,0 +1,91 @@
+/* Resizing propety starts here */
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	height: 100%;
+}
+body{
+	font-family: arial;
+	font-weight: 400;
+}
+
+/* Resizing propert ends here */
+
+/* common style starts here */
+.fleft{
+	float: left;
+}
+.fright{
+	float: right;
+}
+.clearfix:after{
+	content:'';
+	display: block;
+	clear: both;
+}
+/* common style ends here */
+.main-container{
+	width: 100%;
+	min-height: 100%;
+	border:2px solid red;
+	position: relative;
+}
+/* header style starts here */
+.header{
+	height: 50px;
+	/* border:2px solid green; */
+/*	background: url(../Images/hdr-navi.jpg)no-repeat;*/
+	/*background-size: 100% 100%;*/
+	/* background: red; */
+	/* width: 100%; */
+}
+
+.header__nav {
+    margin: 0 auto;
+    width: 708px;
+}
+/* header style ends here */
+
+/* header discription starts here */
+.header-discription{
+	height: 127px;
+	border: 2px solid pink;
+}
+/* header discription ends here */
+
+/* Task header starts here */
+.task-header{
+	height: 42px;
+	border:2px solid blue;
+}
+/* Task header ends here */
+
+/* Task section starts here */
+.task-section{
+	/* height: 404px; */
+	border:2px solid green;
+	overflow: auto;
+}
+
+.task-subsection{
+	height: 229px;
+	border:2px solid red;
+	width: 1094px;
+	margin: 0 auto;
+}
+
+/* Task section ends here */
+
+/* footer section here */
+.footer-section{
+	height: 50px;
+	border:2px solid #000;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+/* footer section ends here */
