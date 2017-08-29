@@ -13,20 +13,29 @@
     <div class="main-container">
         <!--header starts here-->
         <header class="header">
-            <button class="header__burger-button fleft"></button>
+            <button class="header__menu-button fleft"></button>
             <button class="header__plus-button fright"></button>
             <nav class="header__nav">
+                <a href="" class="header__nav__items header__nav__details"></a>
+                <a href="" class="header__nav__items header__nav__task"></a>
+                <a href="" class="header__nav__items header__nav__hazard"></a>
+                <a href="" class="header__nav__items header__nav__controls"></a>
+                <a href="" class="header__nav__items header__nav__history"></a>
+                <a href="" class="header__nav__items header__nav__help"></a>
             </nav>
 
         </header>
         <!--header ends here-->
         <!--header discription starts here-->
         <div class="header-discription">
-            <span class="header-discription__logo fright">
+        <div class="header-discription__container  fright">
+                  <span class="header-discription__logo">
             <a href="#" class="header-discription__logo-link">
              <img alt="" class="header-discription__logo-link__img" src="Images/logo.jpg"/>
             </a>
             </span>
+            </div>
+        <div class="header-discription__wrapper">
             <span class="header-discription__id-name">ID: RA20120328</span>
             <h1 class="header-discription__heading">Some Job 123</h1>
             <table class="header-discription__table">
@@ -48,60 +57,56 @@
                     </tr>
                 </tbody>
             </table>
+            </div>
+            
 
         </div>
         <!--header discription ends here-->
 
         <!--task header starts here-->
         <div class="task-header">
-            <a href="#" class="task-header__button fright">+ New Task</a>
+            <button  class="task-header__button fright">+ New Task</button>
             <h3 class="task-header__text">TASKS</h3>
 
         </div>
         <!--task header ends here-->
         <!--task section starts here-->
         <div class="task-container">
-            <div class="task-section">
-                <div class="task-subsection">
-                    <div class="task-subsection__paragraph">
-
-                        <table class="task-subsection__table-first">
-                            <tr>
-                                <td>
-                                    <div class="task-subsection__ad">
+            <ul class="task-section">
+                <li class="task-subsection">          
+                                   <div class="task-subsection__ad">
                                         <img src="Images/img-thumb.jpg" class="task-subsection__ad-image" alt="">
                                     </div>
-                                </td>
-                                <td>
+                                    <div class="task-subsection__wraper">
                                     <h3 class="task-subsection__hero">This is some task</h3>
                                     <p class="task-subsection__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, obcaecati inventore sapiente similique odio distinctio doloremque ullam, modi earum odit voluptatibus optio aliquid. Molestias, deserunt! Obcaecati rerum nihil ducimus aspernatur.</p>
                                     <span class="task-subsection__attachment"><img class="task-subsection__attachment__img" src="Images/attachment.png" alt=""><label class="task-subsection__label">2</label></span>
-                                </td>
-                                <td>
+                                    </div>
+                               
                                     <div class="task-subsection__icon">
                                         <span class="task-subsection__head">HAZARD TYPE</span>
 
                                         <table class="task-subsection__table">
                                             <tbody>
                                                 <tr>
-                                                    <td><span class="task-subsection__icon-item__a"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__a deactive"></span>
                                                         <label class="task-subsection__count">2</label>
                                                     </td>
-                                                    <td><span class="task-subsection__icon-deactive__c"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__c deactive"></span>
                                                         <label class="task-subsection__count">0</label>
                                                     </td>
-                                                    <td><span class="task-subsection__icon-deactive__d"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__d deactive"></span>
                                                         <label class="task-subsection__count">0</label>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td><span class="task-subsection__icon-item__b"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__b"></span>
                                                         <label class="task-subsection__count">2</label>
                                                     </td>
-                                                    <td><span class="task-subsection__icon-item__e"></span>
+                                                    <td><span class=" task-subsection-item task-subsection__icon-item__e"></span>
                                                         <label class="task-subsection__count">15</label>
                                                     </td>
-                                                    <td><span class="task-subsection__icon-item__f"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__f"></span>
                                                         <label class="task-subsection__count">7</label>
                                                     </td>
 
@@ -109,7 +114,7 @@
 
                                             </tbody>
                                         </table>
-                                        <span class="task-subsection__sevirity clearfix">sevirity</span>
+                                        <span class="task-subsection__sevirity clearfix">SEVIRITY</span>
 
                                         <ul class="task-subsection__progress">
                                             <li class="task-subsection__progress-table__green-color">25</li>
@@ -118,56 +123,47 @@
                                         </ul>
 
                                     </div>
-                                </td>
-                                <td><img class="task-subsection__next-section" src="Images/list-arrow.png" /></td>
+                              <div class="task-subsection__arrow">
+                               <img class="task-subsection__next-section" src="Images/list-arrow.png"/>
+                                </div>
 
-                            </tr>
-                        </table>
 
-                    </div>
-
-                </div>
-                <div class="task-subsection">
-
-                    <div class="task-subsection__paragraph">
-
-                        <table class="task-subsection__table-first">
-                            <tr>
-                                <td>
-                                    <div class="task-subsection__ad">
-                                        <img src="Images/img-thumb2.jpg" class="task-subsection__ad-image" alt="">
+                </li>
+                
+                     <li class="task-subsection">          
+                                   <div class="task-subsection__ad">
+                                       <img src="Images/img-thumb2.jpg" class="task-subsection__ad-image" alt="">
                                     </div>
-                                </td>
-                                <td>
+                                    <div class="task-subsection__wraper">
                                     <h3 class="task-subsection__hero">Mixing chemical X</h3>
                                     <p class="task-subsection__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, obcaecati inventore sapiente similique odio distinctio doloremque ullam, modi earum odit voluptatibus optio aliquid. Molestias, deserunt! Obcaecati rerum nihil ducimus aspernatur.</p>
                                     <span class="task-subsection__attachment"><img class="task-subsection__attachment__img" src="Images/attachment.png" alt=""><label class="task-subsection__label">2</label></span>
-                                </td>
-                                <td>
+                                    </div>
+                               
                                     <div class="task-subsection__icon">
                                         <span class="task-subsection__head">HAZARD TYPE</span>
 
-                                        <table class="task-subsection__table">
+                                          <table class="task-subsection__table">
                                             <tbody>
                                                 <tr>
-                                                    <td><span class="task-subsection__icon-deactive__a"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__a deactive"></span>
                                                         <label class="task-subsection__count">2</label>
                                                     </td>
-                                                    <td><span class="task-subsection__icon-item__c"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__c"></span>
                                                         <label class="task-subsection__count">0</label>
                                                     </td>
-                                                    <td><span class="task-subsection__icon-item__d"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__d"></span>
                                                         <label class="task-subsection__count">0</label>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td><span class="task-subsection__icon-item__b"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__b"></span>
                                                         <label class="task-subsection__count">2</label>
                                                     </td>
-                                                    <td><span class="task-subsection__icon-deactive__e"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__e deactive"></span>
                                                         <label class="task-subsection__count">15</label>
                                                     </td>
-                                                    <td><span class="task-subsection__icon-deactive__f"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__f deactive"></span>
                                                         <label class="task-subsection__count">7</label>
                                                     </td>
 
@@ -175,7 +171,8 @@
 
                                             </tbody>
                                         </table>
-                                        <span class="task-subsection__sevirity clearfix">sevirity</span>
+                                    <span class="task-subsection__sevirity clearfix">SEVIRITY</span>
+
                                         <ul class="task-subsection__progress">
                                             <li class="task-subsection__progress-table__green-color">20</li>
                                             <li class="task-subsection__progress-table__orange-color">02</li>
@@ -183,53 +180,47 @@
                                         </ul>
 
                                     </div>
-                                </td>
-                                <td><img class="task-subsection__next-section" src="Images/list-arrow.png" /></td>
+                              <div class="task-subsection__arrow">
+                               <img class="task-subsection__next-section" src="Images/list-arrow.png"/>
+                                </div>
 
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <div class="task-subsection">
-                    <div class="task-subsection__paragraph">
-
-                        <table class="task-subsection__table-first">
-                            <tr>
-                                <td>
-                                    <div class="task-subsection__ad">
-                                        <img src="Images/img-thumb3.jpg" class="task-subsection__ad-image" alt="">
+                </li>
+                
+                    
+                <li class="task-subsection">
+                     <div class="task-subsection__ad">
+                                      <img src="Images/img-thumb3.jpg" class="task-subsection__ad-image" alt="">
                                     </div>
-                                </td>
-                                <td>
+                                    <div class="task-subsection__wraper">
                                     <h3 class="task-subsection__hero">Climbing large rocks</h3>
                                     <p class="task-subsection__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, obcaecati inventore sapiente similique odio distinctio doloremque ullam, modi earum odit voluptatibus optio aliquid. Molestias, deserunt! Obcaecati rerum nihil ducimus aspernatur.</p>
                                     <span class="task-subsection__attachment"><img class="task-subsection__attachment__img" src="Images/attachment.png" alt=""><label class="task-subsection__label">2</label></span>
-                                </td>
-                                <td>
+                                    </div>
+                               
                                     <div class="task-subsection__icon">
                                         <span class="task-subsection__head">HAZARD TYPE</span>
 
-                                        <table class="task-subsection__table">
+                                           <table class="task-subsection__table">
                                             <tbody>
                                                 <tr>
-                                                    <td><span class="task-subsection__icon-item__a"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__a"></span>
                                                         <label class="task-subsection__count">2</label>
                                                     </td>
-                                                    <td><span class="task-subsection__icon-item__c"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__c"></span>
                                                         <label class="task-subsection__count">0</label>
                                                     </td>
-                                                    <td><span class="task-subsection__icon-item__d"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__d"></span>
                                                         <label class="task-subsection__count">0</label>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td><span class="task-subsection__icon-item__b"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__b"></span>
                                                         <label class="task-subsection__count">20</label>
                                                     </td>
-                                                    <td><span class="task-subsection__icon-item__e"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__e"></span>
                                                         <label class="task-subsection__count">02</label>
                                                     </td>
-                                                    <td><span class="task-subsection__icon-item__f"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__f"></span>
                                                         <label class="task-subsection__count">03</label>
                                                     </td>
 
@@ -237,62 +228,53 @@
 
                                             </tbody>
                                         </table>
-                                        <span class="task-subsection__sevirity clearfix">sevirity</span>
+                                       <span class="task-subsection__sevirity clearfix">SEVIRITY</span>
 
-                                        <ul class="task-subsection__progress">
+                                          <ul class="task-subsection__progress">
                                             <li class="task-subsection__progress-table__green-color">20</li>
                                             <li class="task-subsection__progress-table__orange-color">02</li>
                                             <li class="task-subsection__progress-table__red-color">03</li>
                                         </ul>
-
                                     </div>
-                                </td>
-                                <td><img class="task-subsection__next-section" src="Images/list-arrow.png" /></td>
+                              <div class="task-subsection__arrow">
+                               <img class="task-subsection__next-section" src="Images/list-arrow.png"/>
+                                </div>
 
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <div class="task-subsection">
-                    <div class="task-subsection__paragraph">
-
-                        <table class="task-subsection__table-first">
-                            <tr>
-                                <td>
-                                    <div class="task-subsection__ad">
-                                        <img src="Images/img-thumb.jpg" class="task-subsection__ad-image" alt="">
+                </li>
+                  <li class="task-subsection">
+                     <div class="task-subsection__ad">
+                                      <img src="Images/img-thumb.jpg" class="task-subsection__ad-image" alt="">
                                     </div>
-                                </td>
-                                <td>
+                                    <div class="task-subsection__wraper">
                                     <h3 class="task-subsection__hero">Lifting heavy blocks</h3>
                                     <p class="task-subsection__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, obcaecati inventore sapiente similique odio distinctio doloremque ullam, modi earum odit voluptatibus optio aliquid. Molestias, deserunt! Obcaecati rerum nihil ducimus aspernatur.</p>
                                     <span class="task-subsection__attachment"><img class="task-subsection__attachment__img" src="Images/attachment.png" alt=""><label class="task-subsection__label">2</label></span>
-                                </td>
-                                <td>
+                                    </div>
+                               
                                     <div class="task-subsection__icon">
                                         <span class="task-subsection__head">HAZARD TYPE</span>
 
-                                        <table class="task-subsection__table">
+                                         <table class="task-subsection__table">
                                             <tbody>
                                                 <tr>
-                                                    <td><span class="task-subsection__icon-deactive__a"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__a deactive"></span>
                                                         <label class="task-subsection__count">2</label>
                                                     </td>
-                                                    <td><span class="task-subsection__icon-deactive__c"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__c deactive"></span>
                                                         <label class="task-subsection__count">0</label>
                                                     </td>
-                                                    <td><span class="task-subsection__icon-deactive__d"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__d deactive"></span>
                                                         <label class="task-subsection__count">0</label>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td><span class="task-subsection__icon-item__b"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__b"></span>
                                                         <label class="task-subsection__count">2</label>
                                                     </td>
-                                                    <td><span class="task-subsection__icon-item__e"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__e"></span>
                                                         <label class="task-subsection__count">15</label>
                                                     </td>
-                                                    <td><span class="task-subsection__icon-item__f"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__f"></span>
                                                         <label class="task-subsection__count">7</label>
                                                     </td>
 
@@ -300,62 +282,54 @@
 
                                             </tbody>
                                         </table>
-                                        <span class="task-subsection__sevirity clearfix">sevirity</span>
-                                        <ul class="task-subsection__progress">
+                                        <span class="task-subsection__sevirity clearfix">SEVIRITY</span>
+
+                                            <ul class="task-subsection__progress">
                                             <li class="task-subsection__progress-table__green-color">20</li>
                                             <li class=""></li>
                                             <li class=""></li>
                                         </ul>
-
                                     </div>
-                                </td>
-                                <td><img class="task-subsection__next-section" src="Images/list-arrow.png" /></td>
+                              <div class="task-subsection__arrow">
+                               <img class="task-subsection__next-section" src="Images/list-arrow.png"/>
+                                </div>
 
-                            </tr>
-                        </table>
-                    </div>
-                </div>
+                </li>
 
-                <div class="task-subsection">
-                    <div class="task-subsection__paragraph">
-
-                        <table class="task-subsection__table-first">
-                            <tr>
-                                <td>
-                                    <div class="task-subsection__ad">
+                 <li class="task-subsection">
+                     <div class="task-subsection__ad">
                                         <img src="Images/img-thumb4.jpg" class="task-subsection__ad-image" alt="">
                                     </div>
-                                </td>
-                                <td>
-                                    <h3 class="task-subsection__hero">Pouring hot cofee</h3>
+                                    <div class="task-subsection__wraper">
+                                      <h3 class="task-subsection__hero">Pouring hot cofee</h3>
                                     <p class="task-subsection__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, obcaecati inventore sapiente similique odio distinctio doloremque ullam, modi earum odit voluptatibus optio aliquid. Molestias, deserunt! Obcaecati rerum nihil ducimus aspernatur.</p>
                                     <span class="task-subsection__attachment"><img class="task-subsection__attachment__img" src="Images/attachment.png" alt=""><label class="task-subsection__label">2</label></span>
-                                </td>
-                                <td>
+                                    </div>
+                               
                                     <div class="task-subsection__icon">
                                         <span class="task-subsection__head">HAZARD TYPE</span>
 
-                                        <table class="task-subsection__table">
+                                            <table class="task-subsection__table">
                                             <tbody>
                                                 <tr>
-                                                    <td><span class="task-subsection__icon-item__a"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__a"></span>
                                                         <label class="task-subsection__count">2</label>
                                                     </td>
-                                                    <td><span class="task-subsection__icon-item__c"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__c"></span>
                                                         <label class="task-subsection__count">0</label>
                                                     </td>
-                                                    <td><span class="task-subsection__icon-item__d"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__d"></span>
                                                         <label class="task-subsection__count">0</label>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td><span class="task-subsection__icon-item__b"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__b"></span>
                                                         <label class="task-subsection__count">2</label>
                                                     </td>
-                                                    <td><span class="task-subsection__icon-item__e"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__e"></span>
                                                         <label class="task-subsection__count">15</label>
                                                     </td>
-                                                    <td><span class="task-subsection__icon-item__f"></span>
+                                                    <td><span class="task-subsection-item task-subsection__icon-item__f"></span>
                                                         <label class="task-subsection__count">7</label>
                                                     </td>
 
@@ -363,28 +337,27 @@
 
                                             </tbody>
                                         </table>
-                                        <span class="task-subsection__sevirity clearfix">sevirity</span>
-                                        <ul class="task-subsection__progress">
+                                        <span class="task-subsection__sevirity clearfix">SEVIRITY</span>
+
+                                            <ul class="task-subsection__progress">
                                             <li class="task-subsection__progress-table__green-color">25</li>
                                             <li class="task-subsection__progress-table__orange-color">14</li>
                                             <li class="task-subsection__progress-table__red-color">30</li>
                                         </ul>
 
                                     </div>
-                                </td>
-                                <td><img class="task-subsection__next-section" src="Images/list-arrow.png" /></td>
+                              <div class="task-subsection__arrow">
+                               <img class="task-subsection__next-section" src="Images/list-arrow.png"/>
+                                </div>
 
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <!--task  section ends here-->
+                </li>
 
-            </div>
+            </ul>
+            <div class="clearfix"></div>
             <!--footer section starts here-->
             <footer class="footer-section">
-                <span class="footer-section__power"></span>
-                <span class="footer-section__submit fright">Submit Risk Assesment for Approval</span>
+                <a class="footer-section__power" href=""></a >
+                <button class="footer-section__submit fright">Submit Risk Assesment for Approval</button>
             </footer>
         </div>
     </div>
