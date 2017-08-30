@@ -203,7 +203,8 @@ body {
     text-align: end;
     float: left;
     width: 151px;
-    margin: 10px;
+    padding: 10px;
+    /* margin: 10px; */
 }
 .task-subsection__table {
     border-spacing: 0;
@@ -211,7 +212,7 @@ body {
     width: 200px;
     border-collapse: collapse;
     font-weight: bold;
-    margin: 3px 0 5px 0;
+    margin: 8px 0 7px 0;
 }
 .task-subsection__count {
     float: right;
@@ -238,11 +239,11 @@ body {
     font-size: 14px;
 }
 .task-subsection__wraper {
-    width: calc(100% - (227px + 132px + 161px));
+    width: calc(100% - 468px);
     overflow: hidden;
     float: left;
     text-overflow: ellipsis;
-    padding: 21px;
+    padding: 15px;
 }
 p.task-subsection__text {
     height: 67px;
@@ -261,7 +262,8 @@ p.task-subsection__text {
 .task-subsection__arrow {
     width: 90px;
     float: right;
-    margin: 47px 0 0 0;
+    padding: 53px 0px 0 35px;
+    /* margin: 47px 0 0 0; */
 }
 .task-subsection-item {
     width: 21px;
