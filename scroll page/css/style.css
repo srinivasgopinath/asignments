@@ -98,7 +98,7 @@ body {
     width: calc(100% - 126px);
     overflow: auto;
     height: 100%;
-    padding: 9px 13px 7px 17px;
+    padding: 15px 15px 0px 17px;
 }
 /* header style ends here */
 
