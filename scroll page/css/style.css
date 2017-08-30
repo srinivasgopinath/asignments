@@ -31,7 +31,7 @@ body {
 /* common style ends here */
 
 .main-container {
-    min-width: 1301px;
+    min-width: 1080px;
     height: 100%;
 }
 /* header style starts here */
@@ -59,58 +59,55 @@ body {
 .header-discription__logo-link__img {
     width: 100%;
 }
-.header__nav__items{
-        padding: 21px;
+.header__nav__items {
+    padding: 21px;
     margin: 0px 25px 0 0;
-        display: inline-block;
+    display: inline-block;
 }
 .header__nav__details {
     background: url(../Images/tab-navi.png);
     background-repeat: no-repeat;
     background-position: -25px -4px;
-
 }
 .header__nav__task {
     background: url(../Images/tab-navi.png);
     background-repeat: no-repeat;
     background-position: -99px -3px;
 }
-.header__nav__hazard{
+.header__nav__hazard {
     background: url(../Images/tab-navi.png);
     background-repeat: no-repeat;
     background-position: -177px -3px;
 }
-.header__nav__controls{
+.header__nav__controls {
     background: url(../Images/tab-navi.png);
     background-repeat: no-repeat;
     background-position: -254px -3px;
 }
-.header__nav__history{
-      background: url(../Images/tab-navi.png);
-      background-repeat: no-repeat;
-      background-position: -333px -3px;
+.header__nav__history {
+    background: url(../Images/tab-navi.png);
+    background-repeat: no-repeat;
+    background-position: -333px -3px;
 }
-
-.header__nav__help{
-         background: url(../Images/tab-navi.png);
-         background-repeat: no-repeat;
-         background-position: -409px -4px;
+.header__nav__help {
+    background: url(../Images/tab-navi.png);
+    background-repeat: no-repeat;
+    background-position: -409px -4px;
 }
-
 .header-discription__wrapper {
-    width: 50%;
+    width: calc(100% - 126px);
     overflow: auto;
     height: 100%;
+    padding: 9px 13px 7px 17px;
 }
 /* header style ends here */
 
 /* header discription starts here */
 
-.header-discription {
-    height: 127px;
-    padding: 2px 0 0 16px;
-    padding: 14px 0px 0px 16px;
-    margin: 0 0 13px 0;
+
+.header-discription__image__container.fright {
+    width: 126px;
+    height: 100%;
 }
 .header__plus-button.fright {
     width: 43px;
@@ -122,16 +119,13 @@ body {
 .header-discription__id-name {
     font-weight: bold;
 }
-
 .header-discription__heading {
     font-weight: 100;
     padding: 0 0 4px 0;
 }
-
-
 .header-discription__table {
     border-spacing: 0px;
-    padding: 0px  33px  0px  0;
+    padding: 0px 33px 0px 0;
     border: 1px solid #d9d9d9;
     background: #fcfcfc;
     border-radius: 7px;
@@ -156,9 +150,7 @@ body {
 .header-discription__table tbody td:last-child {
     border: 0;
 }
-
 /* header discription ends here */
-
 /* Task header starts here */
 
 .task-container {
@@ -179,7 +171,6 @@ body {
     font-weight: 100;
     padding: 14px;
 }
-
 .task-header__button.fright {
     padding: 12px;
     text-decoration: none;
@@ -193,7 +184,6 @@ body {
     border: 0;
 }
 /* Task header ends here */
-
 /* Task section starts here */
 
 .task-section {
@@ -206,14 +196,14 @@ body {
     width: 100%;
 }
 .task-subsection__ad-image {
-    margin: 10px;
-    width: 139px;
+    width: 100%;
     border: 1px solid #dbdbdb;
 }
 .task-subsection__ad {
     text-align: end;
     float: left;
-    width: 25%;
+    width: 151px;
+    margin: 10px;
 }
 .task-subsection__table {
     border-spacing: 0;
@@ -223,28 +213,22 @@ body {
     font-weight: bold;
     margin: 3px 0 5px 0;
 }
-
-
 .task-subsection__count {
     float: right;
     padding: 5px 12px 0 0px;
 }
 .task-subsection__next-section {
-    width: 37px;
     float: left;
-    margin: 51px 0 10px 49px;
     padding: 0 0 1px -13px;
 }
 .task-subsection__attachment {
-       margin: 5px 1px 0 0px;
-       border: 1px solid #ccc;
-       padding: 5px;
+    margin: 5px 1px 0 0px;
+    border: 1px solid #ccc;
+    padding: 5px;
 }
-
 .task-subsection:nth-child(even) {
     background: #f3f3f3;
 }
-
 .task-subsection__sevirity {
     font-weight: bold;
     font-size: 14px;
@@ -253,16 +237,13 @@ body {
     font-weight: bold;
     font-size: 14px;
 }
-
-
 .task-subsection__wraper {
-    width: 40%;
+    width: calc(100% - (227px + 132px + 161px));
     overflow: hidden;
     float: left;
     text-overflow: ellipsis;
-    padding: 14px;
+    padding: 21px;
 }
-
 p.task-subsection__text {
     height: 67px;
     overflow: hidden;
@@ -272,16 +253,15 @@ p.task-subsection__text {
     padding: 8px 0 0 0px;
     text-overflow: ellipsis;
 }
-
 .task-subsection__icon {
-    width: 17%;
+    width: 227px;
     padding: 13px;
     float: left;
 }
-
 .task-subsection__arrow {
-    width: 18%;
-    float: left;
+    width: 90px;
+    float: right;
+    margin: 47px 0 0 0;
 }
 .task-subsection-item {
     width: 21px;
@@ -293,6 +273,10 @@ p.task-subsection__text {
     background: url("../Images/red-color.jpg");
     background-size: 100% 100%;
     padding: 4px;
+}
+.task-subsection__hero {
+    font-weight: 500;
+    font-size: 19px;
 }
 .task-subsection__progress-table__orange-color {
     background: url("../Images/orange-color.jpg") no-repeat;
@@ -308,8 +292,6 @@ p.task-subsection__text {
     border-top-left-radius: 10px;
     padding: 3px 0px 6px 5px;
 }
-
-
 .task-subsection__icon-item__a {
     background: url(../Images/icon-item.png) no-repeat;
     background-position: 0 -2px;
@@ -327,12 +309,9 @@ p.task-subsection__text {
     background-position: -129px -2px;
 }
 .task-subsection__icon-item__e {
-
     background: url(../Images/icon-item.png) no-repeat;
     background-position: -60px -30px;
-
 }
-
 .task-subsection__progress-table tr td:last-child label {
     border-bottom-right-radius: 75px;
     border-top-right-radius: 88px;
@@ -341,37 +320,34 @@ p.task-subsection__text {
 .task-subsection__icon-item__f {
     background: url(../Images/icon-item.png) no-repeat;
     background-position: -128px -30px;
-
 }
-.task-subsection-item.task-subsection__icon-item__a.deactive{
-
+.task-subsection-item.task-subsection__icon-item__a.deactive {
     background: url(../Images/icon-deactive.png) no-repeat;
     background-position: 0 -3px;
-
 }
 .task-subsection-item.task-subsection__icon-item__b.deactive {
-
     background: url(../Images/icon-deactive.png) no-repeat;
     background-position: 0 -27px;
-
 }
 .task-subsection-item.task-subsection__icon-item__c.deactive {
-
     background: url(../Images/icon-deactive.png) no-repeat;
     background-position: -60px -3px;
 }
-.task-subsection-item.task-subsection__icon-item__d.deactive {background: url(../Images/icon-deactive.png) no-repeat;background-position: -127px -2px;}
-.task-subsection-item.task-subsection__icon-item__e.deactive{
- 
+.task-subsection-item.task-subsection__icon-item__d.deactive {
+    background: url(../Images/icon-deactive.png) no-repeat;
+    background-position: -127px -2px;
+}
+.task-subsection-item.task-subsection__icon-item__e.deactive {
     background: url(../Images/icon-deactive.png) no-repeat;
     background-position: -58px -30px;
-
 }
-.task-subsection-item.task-subsection__icon-item__f.deactive{
-
+.task-subsection-item.task-subsection__icon-item__f.deactive {
     background: url(../Images/icon-deactive.png) no-repeat;
     background-position: -128px -30px;
-
+}
+.task-subsection__layout-container {
+    width: 1046px;
+    margin: 0 auto;
 }
 .task-subsection__progress {
     margin: 6px 0 0 0;
@@ -385,8 +361,6 @@ p.task-subsection__text {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
 }
-
-
 .task-subsection__progress li {
     width: 33.3%;
     text-align: center;
@@ -396,13 +370,10 @@ p.task-subsection__text {
     font-weight: bold;
     overflow: hidden;
 }
-
-
 .task-subsection__attachment__img {
     padding: 1px 7px 0px 4px;
     margin: 5px -1px -3px -5px;
 }
-
 .task-subsection__progress-table_count {
     position: relative;
     padding: 2px 0 -6px 15px;
@@ -416,16 +387,15 @@ p.task-subsection__text {
     white-space: unset;
     font-weight: bold;
 }
-.task-subsection__icon-deactive__a  + .task-subsection__count ,
-.task-subsection__icon-deactive__b  + .task-subsection__count ,
-.task-subsection__icon-deactive__c  + .task-subsection__count ,
-.task-subsection__icon-deactive__d  + .task-subsection__count ,
-.task-subsection__icon-deactive__e  + .task-subsection__count ,
-.task-subsection__icon-deactive__f  + .task-subsection__count  {
-   color: #ccc;
-
-    }
-    .task-subsection__table tr td {
+.task-subsection__icon-deactive__a + .task-subsection__count,
+.task-subsection__icon-deactive__b + .task-subsection__count,
+.task-subsection__icon-deactive__c + .task-subsection__count,
+.task-subsection__icon-deactive__d + .task-subsection__count,
+.task-subsection__icon-deactive__e + .task-subsection__count,
+.task-subsection__icon-deactive__f + .task-subsection__count {
+    color: #ccc;
+}
+.task-subsection__table tr td {
     border: 1px solid #ccc;
 }
 .task-subsection__task-subsection__head {
@@ -457,6 +427,7 @@ p.task-subsection__text {
     background-size: 100% 100%;
     cursor: pointer;
     border: 0;
+    font-weight: bold;
     font-size: 15px;
     padding: 10px;
     margin: 5px 13px;
