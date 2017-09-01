@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <title>Responsive design</title>
+    <title>asignment 6</title>
 </head>
 
 <body>
+    <!--main parent starts here-->
     <div class="main-container">
+        <!--layout container starts here-->
         <div class="layout-container">
+            <!--header starts here-->
             <header class="header clearfix">
                 <div class="top__nav clearfix">
                     <a href="" class="header__text"><img class="header__logo" src="Images/remedy-log.gif" /></a>
@@ -33,6 +36,8 @@
                 <button class="header__add fright">+ New</button>
 
             </header>
+            <!--header ends here-->
+            <!--search box starts here-->
             <div class="search-wrap">
                 <div class="searchbar-wrapper fleft">
                     <h1 class="hero-txt">Search Jobs & Tasks</h1>
@@ -47,14 +52,20 @@
                     <a href="" class="search-img-container__link"><img src="Images/bstro-logo.gif" class="search-img-container__logo" /></a>
                 </div>
             </div>
+            <!--search box ends here here-->
+            <!--Assesment wraper  starts here-->
             <div class="assesment-wrapper">
+                <!--risk Assesment  starts here-->
                 <div class="risk-assesment fleft">
                     <span class="risk-assesment__title">RISK ASSESMENT DETAILS</span>
                     <input type="text" class="risk-assesment__field" value="Project Name">
                     <div class="risk-assesment__field"><span class="risk-assesment__text">Status</span></div>
                     <div class="risk-assesment__option"><span class="risk-assesment__text">Status</span></div>
                 </div>
+                <!--risk assesment ends   here-->
+
                 <div class="risk-level-wrapper fleft">
+                    <!--risk level progress starts here-->
                     <div class="risk-level__progress">
                         <span class="risk-lever__progress__head">RISK LEVEL</span>
                         <table class="risk-level__table">
@@ -90,7 +101,9 @@
                         </table>
 
                     </div>
+                    <!--risk level progress ends  here-->
                     <div class="risk-level__hazard-type fright">
+                        <!--Hazard  wraper  starts here-->
                         <span class="risk-lever__progress__head">HAZARD TYPE</span>
                         <div class="risk-level__hazard-type__items">
                             <table class="risk-level__hazard__table">
@@ -141,128 +154,161 @@
                             </table>
                         </div>
 
+                        <!--hazard wrapper ends  here-->
+
                     </div>
                 </div>
-                    <div class="dropdown-details-wrapper">
-                <div class="details-wrapper">
-                    <span class="location-head">LOCATION</span>
-                    <ul class="loaction-field">
-                        <li class="loaction-field__item">
-                            <div class="loacation-field__country__field"><span class="loacation-field__country__field__text">Country</span></div>
-                        </li>
-                        <li class="loaction-field__item">
-                            <div class="loacation-field__state__field"><span class="loacation-field__state__field_text">State</span></div>
-                        </li>
-                        <li class="loaction-field__item">
-                            <div class="loacation-field__city__field"><span class="loacation-field__city__field__text">city</span></div>
-                        </li>
-                    </ul>
+                <div class="dropdown-details-wrapper">
+                    <!--location field  starts here-->
+                    <div class="details-wrapper">
+                        <span class="location-head">LOCATION</span>
+                        <ul class="loaction-field">
+                            <li class="loaction-field__item">
+                                <div class="loacation-field__country__field"><span class="loacation-field__country__field__text">Country</span></div>
+                            </li>
+                            <li class="loaction-field__item">
+                                <div class="loacation-field__state__field"><span class="loacation-field__state__field_text">State</span></div>
+                            </li>
+                            <li class="loaction-field__item">
+                                <div class="loacation-field__city__field"><span class="loacation-field__city__field__text">city</span></div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!--location field   starts here-->
+                    <div class="department-wrapper">
+                        <!--department field  starts here-->
+                        <span class="department-head">DEPARTMENT/DEVISION/SECTION</span>
+                        <ul class="department-field">
+                            <li class="loaction-field__item">
+                                <div class="department-field__dept__field"><span class="loacation-field__country__field__text">Department</span></div>
+                            </li>
+                            <li class="loaction-field__item">
+                                <div class="department-field__division__field"><span class="loacation-field__state__field_text">Division</span></div>
+                            </li>
+                            <li class="loaction-field__item">
+                                <div class="department-field__section_field"><span class="loacation-field__city__field__text">Section</span></div>
+                            </li>
+                            <li class="loaction-field__item">
+                                <div class="department-field__where__field"><span class="loacation-field__city__field__text">Where</span></div>
+                            </li>
+                            <li class="loaction-field__item">
+                                <div class="department-field__other__field"><span class="loacation-field__city__field__text">Other Field</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--department field   starts here-->
+                    <div class="calender-wrapper clearfix">
+                        <!--calenderwraper  starts here-->
+                        <span class="calender-head">COMPLETED BETWEEN</span>
+                        <ul class="calender-field">
+                            <li class="calender-field__item">
+                                <div class="calender-field__item__start"><span class="calender-field__text">Start</span><span class="claender-field__date-format">MM/DD/YY</span></div>
+                            </li>
+                            <li class="calender-field__item">
+                                <div class="calender-field__item__end"><span class="calender-field__text">End</span><span class="claender-field__date-format">MM/DD/YY</span></div>
+                            </li>
+                            <li class="calender-field__item">
+                                <button class="calender-field__btn">Appy Changes</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--calender wraper ends here-->
+                </div>
+                <div class="pagination-wraper">
+                    <!--page progress  starts here-->
+                    <div class="page-progress">
+                        <ul class="page-progress__list">
+                            <li class="page-prgress__list">
+                                <button class="page-prgress__list__first-btn">First</button>
+                            </li>
+                            <li class="page-progress__list">
+                                <button class="page-progress__list__left">
+                                    <</button>
+                            </li>
+                            <li class="page-progress__list"><span class="page__list__number active">1</span></li>
+                            <li class="page-progress__list"><span class="page__list__number">2</span></li>
+                            <li class="page-progress__list"><span class="page__list__number">3</span></li>
+                            <li class="page-progress__list"><span class="page__list__number">4</span></li>
+                            <li class="page-progress__list"><span class="page__list__number">5</span></li>
+                            <li class="page-progress__list">
+                                <button class="page-progress__list__right">></button>
+                            </li>
+                            <li class="page-prgress__list">
+                                <button class="page-prgress__list__last-btn">Last</button>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--page progress ends  here-->
+                    <div class="page-items-wraper">
+                        <span class="page-items">Show : </span>
+                        <select class="page-items__select" name="" id="">
+                            <option>10</option>
+                            <option>20</option>
+                            <option>30</option>
+                            <option>40</option>
+                        </select>
+                    </div>
+                    <!--list items starts here-->
+                    <div class="page-items-view fright">
+                        <span class="page-items-view__list fright">Showing 1 to 10 of 4088 itmes</span>
+
+                    </div>
+                    <!--list items ends  here-->
 
                 </div>
-                <div class="department-wrapper">
-                     <span class="department-head">DEPARTMENT/DEVISION/SECTION</span>
-                    <ul class="department-field">
-                        <li class="loaction-field__item">
-                            <div class="department-field__dept__field"><span class="loacation-field__country__field__text">Department</span></div>
-                        </li>
-                        <li class="loaction-field__item">
-                            <div class="department-field__division__field"><span class="loacation-field__state__field_text">Division</span></div>
-                        </li>
-                        <li class="loaction-field__item">
-                            <div class="department-field__section_field"><span class="loacation-field__city__field__text">Section</span></div>
-                        </li>
-                          <li class="loaction-field__item">
-                            <div class="department-field__where__field"><span class="loacation-field__city__field__text">Where</span></div>
-                        </li>
-                          <li class="loaction-field__item">
-                            <div class="department-field__other__field"><span class="loacation-field__city__field__text">Other Field</span></div>
-                        </li>
-                    </ul>
-                </div>
 
-                <div class="calender-wrapper clearfix">
-                     <span class="calender-head">COMPLETED BETWEEN</span>
-                    <ul class="calender-field">
-                        <li class="calender-field__item"><div class="calender-field__item__start"><span class="calender-field__text">Start</span><span class="claender-field__date-format">MM/DD/YY</span></div></li>
-                             <li class="calender-field__item"><div class="calender-field__item__end"><span class="calender-field__text">End</span><span class="claender-field__date-format">MM/DD/YY</span></div></li>
-                        <li class="calender-field__item"><button class="calender-field__btn">Appy Changes</button></li>
-                    </ul>
-                </div>
             </div>
-			<div class="pagination-wraper">
-				<div class="page-progress">
-					<ul class="page-progress__list">
-						<li class="page-prgress__list"><button class="page-prgress__list__first-btn">First</button></li>
-						<li class="page-progress__list"><button class="page-progress__list__left"><</button></li>
-						<li class="page-progress__list"><span class="page__list__number active">1</span></li>
-						<li class="page-progress__list"><span class="page__list__number">2</span></li>
-						<li class="page-progress__list"><span class="page__list__number">3</span></li>
-						<li class="page-progress__list"><span class="page__list__number">4</span></li>
-						<li class="page-progress__list"><span class="page__list__number">5</span></li>
-						<li class="page-progress__list"><button class="page-progress__list__right">></button></li>
-						<li class="page-prgress__list"><button class="page-prgress__list__last-btn">Last</button></li>
-						
-					</ul>
-				</div>
-					<div class="page-items-wraper">
-				<span class="page-items">Show : </span><select class="page-items__select" name="" id="">
-					<option>10</option>
-					<option>20</option>
-					<option>30</option>
-					<option>40</option>
-				</select>
-			</div>
-			<div class="page-items-view fright">
-			<span class="page-items-view__list">Showing 1 to 10 of 4088 itmes</span>
-				
-			</div>
+            <!--Assesment wraper  starts here-->
+            <!--job details starts here-->
+            <div class="job-details-wrapper">
+                <table class="job-details">
+                    <thead>
+                        <th>JOB/TASK/NAME<span class="job-details__drop"></span></th>
+                        <th>RISK ASSESOR</th>
+                        <th>CURENT STATUS</th>
+                        <th>LAST COMPLETED</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="job-details__icon job-details__book"></span>This is a job name</td>
+                            <td>jhohn smith</td>
+                            <td>open pending approval</td>
+                            <td>03801</td>
+                        </tr>
+                        <tr>
+                            <td><span class="job-details__icon job-details__task"></span>This is task name</td>
+                            <td>hadore rosevelt</td>
+                            <td>opening pending approval</td>
+                            <td>03801</td>
+                        </tr>
+                        <tr>
+                            <td><span class="job-details__icon job-details__book"></span>This is a job name</td>
+                            <td>jhohn smith</td>
+                            <td>open pending approval</td>
+                            <td>03801</td>
+                        </tr>
+                        <tr>
+                            <td><span class="job-details__icon job-details__task"></span>This is task name</td>
+                            <td>hadore rosevelt</td>
+                            <td>opening pending approval</td>
+                            <td>03801</td>
+                        </tr>
+                    </tbody>
 
-			</div>
-		
+                </table>
+            </div>
+            <!--job details starts here-->
+            <!--footer starts here-->
+            <footer class="footer">
+                <span class="footer__copy fright	">&copy; copyright 2012.Remedy Intractive | PRIVACY POLICY</span>
+            </footer>
+            <!--footer ends here-->
         </div>
-        <div class="job-details-wrapper">
-        <table class="job-details">
-        	<thead>
-        		<th>JOB/TASK/NAME<span class="job-details__drop"></span></th>
-        		<th>RISK ASSESOR</th>
-        		<th>CURENT STATUS</th>
-        		<th>LAST COMPLETED</th>
-        	</thead>
-        		<tbody>
-        			<tr>
-        				<td><span class="job-details__icon job-details__book"></span>This is a job name</td>
-        				<td>jhohn smith</td>
-        				<td>open pending approval</td>
-        				<td>03801</td>
-        			</tr>
-        			<tr>
-        				<td><span class="job-details__icon job-details__task"></span>This is task name</td>
-        				<td>hadore rosevelt</td>
-        				<td>opening pending approval</td>
-        				<td>03801</td>
-        			</tr>
-        			<tr>
-        				<td><span class="job-details__icon job-details__book"></span>This is a job name</td>
-        				<td>jhohn smith</td>
-        				<td>open pending approval</td>
-        				<td>03801</td>
-        			</tr>
-        			<tr>
-        				<td><span class="job-details__icon job-details__task"></span>This is task name</td>
-        				<td>hadore rosevelt</td>
-        				<td>opening pending approval</td>
-        				<td>03801</td>
-        			</tr>
-        		</tbody>
-  
-        </table>
-        </div>
-        <footer class="footer">
-        	<span class="footer__copy fright	">&copy; copyright 2012.Remedy Intractive | PRIVACY POLICY</span>
-        </footer>
-        </div>
-
+        <!--layout container ends here-->
     </div>
+    <!--main container ends here-->
 
 </body>
 
