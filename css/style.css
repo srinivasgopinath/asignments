@@ -33,7 +33,6 @@ body {
 .layout-container {
     width: 1000px;
     margin: 0 auto;
-
 }
 /* common style ends here */
 /* Header style starts here */
@@ -42,6 +41,18 @@ body {
     background: url("../Images/hdr-bg.jpg");
     background-repeat: repeat-x;
     height: 110px;
+}
+.header__navigation {
+    display: inline-block;
+    height: 50px;
+}
+.header__logout,
+.header__logout__link {
+    color: #fff;
+    text-decoration-style: none;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none font-size: 12px;
 }
 .header__navigation__link {
     color: #bbbbbb;
@@ -60,8 +71,11 @@ body {
     margin-right: -7px;
 }
 .page-wrapper {
-    padding: 1px;
     min-width: 1080px;
+    height: 100%;
+}
+.secondary-header-nav {
+    height: 50px;
 }
 .primary-header {
     height: 50px;
@@ -84,35 +98,35 @@ body {
     text-decoration-style: none;
     font-weight: bold;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 10px;
 }
 .header__logout {
-    padding: 14px;
+    padding: 0;
     overflow: hidden;
     height: -19px;
     height: 42px;
-    width: 177px;
+    width: 186px;
     text-overflow: ellipsis;
+}
+.primary__navigation__logout.fright {
+    padding: 10px;
 }
 .primary-header__logo {
     float: left;
-    width: 68px;
+    width: 63px;
     margin: 0px 18px 0 2px;
-    border-right: 2px solid #3f4141;
-    border-left: 2px solid #3f4141;
 }
 .header__add.fright {
-    width: 60px;
-    font-size: 11px;
+    font-size: 14px;
     color: #3397c9;
     background: #fff;
     border: 0;
-    margin: 5px 0 0 0;
+    margin: 0 0 0 0;
     font-weight: bold;
     border: 1px solid #ccc;
     border-radius: 7px;
-    padding: 0;
-    height: 28px;
+    padding: 6px 13px 6px 13px;
+    height: 41px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -130,21 +144,30 @@ body {
     text-align: center;
     margin: 5px 0 0 0;
     font-weight: 600;
-    padding: 10px 3px 15px 4px;
+    padding: 10px 3px 16px 4px;
 }
 .secondary-header-nav__link.active {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
     border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
     background: #fff;
     color: #51afe0;
 }
 .secondary-header-nav__link:hover {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
     border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
     background: #fff;
     color: #51afe0;
+    background: #fff;
 }
 .secondary-header {
     padding: 10px;
@@ -162,9 +185,10 @@ body {
     border-bottom: 1px solid #ccc;
     padding: 21px;
 }
-.search-img-container.fright {
+.search-img-container__link {
     width: 106px;
     height: 73px;
+    display: inline-block;
     margin: -16px 0 0 0;
 }
 .search-img-container__logo {
@@ -176,12 +200,16 @@ body {
 .hero-txt {
     font-size: 21px;
     font-weight: 100;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 392px;
+    text-overflow: ellipsis;
 }
 .searchbar-wapper__field {
     width: 622px;
     height: 31px;
     margin: 8px 0 8px 0;
-    padding: 3px;
+    padding: 8px;
     border: solid 1px #ccc;
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
@@ -190,14 +218,13 @@ body {
     height: 0 0 0 0;
     padding: 7px 29px 8px 26px;
     cursor: pointer;
+    border-radius: 4px 4px 4px 4px;
     color: #fff;
-    border-top-right-radius: 4px;
     margin-left: -4px;
     border: 0;
     font-size: 14px;
     background: #605d58;
     font-weight: bold;
-    border-bottom-right-radius: 4px;
 }
 .searchbar-wrapper__text {
     font-size: 11px;
@@ -219,12 +246,13 @@ body {
     margin: 2px 8px 0 20px;
 }
 /* search feild style ends here */
+
 /* assesment styles */
 
 .assesment-wrapper {
     width: 100%;
     background: #f0f0f0;
-    padding: 14px;
+    padding: 20px 20px 7px 20px;
     display: inline-block;
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
@@ -238,13 +266,23 @@ body {
 }
 .risk-assesment__field {
     height: 31px;
+    padding: 15px;
     width: 100%;
     cursor: pointer;
     border-radius: 4px;
     border: 1px solid #ccc;
     font-size: 13px;
-    padding: 7px;
+    padding: 10px;
     margin: 6px 0 10px 0px;
+}
+.drop-down {
+    height: 31px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    margin: 6px 0 10px 0;
 }
 .risk-assesment__option {
     height: 31px;
@@ -259,70 +297,42 @@ body {
     width: 100%;
     margin: 6px 0 10px 0px;
 }
-.risk-assesment__title {
+.common__title {
     font-size: 10px;
+    overflow: hidden;
+    display: inline-block;
     font-weight: bold;
+    width: 313px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
-.risk-assesment__field,
-.loacation-field__country__field,
-.loacation-field__state__field,
-.loacation-field__city__field,
-.risk-assesment__option,
-.loacation-field__country__field,
-.loacation-field__state__field,
-.department-field__division__field,
-.department-field__section_field,
-.loacation-field__city__field,
-.department-field__dept__field,
-.department-field__where__field,
-.department-field__other__field {
-    position: relative;
+.loaction-field__one,
+.loaction-field__two {
+    width: 305px;
+    margin: 0 14px 0 0;
+    float: left;
 }
-.risk-assesment__field:after,
-.loacation-field__country__field:after,
-.loacation-field__state__field:after,
-.loacation-field__city__field:after,
-.risk-assesment__option:after,
-.loacation-field__country__field:after,
-.loacation-field__state__field:after,
-.department-field__division__field:after,
-.department-field__section_field:after,
-.loacation-field__city__field:after,
-.department-field__dept__field:after,
-.department-field__where__field:after,
-.department-field__other__field:after {
-    content: '';
-    background: url("../Images/drop.png") no-repeat #fff;
+.loaction-field__three {
+    width: calc(100% - 638px);
+}
+
+
+.risk-assesment__text {
+    padding: 5px 10px 4px 8px;
+    display: inline-block;
+}
+.drop__down__arrow {
+    background: url(../Images/drop.png) no-repeat #fff;
     background-size: 36px 40px;
-    padding: 20px 28px 9px 4px;
+    padding: 11px 27px 18px 10px;
+    border-radius: 0px 5px 3px 0px;
     border-left: 1px solid #ccc;
     top: 0;
-    background-position: center;
-    right: 0;
-    position: absolute;
+    background-position: left;
 }
-.location-field {
-    width: 100%;
-}
-.loacation-field__country__field,
-.loacation-field__state__field,
-.loacation-field__city__field,
-.department-field__dept__field,
-.department-field__division__field,
-.department-field__section_field,
-.department-field__where__field,
-.department-field__other__field {
-    height: 31px;
-    width: 100%;
-    background: #fff;
-    border: 1px solid #ccc;
-    height: 31px;
-    border-radius: 4px;
-    font-size: 13px;
-    padding: 6px;
-    margin: 6px 0 10px 0px;
-    cursor: pointer;
-}
+
+
+
 .risk-level-wrapper {
     width: calc(100% - 403px);
     padding: 19px;
@@ -338,15 +348,16 @@ body {
 .risk-level-wrapper {
     width: calc(100% - 346px);
     background: #fff;
-    margin: 0 0 11px 20px;
+    margin: 0 0 14px 20px;
     border-radius: 4px;
     border: 1px solid #ccc;
     border: 14px 20px 14px solid #f0f0f0;
-    padding: 7px 10px 19px 10px;
+    padding: 7px 22px 2px 10px;
 }
 .risk-level__progress__green {
     background: #50d16c;
     border-radius: 4px;
+    margin: 9px 10px 0 5px;
     padding: 10px 34px 6px 27px;
     color: #fff;
     font-size: 11px;
@@ -354,6 +365,8 @@ body {
 }
 .risk-level__progress__orange {
     background: #feb447;
+    margin: 7px 9px 0 5px;
+    margin: 8px 11px 0 5px;
     font-size: 11px;
     padding: 9px 34px 6px 27px;
     border-radius: 4px;
@@ -365,6 +378,7 @@ body {
     padding: padding: 10px 34px 6px 27px;
     padding: 10px 34px 6px 27px;
     border-radius: 4px;
+    margin: 7px 11px 0 5px;
     color: #fff;
     font-size: 11px;
     font-weight: bold;
@@ -378,9 +392,19 @@ body {
 .risk-level__table tr td:nth-child(2) {
     width: 96px;
 }
+.risk-level__list {
+    list-style: none;
+    padding: 9px;
+}
+.risk-level__list {
+    display: inline-block;
+    margin: 0px 2px 0 0;
+}
 .risk-level__table-text {
     font-size: 13px;
+    padding: 0 2px 0px 3px;
     font-weight: bold;
+    text-align: left;
     text-overflow: ellipsis;
     overflow: hidden;
     display: inline-block;
@@ -393,16 +417,27 @@ body {
 .risk-level__hazard__table {
     width: 100%;
     padding: 0;
-    height: 117px;
+    height: 127px;
     display: inline-block;
     border-collapse: collapse;
     border: 1px solid #ccc;
     overflow: auto;
 }
+.risk-level__hazard__list-item {
+    display: inline-table;
+    width: 100%;
+    text-align: left;
+}
 .risk-level__hazard-type__icon {
     width: 20px;
+    margin: 2px 7px 0 6px;
     height: 20px;
     display: inline-block;
+}
+.content-wrapper {
+    overflow: auto;
+    height: calc(100% - 116px);
+    clear: both;
 }
 .icon__a {
     background: url("../Images/icon-item.png");
@@ -428,24 +463,12 @@ body {
     background: url("../Images/icon-item.png");
     background-position: -63px 252px;
 }
-.risk-level__hazard__table tr td:first-child {
-    width: 20px;
-}
-.risk-level__hazard__table tr:hover {
-    background: #3397c9;
-    color: #fff;
-}
-.risk-level__hazard__table tr td:last-child {
-    width: 100%;
-    padding: 0 0 0 11px;
-}
-.risk-level__hazard-type__items tr:first-child {
+.risk-level__hazard__list-item.active {
     background: #3397c9;
     border: none;
     color: #fff;
 }
 /* assesment style ends here */
-
 /* location styles starts here */
 
 .loaction-field__item {
@@ -454,7 +477,7 @@ body {
     display: inline-block;
 }
 .details-wrapper {
-    padding: 8px;
+    padding: 10px 20px 10px 10px;
     background: #fff;
     clear: both;
 }
@@ -472,7 +495,8 @@ body {
     border-radius: 4px;
 }
 .department-wrapper {
-    padding: 8px;
+    
+    padding: 10px 20px 10px 10px;
     border-top: 1px solid #ccc;
     background: #fff;
 }
@@ -481,7 +505,7 @@ body {
     font-size: 10px;
 }
 .calender-wrapper {
-    padding: 8px;
+    padding: 10px 20px 17px 10px;
     border-top: 1px solid #ccc;
     background: #fff;
     margin: 0 0 0 0;
@@ -494,14 +518,19 @@ body {
     border-right: 1px solid #ccc;
     display: inline-block;
     background: #f9f9f9;
+    border-radius: 4px 0 0 3px;
 }
-.calender-field__item {
-    width: 303px;
+.calender-field__item-one,
+.calender-field__item-two {
+    width: 305px;
     border: 1px solid #ccc;
     height: 31px;
     border-radius: 4px;
     display: inline-block;
     margin: 10px 9px 0 1px;
+}
+.calender-field__item-btn {
+    width: calc(100% - 638px);
 }
 .claender-field__date-format {
     font-size: 14px;
@@ -525,9 +554,10 @@ body {
     cursor: pointer;
 }
 .calender-field__btn {
-    width: 317px;
+    width: 294px;
     height: 30px;
     color: #fff;
+    margin: 10px 0 0 -4px;
     cursor: pointer;
     border: 0;
     font-weight: bold;
@@ -542,15 +572,14 @@ body {
     padding: 0;
 }
 /* location styles starts here */
-
 /* page items styles starts here */
 
-.page-items-wraper {
-    width: 200px;
+.page-selector {
+    width: 457px;
     float: left;
 }
-.page-progress {
-    width: 457px;
+.page-dropdown-wraper {
+    width: 200px;
     float: left;
 }
 .page-prgress__list {
@@ -598,7 +627,7 @@ body {
     background: #3497ce;
     color: #fff;
 }
-.page-items-view {
+.pagination-info {
     width: calc(100% - (200px + 457px));
 }
 .page-items-view__list {
@@ -607,17 +636,17 @@ body {
     text-overflow: ellipsis;
     width: 213px;
     overflow: hidden;
+    white-space: nowrap;
 }
 .page-items {
     font-size: 15px;
 }
 /* page item styles ends here */
-
 /* job details styles starts here */
 
 .job-details-wrapper {
-    border: 1px solid #ccc;
-    margin: 0 0 19px 0;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
 }
 .job-details {
     width: 100%;
@@ -667,27 +696,45 @@ body {
     background-position: center;
 }
 .job-details__drop {
-    background: url("../Images/drop.png") no-repeat;
-    width: 27px;
+
     margin: 0 0 0 4px;
     position: relative;
-    height: 20px;
     background-size: 100% 100%;
     display: inline-block;
-    top: 4px;
+    top: 11px;
+}
+.job-details__drop:after {
+    content: '';
+    border-color: #9f9d9e rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+    height: 24px;
+    border-width: 6px;
+    border-radius: 14px 3px 34px 30px;
+    border-style: solid;
 }
 .risk-level__hazard-type__text {
     font-size: 13px;
 }
 /* job details  styles ends here */
-
 /* footer section starts here */
 
+.footer {
+    height: 32px;
+    padding: 10px;
+}
 .footer__copy.fright {
     color: #8c8c8e;
+    width: 304px;
+    text-overflow: ellipsis;
     font-size: 12px;
     display: inline-block;
     font-weight: bold;
     margin-bottom: 11px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.footer__copy__link {
+    color: #8c8c8e;
+    font-size: 12px;
+    text-decoration: none;
 }
 /* footer section ends here */
