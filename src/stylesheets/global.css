@@ -1,0 +1,46 @@
+/* reset styles starts here */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-weight: 400;
+    background: #f7f8fa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* reset style ends here */
+
+
+/* common style starts here */
+
+.adn--fleft {
+    float: left;
+}
+.adn--fright {
+    float: right;
+}
+.adn--clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.adn--height-100per {
+    height: 100%;
+}
+/* common style ends here */
+
+
+/* header style starts here */
+
+.ui.segment.adn--header {
+    box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.72);
+}
+
+i.adn--menu-icon{
+    color: #FF7F00;
+    font-size: 22px;
+}
+/* header style ends here */

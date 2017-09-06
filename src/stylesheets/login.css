@@ -1,0 +1,150 @@
+/* login form styles starts here */
+
+.adn--login-left-col{
+    background: #191E33;
+    color: #fff;
+}
+.ui.adn--login-layout>.adn--login-left-col:not(.row), .ui.grid>.row>.adn--login-right-col{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.adn--login-left-col {
+    background: url("../images/bg.png");
+    background-size: cover;
+}
+
+.adn--login-hero{
+	
+	color: #191E33;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
+	text-align: center;
+	border-bottom: 1px solid rgba(25, 30, 51, 0.14);
+	padding:0 0 25px 0;
+}
+
+.adn--login-layout{
+	height: 100%;
+}
+.ui.adn--login-layout > .adn--nopadd{
+    padding-top: 0;
+    padding-bottom:0;
+}
+.adn--logo-text-one{
+	color: #FF7F00;
+	font-family: "Heiti SC";
+	font-size: 60px;
+	font-weight: 500;
+	line-height: 62px;
+}
+.adn--logo-text-two{
+	color: #fff;
+	font-family: "Heiti SC";
+	font-size: 60px;
+	font-weight: 500;
+	line-height: 62px;
+}
+.adn--logo{
+	text-align: center;
+	display: inline-block;
+	width: 304px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.adn--logo-hero:first-child{
+	text-align: center;
+	margin: 202px 0 0 0;
+}
+
+.adn--login-paragraph {
+    width: 357px;
+    color: #FFFFFF;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: 300;
+    margin: 0 auto;
+}
+.adn--text-color{
+	color: #FF7F00;
+}
+
+.adn--login-form-wrapper {
+    margin: 202px 0 112px 0;
+}
+
+.adn--login-right-para {
+    padding: 10px;
+    text-align: center;
+    color: #191E33;
+    font-size: 11px;
+    font-weight: 300;
+    text-overflow: ellipsis;
+    line-height: 19px;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 509px;
+}
+
+.adn--logo-img {
+    width: 100%;
+}
+
+.adn--login {
+    padding: 26px 25px 19px 0;
+}
+.ui.form .field>.adn-label{
+	margin: 12px 0 0 0;
+	text-align: right;
+	opacity: 0.4;
+	color: #191E33;
+	font-size: 14px;
+	line-height: 20px;
+}
+.adn--login-checkbox {
+    margin: 17px 0 0 33px;
+}
+
+.adn--signed-label{
+	opacity: 0.5;
+	color: #191E33;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 15px;
+}
+.ui.form .field>.adn--forget-label{
+	color: #FF7F00;
+	font-size: 11px;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 90px;
+	display: inline-block;
+	margin: 18px 35px 0 0;
+	font-weight: 500;
+	line-height: 15px;
+	text-overflow: ellipsis;
+}
+
+.adn--login-paragraph-wrapper {
+    width: 306px;
+    margin: 13px auto;
+}
+
+/* login form style ends here */
+
+/* footer style starts here */
+.adn--footer{
+	text-align: center;
+	color: rgba(25, 30, 51, 0.69);
+	font-size: 11px;
+	height: 0;
+	line-height: 15px;
+	text-align: center;
+}
+/* footer style ends here */
