@@ -3,6 +3,7 @@
 .adn--login-left-col{
     background: #191E33;
     color: #fff;
+    vertical-align: middle;
 }
 .ui.adn--login-layout>.adn--login-left-col:not(.row), .ui.grid>.row>.adn--login-right-col{
 	padding-left: 0;
@@ -12,6 +13,9 @@
 .adn--login-left-col {
     background: url("../images/bg.png");
     background-size: cover;
+    margin: 10px0;
+    position: relative;
+    height: 100%;
 }
 
 .adn--login-hero{
@@ -34,36 +38,36 @@
 }
 .adn--logo-text-one{
 	color: #FF7F00;
-	font-family: "Heiti SC";
 	font-size: 60px;
 	font-weight: 500;
 	line-height: 62px;
 }
 .adn--logo-text-two{
 	color: #fff;
-	font-family: "Heiti SC";
 	font-size: 60px;
 	font-weight: 500;
 	line-height: 62px;
 }
 .adn--logo{
-	text-align: center;
+	text-align: start;
+	left: 0;
 	display: inline-block;
-	width: 304px;
-	text-overflow: ellipsis;
-	overflow: hidden;
+	/* width: 304px; */
+	/* text-overflow: ellipsis; */
+	/* overflow: hidden; */
+	/* position: relative; */
 }
 
 .adn--logo-hero:first-child{
 	text-align: center;
-	margin: 202px 0 0 0;
+	margin: 0 0 0 0;
 }
 
 .adn--login-paragraph {
-    width: 357px;
     color: #FFFFFF;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    text-align: left;
+    padding: 0 10px 0 44px;
+    word-wrap: break-word;
     font-size: 35px;
     line-height: 50px;
     font-weight: 300;
@@ -74,7 +78,7 @@
 }
 
 .adn--login-form-wrapper {
-    margin: 202px 0 112px 0;
+
 }
 
 .adn--login-right-para {
@@ -83,17 +87,14 @@
     color: #191E33;
     font-size: 11px;
     font-weight: 300;
-    text-overflow: ellipsis;
     line-height: 19px;
     text-align: center;
-    white-space: nowrap;
-    margin: 0 auto;
-    overflow: hidden;
-    width: 509px;
 }
 
 .adn--logo-img {
-    width: 100%;
+    width: width: 304px;
+    width: 304px;
+    margin: 56px 89px 29px 0;
 }
 
 .adn--login {
@@ -103,7 +104,8 @@
 	margin: 12px 0 0 0;
 	text-align: right;
 	opacity: 0.4;
-	color: #191E33;
+	color: rgba(25, 30, 51, 0.98);
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 20px;
 }
@@ -111,10 +113,17 @@
     margin: 17px 0 0 33px;
 }
 
-.adn--signed-label{
+
+ .adn--signed-label{
 	opacity: 0.5;
 	color: #191E33;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 	font-size: 12px;
+	text-align: left;
+	width: 156px;
+	font-size: 11px !important;
 	font-weight: 500;
 	line-height: 15px;
 }
@@ -123,7 +132,7 @@
 	font-size: 11px;
 	overflow: hidden;
 	white-space: nowrap;
-	width: 90px;
+	width: 97px;
 	display: inline-block;
 	margin: 18px 35px 0 0;
 	font-weight: 500;
@@ -132,14 +141,19 @@
 }
 
 .adn--login-paragraph-wrapper {
-    width: 306px;
-    margin: 13px auto;
+    width: 486px;
+    margin: 0 auto;
+}
+.adn--left{
+	    position: relative;
+    height: 100%;
 }
 
 /* login form style ends here */
 
 /* footer style starts here */
-.adn--footer{
+
+.adn--login-footer{
 	text-align: center;
 	color: rgba(25, 30, 51, 0.69);
 	font-size: 11px;
@@ -147,4 +161,5 @@
 	line-height: 15px;
 	text-align: center;
 }
+
 /* footer style ends here */

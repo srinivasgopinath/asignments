@@ -1,4 +1,6 @@
 .ui.form input[type=text].adn--input,.ui.form input[type=password].adn--input{
 	    border: 2px solid rgba(25, 30, 51, 0.21);
 	    background: #f7f8fa;
+	    border-width: 1px;
+	    font-size: 14px;
 }
