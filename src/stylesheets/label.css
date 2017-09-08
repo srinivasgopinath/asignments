@@ -1,12 +1,14 @@
-.ui.form .field>.adn--label {
-    margin: 12px 0 0 0;
+
+/* global label style goes here */
+.ui.form .inline.field>.adn--label{
+	    color: rgba(25, 30, 51, 0.44);
+    font-size: 11px;
+    line-height: 16px;
     text-align: right;
-    opacity: 0.4;
-    color: rgba(25, 30, 51, 0.98);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    margin: 10px;
 }
-.ui.form .field>.adn--user-label,.adn--password-label{
-	width: 100px !important;
+
+.ui.form .inline.field>.adn--label__size {
+    width: 77px;
 }
+/* global label style ends here */

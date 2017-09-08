@@ -31,10 +31,12 @@ body {
     height: 100%;
 }
 
-.ui.adn--login-layout > .adn--padding-0{
-    padding: 0;
+.adn--padding-0{
+    padding: 0 !important;
 }
+
 /* common style ends here */
 
 
 
+    

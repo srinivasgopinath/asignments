@@ -6,11 +6,12 @@
     <title>User Profile</title>
     <link rel="stylesheet" type="text/css" href='../../semantic/dist/semantic.min.css'>
     <link rel="stylesheet" href="../stylesheets/global.css">
-    <link rel="stylesheet" href="../stylesheets/btn.css">
+    <link rel="stylesheet" href="../stylesheets/button.css">
     <link rel="stylesheet" href="../stylesheets/checkbox.css">
     <link rel="stylesheet" href="../stylesheets/inputfield.css">
     <link rel="stylesheet" href="../stylesheets/profile.css">
      <link rel="stylesheet" href="../stylesheets/header.css">
+       <link rel="stylesheet" href="../stylesheets/label.css">
 
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -46,33 +47,27 @@
                                 <tr>
                                     <td class="collapsing">
                                         <div class="adn--profile-img">
-                                            <img class="adn--profile-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKEAAAB5CAMAAABm4rHGAAAAY1BMVEXMzMzQ0NDT09PJycnX19eRkZGnp6e2tra/v7+Li4u7u7urq6tzc3PGxsZCQkI5OTlNTU2Xl5d6enqfn59bW1szMzNubm5lZWWBgYEAAABUVFQuLi4nJydISEgYGBhgYGANDQ3O3WZvAAACwUlEQVR4nO2W646bMBCFmcFXzMVgQlgSmr7/U9Y2kE3V7q5U0UqVzvcH8IU5nhsUBQAAAAAAAAAAAAAAAAAAAAAAAAAA+McwMx33tN/Ry9jvOabfdxN/uemPICOH2T0fdLZBehj68jNzpF5253NRYwdZnS+RbTcHed2EFeWt5jT4WGUY7vpjc9y/5cvc2dA/1ngYDvc52EvPJwsk5UuiI7Y8PYZ4S3IkJg7dh9ZI+7ZMl7ZhIpYTUdWZuKe5fXKsP8O/xIXD4ur02OZBHtU2t2cXvQsWnVuTwv4q8kwbvTmnW95HToOcF9yYzXZ0g1BJobnnZ+6nLSmHHDqqlmd1TJazD6s2uV/EheKSnUcmKT9TYT/rcfFe5rd7xUkhuXFT7B57draBo20fjqJViyiSwoLrR0yS0DXEN7PNteZUhTwvXjObduYUJ6asMExbPI3fFZVrEE2n9ihT0xnaFBYivPn7UsQDXJrtje25icjzt5RkVHSanY/ifla4FocmLxd3WKZHys+skOwSKjethv6ewjontnj0tKZadLUgUte9KY7PxDNvw1EBMeviGmpTCwjRfURCXQq6bQqpq84UGH0wZ3eJqb8u0lpZe2nJ3LY83Csl5X/nfNgcS/p7XGjtzVpHvskr2Guxt5nm7Epx6+bDRSmZqBcpqbxlKzz1e5sxsYZyuSRMn1fepNR7MhY0anHdCl6N53aboowJGBtdFasxIVKUY3sZYhy5uu/HMJdYJLFcDsER5jY2darnFHAuvzXkurSTW3VyxyZ376sqXPYyIJUDS11dVep+xNWq7bt7fTXeJfeVba2rqm+jdpq9q/RYn/5hJl2vvj7qj3TueVRav16fRfn8KL5utLmWSzl6P+gc4DCuY/8Xfm6Ihfj17ysOis+NHWcSz+305R4AAAAAAAAAAAAAAAAAAAAAAAAAgP+UH5ySGx3yUHkXAAAAAElFTkSuQmCC" />
+                                            <img class="adn--profile-img" src="../images/avatar.png" />
                                         </div>
                                     </td>
                                     <td>
                                         <form class="ui form adn--from">
-                                            <div class="two fields grid">
-                                                <div class="four  wide field">
-                                                    <label class="adn--lab">First Name</label>
-                                                </div>
-                                                <div class="twelve wide field">
-                                                    <input type="text" name="Firstname" class="adn--input" placeholder="Username">
-                                                </div>
-
-                                            </div>
-                                            <div class="two fields grid">
-                                                <div class="four wide field">
-                                                    <label class="adn--lab">Last Name</label>
-                                                </div>
-                                                <div class="twelve  wide field">
-                                                    <input type="text" class="adn--input" name="Lastname" placeholder="Lastnamed">
-                                                </div>
-                                            </div>
-
+                                                 <div class="inline field">
+                                                 <!-- global label and input field starts here-->
+                                                     <label class="adn--label adn--user__label__size">First Name</label>
+                                                 <input type="text" class="adn--input adn--input__first-name" placeholder="First Name">
+                                                  <!-- global label and input field ends here-->
+                                             </div>
+                                              <div class="inline field">
+                                                  <!-- global label and input field starts here-->
+                                                     <label class="adn--label adn--user__label__size">Last Name</label>
+                                                 <input type="text" class="adn--input adn--input__last-name" placeholder="Last Name">
+                                                     <!-- global label and input field Ends here-->
+                                             </div>
                                             <div class="fields grid adn--fright">
                                             <!-- global button starts here-->
-                                                <button class="ui button adn--button adn--fright" type="submit">Save Changes</button>
-                                            <!-- global button starts here-->
+                                                <button class="ui button adn--button adn--fright adn--profile__btn" type="submit">Save Changes</button>
+                                            <!-- global button ends  here-->
 
                                             </div>
 
@@ -94,37 +89,28 @@
                                 <tr>
                                     <td>
                                         <form class="ui form adn--from">
-                                            <div class="two fields grid">
-                                                <div class="four  wide field">
-                                                    <label class="adn--lab">Curent Passeword</label>
-                                                </div>
-                                                <div class="twelve wide field">
-                                                    <input type="password" name="Curent Password" class="adn--input" placeholder="Curent Password">
-                                                </div>
-
-                                            </div>
-                                            <div class="two fields grid">
-                                                <div class="four wide field">
-                                                    <label class="adn--lab">New Password</label>
-                                                </div>
-                                                <div class="twelve  wide field">
-                                                    <input type="Password" class="adn--input" name="New Password" placeholder="New Password">
-                                                </div>
-                                            </div>
-                                             <div class="two fields grid">
-                                                <div class="four wide field">
-                                                    <label class="adn--lab">Repeat Password</label>
-                                                </div>
-                                                <div class="twelve  wide field">
-                                                    <input type="Password" class="adn--input" name="Repeat Password" placeholder="Repeat Password">
-                                                </div>
-                                            </div>
-
-
+                                             <div class="inline field">
+                                                 <!-- global label and input field starts here-->
+                                                     <label class="adn--label adn--pasword__label__size">Curent Passeword</label>
+                                                 <input type="password" class="adn--input adn--input__pasword" placeholder="Curent Passeword">
+                                                  <!-- global label and input field ends here-->
+                                             </div>
+                                                <div class="inline field">
+                                                 <!-- global label and input field starts here-->
+                                                     <label class="adn--label adn--pasword__label__size">New Password</label>
+                                                 <input type="password" class="adn--input adn--input__pasword" placeholder="New Password">
+                                                  <!-- global label and input field ends here-->
+                                             </div>
+                                              <div class="inline field">
+                                                 <!-- global label and input field starts here-->
+                                                     <label class="adn--label adn--pasword__label__size">Repeat Password</label>
+                                                 <input type="password" class="adn--input adn--input__pasword" placeholder="Repeat Password">
+                                                  <!-- global label and input field ends here-->
+                                             </div>
                                             <div class="fields grid adn--fright">
                                             <!-- global button starts here-->
-                                                <button class="ui button adn--button adn--fright" type="submit">Change Password</button>
-                                            <!-- global button starts here-->
+                                                <button class="ui button adn--button adn--fright adn--password__btn" type="submit">Change Password</button>
+                                            <!-- global button ends here-->
 
                                             </div>
 

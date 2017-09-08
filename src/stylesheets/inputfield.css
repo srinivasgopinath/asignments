@@ -1,13 +1,11 @@
+/* gloabal input style starts here */
+
 .ui.form input[type=text].adn--input,.ui.form input[type=password].adn--input{
-	    border: 2px solid rgba(25, 30, 51, 0.21);
-	    background: #f7f8fa;
-	    border-width: 1px;
-	    font-size: 14px;
-	    font-weight: 300;
+       height: 35px;
+       background: #fff;
+       font-size: 14px;
+       font-weight: 300;
+       border-width: 1px;
 }
 
-.ui.form input[type=text].adn--input-user,.ui.form input[type=password].adn--input-password{
-	  width: calc(100% - 136px);
-		height: 37px;
-}
-
+/* gloabal input style ends here */
