@@ -1,25 +1,20 @@
 /* login form styles starts here */
 
-.adn--login-left-col{
-    background: #191E33;
-    color: #fff;
-    vertical-align: middle;
-}
+
 .ui.adn--login-layout>.adn--login-left-col:not(.row), .ui.grid>.row>.adn--login-right-col{
 	padding-left: 0;
 	padding-right: 0;
 }
 
-.adn--login-left-col {
+.adn--login__left-col {
     background: url("../images/bg.png");
     background-size: cover;
-}
-.adn--login-left-col {
     display: flex !important;
     align-items: center;
     justify-content: center;
 }
-.adn--login-hero{
+
+.adn--login__hero{
 	
 	color: #191E33;
 	font-size: 16px;
@@ -46,8 +41,9 @@
 	font-weight: 500;
 	line-height: 62px;
 }
-.adn--logo{
+.adn--login__left-col__logo-link{
 	display: inline-block;
+	width: 100%;
 }
 
 .adn--logo-hero:first-child{
@@ -55,12 +51,12 @@
 	margin: 0 0 0 0;
 }
 
-.adn--login-content-paragraph-wrapper{
-    color: #FFFFFF;
+.adn--login__left-col__content-wrapper{
+    color: #FFF !important;
     text-align: left;
     word-wrap: break-word;
     font-size: 35px;
-    width: 428px;
+    width: 450px;
     line-height: 50px;
     font-weight: 300;
 }
@@ -68,7 +64,7 @@
 	color: #FF7F00;
 }
 
-.adn--login-right-para {
+.adn--login__para {
     padding: 10px;
     text-align: center;
     color: #191E33;
@@ -78,9 +74,9 @@
     text-align: center;
 }
 
-.adn--logo-img {
-    width: 304px;
-    margin: 95px 0 26px 0;
+.adn--login__left-col__logo {
+    width: 100%;
+    /* margin: 95px 0 26px 0; */
 }
 
 .adn--login {
