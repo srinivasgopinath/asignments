@@ -173,22 +173,33 @@
 
 /* input field style starts here */
 
-
 /* Input field style ends here */
 
 /* label style startes here */
-
+.ui.form .adn--input.field>label {
+    width: 75px;
+    float: left;
+    padding: 10px 0 0 0;
+    color: rgba(25, 30, 51, 0.31);
+    font-size: 14px;
+}
 /* label style ends here */
 
 /* Input style starts here */
 
-
+.ui.form .adn--input.field>input {
+    width: calc(100% - 87px);
+    margin: 0 0 28px 0;
+    height: 35px;
+    font-size: 14px;
+    border: 1px solid rgba(25, 30, 51, 0.27);
+}
 /* Input style ends here  */
 
 /* footer style starts here */
 .adn--login__copyright-text {
     position: absolute;
-    bottom: 0;
+    bottom: 8px;
     width: 100%;
     color: rgba(25, 30, 51, 0.47);
     font-size: 12px;
