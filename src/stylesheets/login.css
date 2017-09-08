@@ -36,6 +36,7 @@
 .adn--login__left-col__logo-link {
     display: inline-block;
     width: 100%;
+    margin:0 0 35px 0;
 }
 .adn--logo-hero:first-child {
     text-align: center;
@@ -49,6 +50,7 @@
     width: 450px;
     line-height: 50px;
     font-weight: 300;
+    margin-bottom: 40px;
 }
 .adn--highlight__text {
     color: #FF7F00;
@@ -109,9 +111,7 @@
     background: #FF7F00;
     box-shadow: 0 3px 6px 0 rgba(255, 127, 0, 0.23), 0 3px 6px 0 rgba(255, 127, 0, 0.16);
 }
-.ui.adn--login-left-col-btn {
-    margin: 16px 0 0 0px;
-}
+
 /* login form style ends here */
 
 /* input field style starts here */
