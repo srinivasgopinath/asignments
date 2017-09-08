@@ -179,7 +179,8 @@
 .ui.form .adn--input.field>label {
     width: 75px;
     float: left;
-    padding: 10px 0 0 0;
+    font-weight: 500;
+    padding: 9px 0 0 0;
     color: rgba(25, 30, 51, 0.31);
     font-size: 14px;
 }
@@ -187,11 +188,12 @@
 
 /* Input style starts here */
 
-.ui.form .adn--input.field>input {
-    width: calc(100% - 87px);
-    margin: 0 0 28px 0;
+.ui.form .inline.field.adn--input>input{
+    width: calc(100% - 90px);
+    margin: 0 0 32px 0;
     height: 35px;
     font-size: 14px;
+    margin: 0 0 27px 0;
     border: 1px solid rgba(25, 30, 51, 0.27);
 }
 /* Input style ends here  */
