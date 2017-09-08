@@ -73,84 +73,116 @@
 .adn--login-checkbox {
     margin: 17px 0 0 33px;
 }
-.ui.checkbox .adn--signed-label {
-    color: rgba(25, 30, 51, 0.48);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 12px;
-    text-align: left;
-    width: 156px;
-    font-size: 11px;
-    font-weight: 500;
-    line-height: 15px;
-}
-.ui.form .field>.adn--forget-label {
-    color: #FF7F00;
-    font-size: 11px;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 97px;
-    text-align: left;
-    display: inline-block;
-    margin: 18px 23px 0 0;
-    font-weight: 500;
-    line-height: 15px;
-    text-overflow: ellipsis;
-}
+
 .adn--middle__align {
     position: relative;
     height: 100%;
     margin-top: 0 !important;
 }
-.adn--btn {
-    color: #fff;
-    border-radius: 4px;
-    margin: 0px 0 0 0;
+
+/* <-----------------------------------------------------------------left content ends here */
+
+/* right content starts here ----------------------------------------------------------------->*/
+/* right contet starts here */
+.ui.grid>.row>.column.adn--login-right-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* right conternt ends here */
+
+.adn--login__right-col__title{
+    color: #191E33;
+    font-size: 16px;
+    /* width: 100%; */
+    font-weight: 500;
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 30px 0;
+    line-height: 22px;
+    text-align: center;
+}
+.adn--login__right-col__paragraph {
+    color: #191E33;
+    font-size: 14px;
+    padding: 14px 0 35px 0;
+    font-weight: 300;
+    text-align: center;
+}
+
+.adn--login__right-col__form {
+    width: calc(100% - 80px);
+    margin: 0 auto;
+}
+
+.adn--login__right-col__input-label{
+    color: rgba(25, 30, 51, 0.55);
+    display: inline-block;
+    width: 83px;
+    font-size: 14px;
+}
+
+.adn--login__right-col__input {
+    width: calc(100% - 89px);
+    height: 35px;
+    padding: 8px;
+    font-weight: 300;
+    font-size: 14px;
+    border: 1px solid rgba(25, 30, 51, 0.25);
+    margin: 2px 0 13px 0;
+    border-radius: 3px;
+    border-width: 1;
+}
+
+.adn--login__right-col__actions-wrapper {
+    padding: 33px 0 0 0;
+    width: 161px;
+
+}
+
+.adn--login__right-col__keep-signed__wrapper {
+    width: calc(100% - 161px);
+    padding: 25px 0 0 0;
+}
+
+.adn--login__right-col__password__label {
+    margin: 0 45px 0 0;
     font-size: 12px;
-    background: #FF7F00;
-    box-shadow: 0 3px 6px 0 rgba(255, 127, 0, 0.23), 0 3px 6px 0 rgba(255, 127, 0, 0.16);
+    font-weight: 500;
+    color: #FF7F00;
+}
+
+.adn--login__right-col__checkbox-label{
+     color: rgba(25, 30, 51, 0.72);
+     font-size: 11px;
+     font-weight: 500;
 }
 
 /* login form style ends here */
 
 /* input field style starts here */
 
-.ui.form input[type=text].adn--input-user,
-.ui.form input[type=password].adn--input-password {
-    width: calc(100% - 111px);
-    /* height: 37px; */
-}
+
 /* Input field style ends here */
 
 /* label style startes here */
 
-.ui.form .field>.adn--user-label,
-.adn--password-label {
-    width: 64px !important;
-}
 /* label style ends here */
 
 /* Input style starts here */
 
-.ui.form input[type=text].adn--input,
-.ui.form input[type=password].adn--input {
-    border: 2px solid rgba(25, 30, 51, 0.21);
-    background: #f7f8fa;
-    border-width: 1px;
-    font-size: 14px;
-    font-weight: 300;
-}
+
 /* Input style ends here  */
 
 /* footer style starts here */
-
-.adn--login-footer {
-    text-align: center;
-    color: rgba(25, 30, 51, 0.69);
-    font-size: 11px;
-    height: 0;
-    line-height: 15px;
+.adn--login__copyright-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: rgba(25, 30, 51, 0.47);
+    font-size: 12px;
+    left: 0;
     text-align: center;
 }
+
+
 /* footer style ends here */
