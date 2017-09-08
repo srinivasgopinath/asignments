@@ -13,11 +13,12 @@
 .adn--login-left-col {
     background: url("../images/bg.png");
     background-size: cover;
-    margin: 10px0;
-    position: relative;
-    height: 100%;
 }
-
+.adn--login-left-col {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
 .adn--login-hero{
 	
 	color: #191E33;
@@ -46,8 +47,6 @@
 	line-height: 62px;
 }
 .adn--logo{
-	text-align: start;
-	left: 0;
 	display: inline-block;
 }
 
@@ -56,15 +55,14 @@
 	margin: 0 0 0 0;
 }
 
-.adn--login-paragraph {
+.adn--login-content-paragraph-wrapper{
     color: #FFFFFF;
     text-align: left;
-    /* padding: 0 10px 0 44px; */
     word-wrap: break-word;
     font-size: 35px;
+     width: 400px;
     line-height: 50px;
     font-weight: 300;
-    margin: 0 auto;
 }
 .adn--text-color{
 	color: #FF7F00;
@@ -81,9 +79,8 @@
 }
 
 .adn--logo-img {
-    width: width: 304px;
     width: 304px;
-    margin: 56px 89px 29px 0;
+    margin: 31px 0 0 0;
 }
 
 .adn--login {
@@ -123,7 +120,7 @@
 }
 .adn--login-paragraph-wrapper {
     width: 486px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .adn--middle__align{
