@@ -3,4 +3,11 @@
 	    background: #f7f8fa;
 	    border-width: 1px;
 	    font-size: 14px;
+	    font-weight: 300;
 }
+
+.ui.form input[type=text].adn--input-user,.ui.form input[type=password].adn--input-password{
+	  width:;
+	  width: calc(100% - 136px);
+}
+

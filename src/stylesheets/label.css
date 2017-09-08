@@ -1,0 +1,12 @@
+.ui.form .field>.adn--label {
+    margin: 12px 0 0 0;
+    text-align: right;
+    opacity: 0.4;
+    color: rgba(25, 30, 51, 0.98);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.ui.form .field>.adn--user-label,.adn--password-label{
+	width: 100px !important;
+}

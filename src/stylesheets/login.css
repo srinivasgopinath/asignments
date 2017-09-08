@@ -32,7 +32,7 @@
 .adn--login-layout{
 	height: 100%;
 }
-.ui.adn--login-layout > .adn--nopadd{
+.ui.adn--login-layout > .adn--padding-zero{
     padding-top: 0;
     padding-bottom:0;
 }
@@ -52,10 +52,6 @@
 	text-align: start;
 	left: 0;
 	display: inline-block;
-	/* width: 304px; */
-	/* text-overflow: ellipsis; */
-	/* overflow: hidden; */
-	/* position: relative; */
 }
 
 .adn--logo-hero:first-child{
@@ -77,15 +73,11 @@
 	color: #FF7F00;
 }
 
-.adn--login-form-wrapper {
-
-}
-
 .adn--login-right-para {
     padding: 10px;
     text-align: center;
     color: #191E33;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 300;
     line-height: 19px;
     text-align: center;
@@ -100,20 +92,14 @@
 .adn--login {
     padding: 26px 25px 19px 0;
 }
-.ui.form .field>.adn-label{
-	margin: 12px 0 0 0;
-	text-align: right;
-	opacity: 0.4;
-	color: rgba(25, 30, 51, 0.98);
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 20px;
-}
+
 .adn--login-checkbox {
     margin: 17px 0 0 33px;
 }
 
-
+.ui.grid>.adn--login:not(.row) {
+    padding: 0;
+}
  .adn--signed-label{
 	opacity: 0.5;
 	color: #191E33;
@@ -139,7 +125,6 @@
 	line-height: 15px;
 	text-overflow: ellipsis;
 }
-
 .adn--login-paragraph-wrapper {
     width: 486px;
     margin: 0 auto;
@@ -147,6 +132,18 @@
 .adn--left{
 	    position: relative;
     height: 100%;
+}
+.adn--btn{
+		color: #fff;
+	border-radius: 4px;
+	margin: 0px 0 0 0;
+	font-size: 12px;
+	background: #FF7F00;
+	box-shadow: 0 3px 6px 0 rgba(255,127,0,0.23), 0 3px 6px 0 rgba(255,127,0,0.16);
+}
+
+.ui.adn--learn-btn{
+	margin: 40px 0 0 40px;
 }
 
 /* login form style ends here */

@@ -1,27 +1,8 @@
-/* all button styles goes here */
+/* global button styles goes here */
 
-.adn--btn{
-		color: #fff;
-	border-radius: 4px;
-	margin: 0px 0 0 0;
-	font-size: 12px;
-	background: #FF7F00;
-	box-shadow: 0 3px 6px 0 rgba(255,127,0,0.23), 0 3px 6px 0 rgba(255,127,0,0.16);
-}
-.ui.adn--login-btn{
+.ui.adn--button{
 	color: #fff;
 	border-radius: 4px;
-	margin: 0px 0 0 0;
-	height: 35px;
-	font-weight: 500;
-	font-size: 12px;
-	background: #FF7F00;
-	box-shadow: 0 3px 6px 0 rgba(255,127,0,0.23), 0 3px 6px 0 rgba(255,127,0,0.16);
-}
-.ui.adn--primary-btn{
-	color: #fff;
-	border-radius: 4px;
-	margin: 40px 0 0 40px;
 	height: 35px;
 	font-weight: 500;
 	font-size: 12px;
@@ -29,28 +10,13 @@
 	box-shadow: 0 3px 6px 0 rgba(255,127,0,0.23), 0 3px 6px 0 rgba(255,127,0,0.16);
 }
 
-.ui.adn--primary-btn:hover,.ui.adn--login-btn:hover{
+.ui.adn--button:hover{
 	color: #FF7F00;
 	border-radius: 4px;
 	background: #fff;
 	box-shadow: 0 3px 6px 0 rgba(255,127,0,0.23), 0 3px 6px 0 rgba(255,127,0,0.16);
 
-}
-.adn--menu {
-    width: 26px;
-    height: 24px;
-    background: none;
-    border: 0;
+
 }
 
-.ui.adn--save-btn {
-    color: #fff;
-    border-radius: 4px;
-    margin: 0px 9px 0 1px;
-    height: 35px;
-    font-weight: 500;
-    font-size: 12px;
-    background: #FF7F00;
-    box-shadow: 0 3px 6px 0 rgba(255,127,0,0.23), 0 3px 6px 0 rgba(255,127,0,0.16);
-}
-/* all utton style ends here */
+/* all global button style ends here */

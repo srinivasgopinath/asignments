@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../stylesheets/btn.css">
     <link rel="stylesheet" href="../stylesheets/checkbox.css">
     <link rel="stylesheet" href="../stylesheets/inputfield.css">
+     <link rel="stylesheet" href="../stylesheets/label.css">
+
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
@@ -22,7 +24,7 @@
     <!--main grid starts here-->
     <div class="ui  stackable centered aligned padded grid adn--login-layout">
 
-        <div class="row adn--nopadd">
+        <div class="row adn--padding-0">
             <!--Left Logo discription content starts here-->
             <div class="ten wide column adn--login-left-col">
                 <div class="ui two middle aligned column centered grid adn--left">
@@ -36,7 +38,9 @@
 
                             <p class="adn--login-paragraph">Lorem ipsum is a simply dummy text of ther <span class="adn--text-color">printing </span> and <span class="adn--text-color">typesetting</span> industry.</span>
                             </p>
-                            <button class="ui button adn--btn adn--primary-btn">Learn More</button>
+                            <!-- global button starts here-->
+                      <button class="ui button adn--button adn--learn-btn">Learn More</button>
+                            <!-- global button ends here-->
 
                         </div>
                     </div>
@@ -54,24 +58,14 @@
                      <h4 class="adn--login-hero">LOGIN</h4>
                     <p class="adn--login-right-para">Lorem ipsum is a simply dummy text of therprinting and typesettingindustry.</p>
                         <form class="ui form">
-                            <div class="two fields grid">
-                                <div class="four wide field">
-                                    <label class="adn-label">Username</label>
-                                </div>
-                                <div class="twelve wide field">
-                                    <input type="text" name="username" class="adn--input" placeholder="User name">
-                                </div>
-
+                          <div class="inline field">
+                                <label class="adn--label  adn--user-label">User Name</label>
+                                <input type="text" class="adn--input adn--input-user" placeholder="Username">
                             </div>
-                            <div class="two fields grid">
-                                <div class="four wide field">
-                                    <label class="adn-label">Password</label>
-                                </div>
-                                <div class="twelve  wide field">
-                                    <input type="password" class="adn--input" name="Password" placeholder="password">
-                                </div>
+                             <div class="inline field">
+                                <label class="adn--label  adn--user-label">Password</label>
+                                <input type="password" class="adn--input adn--input-password" placeholder="Password">
                             </div>
-
                             <div class="two fields grid">
                                 <div class="eight wide field">
 
@@ -82,7 +76,9 @@
                                 </div>
                                 <div class="eight wide field adn-forgot-paswd">
                                     <a href="" class="adn--forget-label"><label class="adn--forget-paswd">Forgot Password?</label></a>
-                                    <button class="ui button adn--login-btn" type="submit">Login</button>
+                                    <!-- global button starts here-->
+                                    <button class="ui button adn--button adn--login-btn" type="submit">Login</button>
+                                    <!-- global button ends here-->
                                 </div>
                             </div>
 

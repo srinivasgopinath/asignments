@@ -1,0 +1,30 @@
+/* new user styles starts here */
+.ui.form .field>.adn--lab {
+    color: rgba(25, 30, 51, 0.44);
+    font-size: 11px;
+    line-height: 16px;
+    text-align: right;
+    margin: 10px;
+}
+
+.ui.adn--card thead tr:first-child>th:only-child
+{
+    background: #fff;
+    padding: 19px;
+    border-bottom: 1px solid rgba(25, 30, 51, 0.2);
+}
+
+.ui.celled.adn--card tr td, .ui.celled.adn--card tr th{border-left:0;vertical-align: top;}
+
+
+
+.ui.form input[type=text].adn--input,.ui.form input[type=password].adn--input{
+       height: 33px;
+       background: #fff;
+}
+
+.form.adn--from {
+    margin: 30px 13px 0 0;
+}  
+
+/* new user styles ends here */

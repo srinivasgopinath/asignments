@@ -1,9 +1,27 @@
+
+/* card style starts here */
+.ui.adn--card{
+
+    width: 600px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.23), 0 3px 6px 0 rgba(0,0,0,0.16);
+}
+.adn--card-hero {
+    color: #191E33;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* card style ends here */
+
 /* card style starts here */
 .adn--profile-img {
     padding: 7px;
     border-radius: 16px;
     width: 111px;
 }
+
 
 .ui.form .field>.adn--lab {
     color: rgba(25, 30, 51, 0.44);
@@ -38,4 +56,12 @@
     width: 109px;
     height: 110px;
 }
+
+.adn--menu {
+    width: 26px;
+    height: 24px;
+    background: none;
+    border: 0;
+}
+
 /* card style ends here */

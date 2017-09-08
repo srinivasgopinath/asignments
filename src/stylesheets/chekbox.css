@@ -1,0 +1,9 @@
+.ui.adn--checkinput:checked~.box:after, .ui.adn--check input:checked~.adn--signed-label:after {
+    opacity: 1;
+    color: #fff;
+    background: #ff7f00;
+}
+
+.ui.adn--check .box:before, .ui.adn--check.adn--signed-label:before {
+    background: #ff7f00;
+}
