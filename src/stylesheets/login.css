@@ -32,10 +32,7 @@
 .adn--login-layout{
 	height: 100%;
 }
-.ui.adn--login-layout > .adn--padding-zero{
-    padding-top: 0;
-    padding-bottom:0;
-}
+
 .adn--logo-text-one{
 	color: #FF7F00;
 	font-size: 60px;
@@ -142,11 +139,19 @@
 	box-shadow: 0 3px 6px 0 rgba(255,127,0,0.23), 0 3px 6px 0 rgba(255,127,0,0.16);
 }
 
-.ui.adn--learn-btn{
+.ui.adn--login-left-col-btn{
 	margin: 40px 0 0 40px;
 }
 
 /* login form style ends here */
+
+/* input field style starts here */
+.ui.form input[type=text].adn--input-user,.ui.form input[type=password].adn--input-password{
+	  width: calc(100% - 136px);
+		height: 37px;
+}
+
+/* Input field style ends here */
 
 /* footer style starts here */
 

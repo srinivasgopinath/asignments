@@ -7,7 +7,7 @@
 }
 
 .ui.form input[type=text].adn--input-user,.ui.form input[type=password].adn--input-password{
-	  width:;
 	  width: calc(100% - 136px);
+		height: 37px;
 }
 
