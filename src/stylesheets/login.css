@@ -176,7 +176,7 @@
 /* Input field style ends here */
 
 /* label style startes here */
-.ui.form .adn--input.field>label {
+.ui.form.adn--input>.inline.field>label {
     width: 75px;
     float: left;
     font-weight: 500;
@@ -187,8 +187,7 @@
 /* label style ends here */
 
 /* Input style starts here */
-
-.ui.form .inline.field.adn--input>input{
+.ui.form.adn--input>.inline.field>input {
     width: calc(100% - 90px);
     margin: 0 0 32px 0;
     height: 35px;
@@ -196,6 +195,7 @@
     margin: 0 0 27px 0;
     border: 1px solid rgba(25, 30, 51, 0.27);
 }
+
 /* Input style ends here  */
 
 /* footer style starts here */
