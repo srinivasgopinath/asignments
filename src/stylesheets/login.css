@@ -1,0 +1,137 @@
+/* left content background style goes here */
+
+.adn--login__layout-left__col-wrapper{
+    background: url(../images/bg.png);
+    background-size: cover;
+}
+
+.ui.ten.wide.column.adn--login__layout-left__col-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* left content background style ends here */
+
+
+/* logo content style goes here */
+
+.adn--login__layout_logo-link {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 35px 0;
+}
+
+/* logo content style ends here */
+
+/* left content pragraph styles goes here */
+
+.adn-login__content-paragraph {
+    margin: 0 auto;
+    color: #FFF;
+    text-align: left;
+    word-wrap: break-word;
+    font-size: 35px;
+    width: 450px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.adn--login__layout-highlight__text {
+    color: #ff7f00;
+}
+
+
+/* left content paragraph style ends here */
+
+/* right content goes here */
+
+.ui.six.wide.column.adn--login__layout-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* right content ends here */
+
+/* right side content title goes here */
+
+.adn--login__layout-right__col-title{
+    color: rgba(25, 30, 51, 0.77);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 0 31px 0;
+    margin: 0 0 29px 0;
+    border-bottom: 1px solid rgba(25, 30, 51, 0.22);
+}
+
+/* right side content title ends here */
+
+
+/* right side paragraph content starts  here */
+
+.adn--login__layout-right__col-paragraph {
+    color: #191E33;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0 0 48px 0;
+    text-align: center;
+}
+
+/* right side paragraph content ends here */
+
+/* right side form contet goes here */
+.adn--input {
+    margin: 0 0 19px 0;
+}
+.adn--login__layout-right__col-form__wrapper {
+    width: calc(100% - 80px);
+    margin: 0 auto;
+}
+
+.ui.adn--input .inline.field>label {
+    width: 69px;
+    color: rgba(25, 30, 51, 0.51);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.ui.adn--input .inline.field>input {
+    width: calc(100% - 85px);
+    height: 35px;
+    border-width: 1px;
+    border-radius: 3px;
+    font-size: 14px;
+    border: 1px solid rgba(25, 30, 51, 0.28);
+}
+
+.adn--login__layout-password-link {
+     color: #FF7F00;
+    font-size: 11px;
+    font-weight: 500;
+    margin: 0 30px 0 0;
+} 
+ 
+.ui.checkbox .adn--login__right-col__checkbox-label{
+    color: rgba(25, 30, 51, 0.54);
+    font-size: 11px;
+    font-weight: 500;
+}
+.adn--login__layout-checkbox__wrapper{margin: 44px 0 0 0;}
+
+.adn--login__layout-password_wrapper {
+    margin: 35px 0 0 0;
+}
+/* right side form content ends here */
+
+
+/* copyright starts here */
+
+.adn--copyright {
+    position: absolute;
+    bottom: 9px;
+    color: #191E33;
+    font-size: 11px;
+}
+
+/* copyright ends here */
