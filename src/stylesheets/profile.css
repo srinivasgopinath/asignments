@@ -8,6 +8,17 @@
     background: none;
     border: 0;
 }
+
+i.icon.adn--header__menu__icon {
+    color: #ff7f00;
+    font-size: 24px;
+}
+
+.adn-header__menu {
+    background: none;
+    border: 0;
+    padding: 12px;
+}
 /* logo style ends here */
 
 /* card style starts here */
