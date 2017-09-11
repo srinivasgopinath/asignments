@@ -12,6 +12,9 @@
 
 /* card style starts here */
 
+.adn--card__title {
+    height: 80px;
+}
 .adn--card__content {
     width: calc(100% - 78px);
     margin: 0 auto;
@@ -25,7 +28,7 @@
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.23), 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 }
 
-.adn--card__profile__img-container {
+.adn--card__content-profile__wrapper {
     width: 114px;
 }
 .adn--card__profile-img {
@@ -39,7 +42,7 @@
     margin: 30px 0 30px 0;
 }
 
-.adn--card__input-password{
+.adn--card__content__input__password-wrapper{
     margin: 48px 0 0 0;
 }
 .adn--card__input-wrapper{
@@ -53,7 +56,7 @@
 
 /* card title starts here */
 
-.adn--card__content__header__title {
+.adn--card__header__title {
     text-align: justify;
     padding: 30px 0 30px 40px;
     color: #191E33;
@@ -91,16 +94,13 @@
 
 /* button style starts here */
 
-.ui.adn--card__footer__btn {
-    margin: 0 0 30px 0;
-}
 /*button style ends here  */
 
 /* footer style goes here*/
 
 .adn--card__footer {
-    width: calc(100% - 45px);
-    /* margin: 10px 0 43px 0; */
+    width: calc(100% - 42px);
+    height: 65px;
 }
 
 /* footer style ends here */
