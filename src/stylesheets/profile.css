@@ -36,24 +36,27 @@ i.icon.adn--header__menu__icon {
     background-color: #FFFFFF;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.23), 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 }
-
-.adn--card__content-profile__wrapper {
+.adn--card__profile-img__wrapper {
     width: 114px;
+     margin: 28px 0 0 0;
 }
 .adn--card__content__profile-img {
-    width: 112px;
-    margin: 24px 0 0 0;
-}
-.adn--card__input-wrapper {
-    margin: 28px 0 0 0;
+    width: 104px;
 }
 
-.adn--card__input-wrapper{
-    margin: 48px 0 0 0;
-    width: calc(100% - 139px);
+.adn--card__profile-input__wrapper{
+    width: calc(100% - 138px);
+    margin: 43px 0 0 0;
+}
+
+.adn--card .adn--card__profile-input__wrapper .ui.adn--input .inline.field label {
+ width: 75px;
+}
+.adn--card .adn--card__profile-input__wrapper .ui.adn--input .inline.field input {
+ width: calc(100% - 96px);
 }
 .ui.form.adn--input {
-    margin: 0 0 19px 0;
+    margin: 28px 0 19px 0;
 }
 /* card style ends here */
 
@@ -87,12 +90,27 @@ i.icon.adn--header__menu__icon {
     font-weight: 500;
 }
 
+.adn--card .adn--card__profile-input__wrapper {
+    margin: 24px 0 20px 0;
+}
+.adn--card .adn--card__content .adn--input .inline label {
+    width: 129px;
+}
+
+.adn--card .adn--card__content .adn--input .inline input {
+    width: calc(100% - 150px);
+}
+
+
+.adn--card .adn--card__profile-input__wrapper .ui.adn--input {
+    margin: 19px 0 0 0;
+}
 /* label style ends here */
 
 /* input feald style starts here */
 
 .ui.adn--input .inline.field>input {
-    width: calc(100% - 96px);
+    /* width: calc(100% - 96px); */
 }
 
 /* input feald end here */
