@@ -5,7 +5,7 @@
     <title>New User</title>
     <link rel="stylesheet" type="text/css" href='../../semantic/dist/semantic.min.css'>
     <link rel="stylesheet" href="../stylesheets/global.css">
-    <link rel="stylesheet" href="../stylesheets/bbutton.css">
+    <link rel="stylesheet" href="../stylesheets/button.css">
     <link rel="stylesheet" href="../stylesheets/checkbox.css">
     <link rel="stylesheet" href="../stylesheets/inputfield.css">
     <link rel="stylesheet" href="../stylesheets/newuser.css">
@@ -26,144 +26,91 @@
                 <button class="adn--menu adn--fright"><i class="sidebar icon adn--menu-icon"></i></button>
             </div>
             <!-- header ends here-->
-
-            <div class="ui two column centered grid">
-
-                <div class="centered row">
-                    <div class="column">
-                    
- <table class="ui celled striped table adn--card">
-                            <thead>
-                                <tr>
-                                    <th colspan="3">
-                                        <span class="adn--card-hero">CREATE NEW USER</span>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <form class="ui form adn--from">
-                                            <div class="two fields grid">
-                                                <div class="four  wide field">
-                                                    <label class="adn--lab">Email Id</label>
-                                                </div>
-                                                <div class="twelve wide field">
-                                                    <input type="text" name="Email Id" class="adn--input" placeholder="Email Id">
-                                                </div>
-
-                                            </div>
-                                            <div class="two fields grid">
-                                                <div class="four wide field">
-                                                    <label class="adn--lab">First Name</label>
-                                                </div>
-                                                <div class="twelve  wide field">
-                                                    <input type="text" class="adn--input" name="First Name" placeholder="First Name">
-                                                </div>
-                                            </div>
-                                             <div class="two fields grid">
-                                                <div class="four wide field">
-                                                    <label class="adn--lab">Last Name</label>
-                                                </div>
-                                                <div class="twelve  wide field">
-                                                    <input type="text" class="adn--input" name="Last Name P" placeholder="Last Name">
-                                                </div>
-                                            </div>
-                                              <div class="two fields grid">
-                                                <div class="four wide field">
-                                                    <label class="adn--lab">User Role</label>
-                                                </div>
-                                                <div class="twelve  wide field">
-                                                                                                    <div class="ui fluid selection ">
-                                            <input name="user" type="hidden">
-                                                  <i class="dropdown icon"></i>
-                                                  <div class="default text">Select Role</div>
-                                                  <div class="menu">
-                                                    <div class="item" data-value="jenny">
-                                                      <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
-                                                      Jenny Hess
-                                                    </div>
-                                                    <div class="item" data-value="elliot">
-                                                      <img class="ui mini avatar image" src="/images/avatar/small/elliot.jpg">
-                                                      Elliot Fu
-                                                    </div>
-                                                    <div class="item" data-value="stevie">
-                                                      <img class="ui mini avatar image" src="/images/avatar/small/stevie.jpg">
-                                                      Stevie Feliciano
-                                                    </div>
-                                                    <div class="item" data-value="christian">
-                                                      <img class="ui mini avatar image" src="/images/avatar/small/christian.jpg">
-                                                      Christian
-                                                    </div>
-                                                    <div class="item" data-value="matt">
-                                                      <img class="ui mini avatar image" src="/images/avatar/small/matt.jpg">
-                                                      Matt
-                                                    </div>
-                                                    <div class="item" data-value="justen">
-                                                      <img class="ui mini avatar image" src="/images/avatar/small/justen.jpg">
-                                                      Justen Kitsune
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                                </div>
-                                            </div>
-
-                                              <div class="two fields grid">
-                                                <div class="four wide field">
-                                                    <label class="adn--lab">Clint</label>
-                                                </div>
-                                                <div class="twelve  wide field">
-                                                   <div class="ui fluid selection dropdown">
-                                  <input name="user" type="hidden">
-                                  <i class="dropdown icon"></i>
-                                  <div class="default text">Select Client</div>
-                                  <div class="menu">
-                                    <div class="item" data-value="jenny">
-                                      <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
-                                      Jenny Hess
-                                    </div>
-                                    <div class="item" data-value="elliot">
-                                      <img class="ui mini avatar image" src="/images/avatar/small/elliot.jpg">
-                                      Elliot Fu
-                                    </div>
-                                    <div class="item" data-value="stevie">
-                                      <img class="ui mini avatar image" src="/images/avatar/small/stevie.jpg">
-                                      Stevie Feliciano
-                                    </div>
-                                    <div class="item" data-value="christian">
-                                      <img class="ui mini avatar image" src="/images/avatar/small/christian.jpg">
-                                      Christian
-                                    </div>
-                                    <div class="item" data-value="matt">
-                                      <img class="ui mini avatar image" src="/images/avatar/small/matt.jpg">
-                                      Matt
-                                    </div>
-                                    <div class="item" data-value="justen">
-                                      <img class="ui mini avatar image" src="/images/avatar/small/justen.jpg">
-                                      Justen Kitsune
-                                    </div>
-                                  </div>
-                                </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="fields grid adn--fright">
-                                                <button class="ui button adn--btn-default">Cancel</button>
-                                                <button class="ui button adn--save-btn adn--fright" type="submit">Change Password</button>
-
-                                            </div>
-
-                                        </form>
-                                    </td>
-
-                                </tr>
-                            </tbody>
-                        </table>
+            <!--new user content goes here-->
+             <!--card content wrapper starts here-->
+            <div class="ui column centered grid adn--card__wrapper">
+                <!--card content stars here-->
+                <div class="centered adn--card__content-wrapper adn--padding-0">
+                    <!--card title starts here-->
+                    <div class="adn--card__header adn--card__content-title">
+                        <h3 class="adn--card__content-title__text">CREATE NEW USER</h3>
                     </div>
+                    <!--card title ends here-->
 
+                    <!-- card content starts here-->
+                    <div class="adn--card__content__box adn--clearfix">
+                        <!--card input items starts here-->
+                        <div class="adn--card__input-wrapper">
+                            <!--global input field-->
+                            <div class="ui form adn--input">
+                                <div class="inline field">
+                                    <label>Email ID</label>
+                                    <input type="text" placeholder="Email ID">
+                                </div>
+                            </div>
+                            <!--global input field-->
+
+                            <!--global input field-->
+                            <div class="ui form adn--input">
+                                <div class="inline field">
+                                    <label>First Name</label>
+                                    <input type="text" placeholder="First Name">
+                                </div>
+                            </div>
+                            <!--global input field-->
+                              <!--global input field-->
+                            <div class="ui form adn--input">
+                                <div class="inline field">
+                                    <label>Last Name</label>
+                                    <input type="text" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <!--global input field-->
+                              <!--global input field-->
+                            <div class="ui form adn--input">
+                              <div class="inline field">
+                                    <label>User Role</label>
+                                    
+                                      <select class="ui dropdown">
+                                          <option value="">Select User Role</option>
+                                          <option value="1">Male</option>
+                                          <option value="0">Female</option>
+                                     </select>
+                
+                                </div>
+                            </div>
+                            <!--global input field-->
+                              <!--global input field-->
+                            <div class="ui form adn--input">
+                                <div class="inline field">
+                                    <label>Clint</label>
+                                      <select class="ui dropdown">
+                                          <option value="">Select Client</option>
+                                          <option value="1">Male</option>
+                                          <option value="0">Female</option>
+                                     </select>
+                                </div>
+                            </div>
+                            <!--global input field-->
+                            <div class="adn--card--footer adn--clearfix">
+                            <!--global button starts here-->
+                            <div class="adn--card__input-button adn--fright">
+                            <div class="ui button adn--button adn--button__cancel">Cancel</div>
+                                <div class="ui button adn--button">Save Changes</div>
+                            </div>  
+                            <!--global button ends here-->
+                            </div>
+
+                        </div>
+                        <!--card input items ends herer-->
+                    </div>
+                    <!-- card content starts here-->
                 </div>
+                <!--card content stars here-->
             </div>
+            <!--new user content ends here-->
+
+
 
         </div>
 </body>

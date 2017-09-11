@@ -1,30 +1,124 @@
-/* new user styles starts here */
-.ui.form .field>.adn--lab {
-    color: rgba(25, 30, 51, 0.44);
-    font-size: 11px;
-    line-height: 16px;
-    text-align: right;
-    margin: 10px;
+/* header css starts here */
+
+
+.ui.segment.adn--header {
+    /* box-shadow: 0 1px 8px 3px rgba(34, 36, 38, 0.71); */
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,0.16), 0 10px 20px 0 rgba(0,0,0,0.09);
+    border-radius: 0;
+    height: 80px;
 }
 
-.ui.adn--card thead tr:first-child>th:only-child
-{
+i.adn--menu-icon{
+    color: #FF7F00;
+    font-size: 22px;
+    padding: 14px 24px 0 0;
+}
+
+.adn--logo-link {
+    display: inline-block;
+    padding: 14px;
+}
+
+.adn--logo-img {
+    width: 136px;
+}
+.adn--menu {
+    background: none;
+    border: 0;
+}
+
+.adn--card__header.adn--card__content-title {
+    padding: 30px 0 30px 40px;
+    border-bottom: 1px solid rgba(25, 30, 51, 0.37);
+}
+
+.adn--card__content-title__text {
+    text-align: justify;
+    color: #191E33;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* header css ends here */
+
+/* card content goes here */
+
+.adn--card__content-wrapper {
+    width: 680px;
+    border-radius: 8px;
+    margin: 30px 0 0 0;
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.23), 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+
+.adn--card__content__box {
+    width: calc(100% - 78px);
+    margin: 0 auto;
+}
+
+.adn--card__input-wrapper {
+    margin: 28px 0 0 0;
+}
+
+
+/* card content ends here */
+
+
+/* label styles starts here */
+
+.ui.adn--input .inline.field>label {
+    width: 85px;
+    text-align: left;
+}
+
+
+
+
+/* label style ends here */
+
+/* input style goes here */
+
+.ui.form.adn--input {
+    margin: 0 0 19px 0;
+}
+.ui.adn--input .inline.field>input {
+    width: calc(100% - 107px);
+}
+
+
+.ui.form.adn--input .inline.field>select {
+    height: 35px;
+    width: calc(100% - 103px);
+    border-width: 1px;
+    border-radius: 3px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.39);
+    border: 1px solid rgba(25, 30, 51, 0.28);
+}
+
+.ui.adn--input .inline.field>select:focus {
+    border: 1px solid #ff7f00;
+}
+
+
+.ui.adn--input .inline.field>input:focus {
+    border: 1px solid #ff7f00;
+}
+/* input style end here */
+
+
+
+/* button style starts here */
+
+.adn--card__input-button.adn--fright {
+    margin: 0 0 30px 0;
+}
+
+
+.ui.button.adn--button.adn--button__cancel {
     background: #fff;
-    padding: 19px;
-    border-bottom: 1px solid rgba(25, 30, 51, 0.2);
+    color: #ff7f00;
+    box-shadow: none;
 }
-
-.ui.celled.adn--card tr td, .ui.celled.adn--card tr th{border-left:0;vertical-align: top;}
-
-
-
-.ui.form input[type=text].adn--input,.ui.form input[type=password].adn--input{
-       height: 33px;
-       background: #fff;
-}
-
-.form.adn--from {
-    margin: 30px 13px 0 0;
-}  
-
-/* new user styles ends here */
+/* button style ends here */
