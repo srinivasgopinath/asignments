@@ -12,9 +12,7 @@
 
 /* card style starts here */
 
-.adn--card__title {
-    height: 80px;
-}
+
 .adn--card__content {
     width: calc(100% - 78px);
     margin: 0 auto;
@@ -31,20 +29,14 @@
 .adn--card__content-profile__wrapper {
     width: 114px;
 }
-.adn--card__profile-img {
+.adn--card__content__profile-img {
     width: 112px;
     margin: 24px 0 0 0;
 }
 .adn--card__input-wrapper {
     margin: 28px 0 0 0;
 }
-.adn--card__wrapper-password {
-    margin: 30px 0 30px 0;
-}
 
-.adn--card__content__input__password-wrapper{
-    margin: 48px 0 0 0;
-}
 .adn--card__input-wrapper{
     margin: 48px 0 0 0;
     width: calc(100% - 139px);
@@ -56,13 +48,22 @@
 
 /* card title starts here */
 
-.adn--card__header__title {
-    text-align: justify;
-    padding: 30px 0 30px 40px;
+.adn--card__header {
+    height: 80px;
+    border-bottom: 1px solid rgba(25, 30, 51, 0.31);
+
+}
+
+
+.adn--card__header-title {
+    padding: 30px 0 0 30px;
     color: #191E33;
     font-size: 16px;
-    border-bottom: 1px solid rgba(25, 30, 51, 0.37);
+    width: 148px;
+    text-overflow: ellipsis;
     font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
 }
 /* card title ends here */
 
@@ -74,12 +75,7 @@
     font-size: 14px;
     font-weight: 500;
 }
-.ui.adn--input-password .inline.field>label {
-    width: 128px;
-    color: rgba(25, 30, 51, 0.51);
-    font-size: 14px;
-    font-weight: 500;
-}
+
 /* label style ends here */
 
 /* input feald style starts here */
@@ -87,9 +83,7 @@
 .ui.adn--input .inline.field>input {
     width: calc(100% - 96px);
 }
-.ui.adn--input-password .inline.field>input {
-    width: calc(100% - 149px);
-}
+
 /* input feald end here */
 
 /* button style starts here */
