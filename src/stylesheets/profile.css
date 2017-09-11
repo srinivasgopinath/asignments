@@ -1,87 +1,92 @@
+/* logo starts here */
 
-/* card style starts here */
-.ui.adn--card{
-
-    width: 600px;
-    border-radius: 8px;
-    background-color: #FFFFFF;
-    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.23), 0 3px 6px 0 rgba(0,0,0,0.16);
+.adn--header__logo-link {
+    padding: 14px;
+    display: inline-block;
 }
-.adn--card-hero {
-    color: #191E33;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-/* card style ends here */
-
-/* card style starts here */
-.adn--profile-img {
-    padding: 7px;
-    border-radius: 16px;
-    width: 111px;
-}
-
-
-.ui.adn--card thead tr:first-child>th:only-child
-{
-    background: #fff;
-    padding: 19px;
-    border-bottom: 1px solid rgba(25, 30, 51, 0.2);
-}
-
-.ui.celled.adn--card tr td, .ui.celled.adn--card tr th{border-left:0;vertical-align: top;}
-
-
-
-.form.adn--from {
-    margin: 30px 13px 0 0;
-}  
-
-
- .adn--profile-img {
-    width: 109px;
-    height: 110px;
-}
-
 .adn--menu {
-    width: 26px;
-    height: 24px;
     background: none;
     border: 0;
 }
+/* logo style ends here */
 
+/* card style starts here */
+
+.adn--card__content__box {
+    width: calc(100% - 78px);
+    margin: 0 auto;
+}
+.adn--card__content-wrapper {
+    width: 680px;
+    border-radius: 8px;
+    margin: 30px 0 0 0;
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.23), 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.adn--card__profile__img-container {
+    width: 98px;
+}
+.adn--card__profile-img {
+    width: 98px;
+    margin: 28px 0 28px 0;
+}
+.adn--card__input-wrapper {
+    margin: 28px 0 0 0;
+}
+.adn--card__wrapper-password {
+    margin: 30px 0 30px 0;
+}
+.adn--card__input-wrapper.adn--fright {
+    margin: 43px 0 0 0;
+    width: calc(100% - 134px);
+}
+.ui.form.adn--input {
+    margin: 0 0 19px 0;
+}
 /* card style ends here */
+
+/* card title starts here */
+
+.adn--card__content-title__text {
+    text-align: justify;
+    padding: 30px 0 30px 40px;
+    color: #191E33;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(25, 30, 51, 0.37);
+    font-weight: 500;
+}
+/* card title ends here */
+
+/* label style starts here */
+
+.ui.adn--input .inline.field>label {
+    width: 75px;
+    color: rgba(25, 30, 51, 0.51);
+    font-size: 14px;
+    font-weight: 500;
+}
+.ui.adn--input-password .inline.field>label {
+    width: 124px;
+    color: rgba(25, 30, 51, 0.51);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+}
+/* label style ends here */
+
+/* input feald style starts here */
+
+.ui.adn--input .inline.field>input {
+    width: calc(100% - 91px);
+}
+.ui.adn--input-password .inline.field>input {
+    width: calc(100% - 143px);
+}
+/* input feald end here */
 
 /* button style starts here */
 
- .ui.adn--profile__btn{
-        margin: 0px 9px 0 5px;
- }
-
- .ui.adn--password__btn{
-    margin: 0 10px 0 0;
- }
-
-
-
-.ui.form .inline.field>.adn--user__label__size {
-    width: 77px;
+.adn--card__input-button.adn--fright {
+    padding: 0 0 30px 0;
 }
-
-
-.ui.form .inline.field>.adn--pasword__label__size {
-    width: 100px;
-    text-align: left !important;
-}
-
-
-.ui.form input[type=text].adn--input__first-name,.ui.form input[type=text].adn--input__last-name{
-   
-               width: calc(100% - 101px);
-}
-.ui.form input[type=password].adn--input__pasword{
-    width: calc(100% - 124px);
-}
-
 /*button style ends here  */

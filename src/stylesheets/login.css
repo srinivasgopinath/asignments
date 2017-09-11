@@ -91,18 +91,10 @@
 
 .ui.adn--input .inline.field>label {
     width: 69px;
-    color: rgba(25, 30, 51, 0.51);
-    font-size: 14px;
-    font-weight: 500;
 }
 
 .ui.adn--input .inline.field>input {
     width: calc(100% - 85px);
-    height: 35px;
-    border-width: 1px;
-    border-radius: 3px;
-    font-size: 14px;
-    border: 1px solid rgba(25, 30, 51, 0.28);
 }
 
 .adn--login__layout-password-link {

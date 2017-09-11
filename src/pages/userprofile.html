@@ -10,9 +10,8 @@
     <link rel="stylesheet" href="../stylesheets/checkbox.css">
     <link rel="stylesheet" href="../stylesheets/inputfield.css">
     <link rel="stylesheet" href="../stylesheets/profile.css">
-     <link rel="stylesheet" href="../stylesheets/header.css">
-       <link rel="stylesheet" href="../stylesheets/label.css">
-
+    <link rel="stylesheet" href="../stylesheets/header.css">
+    <link rel="stylesheet" href="../stylesheets/label.css">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
@@ -26,106 +25,121 @@
 
             <!-- header starts here-->
             <div class="ui segment adn--header">
-                <a href="" class="adn--logo-link"><img src="../images/adtechnacity_logo.svg" class="adn--logo-img"></a>
+                <a href="" class="adn--header__logo-link"><img src="../images/adtechnacity_logo.svg" class="adn--header__logo-img"></a>
                 <button class="adn--menu adn--fright"><i class="sidebar icon adn--menu-icon"></i></button>
             </div>
             <!-- header ends here-->
 
-            <div class="ui two column centered grid">
-
-                <div class="centered row">
-                    <div class="column">
-                        <table class="ui celled striped table adn--card">
-                            <thead>
-                                <tr>
-                                    <th colspan="3">
-                                        <span class="adn--card-hero">USER PROFILE</span>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="collapsing">
-                                        <div class="adn--profile-img">
-                                            <img class="adn--profile-img" src="../images/avatar.png" />
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <form class="ui form adn--from">
-                                                 <div class="inline field">
-                                                 <!-- global label and input field starts here-->
-                                                     <label class="adn--label adn--user__label__size">First Name</label>
-                                                 <input type="text" class="adn--input adn--input__first-name" placeholder="First Name">
-                                                  <!-- global label and input field ends here-->
-                                             </div>
-                                              <div class="inline field">
-                                                  <!-- global label and input field starts here-->
-                                                     <label class="adn--label adn--user__label__size">Last Name</label>
-                                                 <input type="text" class="adn--input adn--input__last-name" placeholder="Last Name">
-                                                     <!-- global label and input field Ends here-->
-                                             </div>
-                                            <div class="fields grid adn--fright">
-                                            <!-- global button starts here-->
-                                                <button class="ui button adn--button adn--fright adn--profile__btn" type="submit">Save Changes</button>
-                                            <!-- global button ends  here-->
-
-                                            </div>
-
-                                        </form>
-                                    </td>
-
-                                </tr>
-                            </tbody>
-                        </table>
- <table class="ui celled striped table adn--card">
-                            <thead>
-                                <tr>
-                                    <th colspan="3">
-                                        <span class="adn--card-hero">PASSWORD</span>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <form class="ui form adn--from">
-                                             <div class="inline field">
-                                                 <!-- global label and input field starts here-->
-                                                     <label class="adn--label adn--pasword__label__size">Curent Passeword</label>
-                                                 <input type="password" class="adn--input adn--input__pasword" placeholder="Curent Passeword">
-                                                  <!-- global label and input field ends here-->
-                                             </div>
-                                                <div class="inline field">
-                                                 <!-- global label and input field starts here-->
-                                                     <label class="adn--label adn--pasword__label__size">New Password</label>
-                                                 <input type="password" class="adn--input adn--input__pasword" placeholder="New Password">
-                                                  <!-- global label and input field ends here-->
-                                             </div>
-                                              <div class="inline field">
-                                                 <!-- global label and input field starts here-->
-                                                     <label class="adn--label adn--pasword__label__size">Repeat Password</label>
-                                                 <input type="password" class="adn--input adn--input__pasword" placeholder="Repeat Password">
-                                                  <!-- global label and input field ends here-->
-                                             </div>
-                                            <div class="fields grid adn--fright">
-                                            <!-- global button starts here-->
-                                                <button class="ui button adn--button adn--fright adn--password__btn" type="submit">Change Password</button>
-                                            <!-- global button ends here-->
-
-                                            </div>
-
-                                        </form>
-                                    </td>
-
-                                </tr>
-                            </tbody>
-                        </table>
+            <!--card content wrapper starts here-->
+            <div class="ui column centered grid adn--card__wrapper">
+                <!--card content stars here-->
+                <div class="centered adn--card__content-wrapper adn--padding-0">
+                    <!--card title starts here-->
+                    <div class="adn--card__content-title">
+                        <h3 class="adn--card__content-title__text">USER PROFILE</h3>
                     </div>
+                    <!--card title ends here-->
 
+                    <!-- card content starts here-->
+                    <div class="adn--card__content__box adn--clearfix">
+                        <!--profile image starts here-->
+                        <div class="adn--card__profile__img-container adn--fleft">
+                            <img src="../images/avatar.png" alt="" class="adn--card__profile-img">
+                        </div>
+                        <!--profile image ends here-->
+                        <!--card input items starts here-->
+                        <div class="adn--card__input-wrapper adn--fright">
+                            <!--global input field-->
+                            <div class="ui form adn--input">
+                                <div class="inline field">
+                                    <label>First Name</label>
+                                    <input type="text" placeholder="First Name">
+                                </div>
+                            </div>
+                            <!--global input field-->
+
+                            <!--global input field-->
+                            <div class="ui form adn--input">
+                                <div class="inline field">
+                                    <label>Last Name</label>
+                                    <input type="text" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <!--global input field-->
+
+                            <!--global button starts here-->
+                            <div class="adn--card__input-button adn--fright">
+                                <div class="ui button adn--button">Save Changes</div>
+                            </div>
+                            <!--global button ends here-->
+
+                        </div>
+                        <!--card input items ends herer-->
+                    </div>
+                    <!-- card content starts here-->
                 </div>
+                <!--card content stars here-->
             </div>
 
+            <!--card content wrapper ENDShere-->
+
+            <!--card content wrapper starts here-->
+            <div class="ui column centered grid adn--card__wrapper">
+                <!--card content stars here-->
+                <div class="centered adn--card__content-wrapper adn--padding-0  adn--card__wrapper-password">
+                    <!--card title starts here-->
+                    <div class="adn--card__content-title">
+                        <h3 class="adn--card__content-title__text">PASSWORD</h3>
+                    </div>
+                    <!--card title ends here-->
+
+                    <!-- card content starts here-->
+                    <div class="adn--card__content__box adn--clearfix">
+                        <!--card input items starts here-->
+                        <div class="adn--card__input-wrapper">
+                            <!--global input field-->
+                            <div class="ui form adn--input adn--input-password">
+                                <div class="inline field">
+                                    <label>Current Password</label>
+                                    <input type="password" placeholder="Current Password">
+                                </div>
+                            </div>
+                            <!--global input field-->
+
+                            <!--global input field-->
+                            <div class="ui form adn--input adn--input-password">
+                                <div class="inline field">
+                                    <label>New Password</label>
+                                    <input type="password" placeholder="New Password">
+                                </div>
+                            </div>
+                            <!--global input field-->
+
+                            <!--global input field-->
+                            <div class="ui form adn--input adn--input-password">
+                                <div class="inline field">
+                                    <label>Repeat Password</label>
+                                    <input type="password" placeholder="Repeat Password">
+                                </div>
+                            </div>
+                            <!--global input field-->
+
+                            <!--global button starts here-->
+                            <div class="adn--card__input-button adn--fright">
+                                <div class="ui button adn--button">Save Changes</div>
+                            </div>
+                            <!--global button ends here-->
+
+                        </div>
+                        <!--card input items ends herer-->
+                    </div>
+                    <!-- card content starts here-->
+                </div>
+                <!--card content stars here-->
+            </div>
+
+            <!--card content wrapper starts here-->
         </div>
 </body>
 
-</html> 
+</html>
