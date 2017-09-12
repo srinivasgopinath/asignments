@@ -1,0 +1,15 @@
+.ui.adn--input .inline.field>label {
+    color: rgba(25, 30, 51, 0.51);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.ui.form.adn--input .inline.field>select {
+    height: 35px;
+    border-width: 1px;
+    border-radius: 3px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.39);
+    border: 1px solid rgba(25, 30, 51, 0.28);
+}

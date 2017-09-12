@@ -86,6 +86,12 @@ i.icon.adn--header__menu__icon {
 
 /* label and input  style ends here here */
 
+/* drop down style goes here */
+.ui.form.adn--input .inline.field>select {
+    width: calc(100% - 103px);
+  
+}
+/* dropdown style ends here */
 
 /* button style starts here */
 
