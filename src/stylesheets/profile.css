@@ -50,6 +50,7 @@ i.icon.adn--header__menu__icon {
 .adn--card__content {
     width: calc(100% - 78px);
     margin: 0 auto;
+    padding-top: 40px;
 }
 
 .adn--card {
@@ -61,7 +62,6 @@ i.icon.adn--header__menu__icon {
 }
 .adn--card__profile-img__wrapper {
     width: 114px;
-     margin: 28px 0 0 0;
 }
 .adn--card__content__profile-img {
     width: 104px;
@@ -69,7 +69,6 @@ i.icon.adn--header__menu__icon {
 
 .adn--card__profile-input__wrapper{
     width: calc(100% - 138px);
-    margin: 43px 0 0 0;
 }
 
 .adn--card .adn--card__profile-input__wrapper .ui.adn--input .inline.field label {
@@ -79,12 +78,6 @@ i.icon.adn--header__menu__icon {
  width: calc(100% - 96px);
 }
 
-.ui.form.adn--input:first-child {
-    margin: 28px 0 19px 0;
-}
-.ui.form.adn--input {
-    margin: 0 0 19px 0;
-}
 
 /* card style ends here */
 
@@ -99,7 +92,7 @@ i.icon.adn--header__menu__icon {
 }
 
 .adn--card .adn--card__profile-input__wrapper {
-    margin: 24px 0 20px 0;
+    margin: 20px 0 0 0;
 }
 .adn--card .adn--card__content .adn--input .inline label {
     width: 129px;
@@ -110,9 +103,6 @@ i.icon.adn--header__menu__icon {
 }
 
 
-.adn--card .adn--card__profile-input__wrapper .ui.adn--input {
-    margin: 19px 0 0 0;
-}
 
 /* label and input  style ends here here */
 
