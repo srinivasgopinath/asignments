@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Create New User</title>
+    <title>Create New Initiative</title>
     <link rel="stylesheet" type="text/css" href='../../semantic/dist/semantic.min.css'>
     <link rel="stylesheet" href="../stylesheets/global.css">
     <link rel="stylesheet" href="../stylesheets/button.css">
     <link rel="stylesheet" href="../stylesheets/checkbox.css">
     <link rel="stylesheet" href="../stylesheets/inputfield.css">
-    <link rel="stylesheet" href="../stylesheets/newuser.css">
+    <link rel="stylesheet" href="../stylesheets/newinitiative.css">    
     <link rel="stylesheet" href="../stylesheets/header.css">    
     <link rel="stylesheet" href="../stylesheets/dropdown.css">
 
@@ -36,7 +36,7 @@
 
             <!--card title starts here-->
             <div class="adn--card__header">
-                <h3 class="adn--card__header-title">CREATE NEW USER</h3>
+                <h3 class="adn--card__header-title">CREATE NEW CLIENT   </h3>
             </div>
             <!--card title ends here-->
 
@@ -46,64 +46,40 @@
                 <!--global input field-->
                 <div class="ui form adn--input">
                     <div class="inline field">
-                        <label>Email Id</label>
-                        <input type="text" placeholder="Email Id">
+                        <label>Initiative Id</label>
+                        <input type="text" placeholder="Enter Your Initiative Id">
                     </div>
                 </div>
                 <!--global input field-->
-
-                <!--global input field-->
+                   <!--global input field-->
                 <div class="ui form adn--input">
                     <div class="inline field">
-                        <label>First Name</label>
-                        <input type="text" placeholder="First Name">
+                        <label>Name</label>
+                        <input type="text" placeholder="Enter Your  Name">
                     </div>
                 </div>
                 <!--global input field-->
 
-                <!--global input field-->
-                <div class="ui form adn--input">
-                    <div class="inline field">
-                        <label>Last Name</label>
-                        <input type="text" placeholder="Last Name">
-                    </div>
-                </div>
-                <!--global input field-->
-
-                <!--global input field-->
-                <div class="ui form adn--dropdown">
-                    <div class="inline field">
-                        <label>User Role</label>
-
-                        <select class="ui dropdown">
-                            <option value="">Select User Role</option>
-                            <option value="1">Male</option>
-                            <option value="0">Female</option>
-                        </select>
-
-                    </div>
-                </div>
-                <!--global input field-->
-
-                <!--global input field-->
+                 <!--global input field-->
                 <div class="ui form adn--dropdown">
                     <div class="inline field">
                         <label>Client</label>
+
                         <select class="ui dropdown">
-                            <option value="">Select Client</option>
+                            <option value="">Select New Client</option>
                             <option value="1">Male</option>
                             <option value="0">Female</option>
                         </select>
+
                     </div>
                 </div>
                 <!--global input field-->
-
             </div>
             <!--card content ends here-->
             <div class="adn--card__footer adn--clearfix">
 
                 <!--global button starts here-->
-                <button class="ui button adn--button">Save User</button>
+                <button class="ui button adn--button">Save Client</button>
                 <button class="ui button adn--button--secondary">Cancel</button>
                 <!--global button ends here-->
 
@@ -117,6 +93,7 @@
     </div>
 </div>
 
+
 <!-- ::: JQUERY SCRIPT STARTS HERE -->
 <script>
     $( document ).ready(function() {
@@ -126,7 +103,6 @@
 
 </script>
 <!-- ::: JQUERY SCRIPT ENDS HERE -->
-
 </body>
 
 </html>
