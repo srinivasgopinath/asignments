@@ -9,16 +9,14 @@
 html{
 	height: 100%;
 }
-.ui.grid>.adn--nopadding-0{
-	padding: 0;
+.adn--nopadding-0{
+	padding: 0 !important;
 }
-.ui.grid>.row>.adn--nopadding-0{
-	padding: 0;
-}
+
 
 .adn--margin-0 {
     margin: 0 !important;
-margin: 0 !important; 
+
 }
 
 .adn--clearfix:after {
@@ -36,7 +34,7 @@ margin: 0 !important;
 
 .adn--layout__header{
 	background: red;
-	height: 100%;
+	height: 80px;
 }
 
 /* header ends here */
@@ -47,7 +45,7 @@ margin: 0 !important;
 
 .ui.adn--layout>.row>.adn--layout__left-col {
     width: 200px;
-    height: 563px;
+    height: 100%;
     background: green;
 }
 .ui.adn--layout>.row>.adn--layout__right-col {
@@ -66,7 +64,7 @@ margin: 0 !important;
 
 /*right side main content goes here */
 
-.adn--layout__right-col__button-wrapper{          
+.adn--layout__right-col__button-wrapper{
 	height: 60px;
 	background: purple;
 	width: 100%;
