@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Create New Initiative</title>
+    <title>layout</title>
     <link rel="stylesheet" type="text/css" href='../../semantic/dist/semantic.min.css'>
     <link rel="stylesheet" href="../stylesheets/layout.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -14,11 +14,11 @@
 </head>
 <body>
 <!--the outer grid goes here-->
-<div class="ui stackable grid">
-<div class="row">
-     <div class="column">
+<div class="ui stackable grid adn--layout">
+<div class="row adn--nopadding-0">
+     <div class="column adn--nopadding-0">
     <!--header goes here-->
-    <div class="adn--header">
+    <div class="adn--layout__header">
         
     </div>
     <!--header ends here-->
@@ -26,24 +26,29 @@
 
 </div>   
 <!--the main content goes here-->
-    <div class="row">
-        <div class="five wide column">
-            <div class="adn--navigation--components">
+    <div class="row adn--nopadding-0">
+    <!--left navigation starts here-->
+        <div class="column adn--layout__left-col adn--nopadding-0">
+            <div class="adn--layout__left-col__navigation-components">
                 
             </div>
         </div>
-        <div class="eleven wide column">
+    <!--left navigation starts here-->
+
+    <!--right content starts here-->
+        <div class="column adn--layout__right-col adn--nopadding-0">
             <div class="row">
-                <div class="adn--button">
+                <div class="adn--layout__right-col__button-wrapper">
                     
                 </div>
             </div>
             <div class="row">
-                <div class="adn--content--wrapper">
+                <div class="adn--layout__right-col__content-wrapper">
                     
                 </div>
             </div>
         </div>
+    <!--left content starts here-->
     </div>
 
 <!--the main content ends here-->

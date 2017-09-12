@@ -9,10 +9,17 @@
 html{
 	height: 100%;
 }
+.ui.grid>.adn--nopadding-0{
+	padding: 0;
+}
+.ui.grid>.row>.adn--nopadding-0{
+	padding: 0;
+}
 /* resizing style ends herer */
+
 /* Header goes here */
 
-.adn--header{
+.adn--layout__header{
 	background: red;
 	height: 80px;
 }
@@ -22,9 +29,20 @@ html{
 
 /* left naviaggation components  goes here */
 
-.adn--navigation--components{
-	width: 100%;
-	height: 600px;
+
+.ui.adn--layout>.row>.adn--layout__left-col {
+    width: 196px;
+    height: 563px;
+    background: green;
+}
+.ui.adn--layout>.row>.adn--layout__right-col {
+    width: calc(100% - 196px);
+    background: red;
+}
+
+.adn--layout__left-col__navigation-components{
+
+
 	background: green;
 }
 
@@ -33,17 +51,11 @@ html{
 
 /*right side main content goes here */
 
-.adn--button{
+.adn--layout__right-col__button-wrapper{          
 	height: 60px;
 	background: purple;
 	width: 100%;
 }
 
 
-.adn--content--wrapper{
-	height: 100%
-	background;
-	background: red;
-	height: 540px;
-}
 /* tight side main content ends here */
