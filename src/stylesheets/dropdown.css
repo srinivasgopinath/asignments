@@ -1,15 +1,26 @@
-.ui.adn--input .inline.field>label {
+/* global drop down style starts here */
+
+.ui.adn--dropdown .inline.field>label {
     color: rgba(25, 30, 51, 0.51);
     font-size: 14px;
     font-weight: 500;
 }
 
 
-.ui.form.adn--input .inline.field>select {
+.ui.form.adn--dropdown .inline.field>.dropdown {
     height: 35px;
     border-width: 1px;
     border-radius: 3px;
-    font-size: 14px;
+    margin: 0 0 20px 0;
+    font-size: 13px;
     color: rgba(0, 0, 0, 0.39);
     border: 1px solid rgba(25, 30, 51, 0.28);
 }
+
+
+
+.ui.form.adn--dropdown .inline.field>.dropdown:focus {
+border: 1px solid #FF7F00;
+}
+
+/* global drop down style ends here */
