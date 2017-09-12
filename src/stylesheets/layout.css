@@ -15,13 +15,28 @@ html{
 .ui.grid>.row>.adn--nopadding-0{
 	padding: 0;
 }
+
+.adn--margin-0 {
+    margin: 0 !important;
+margin: 0 !important; 
+}
+
+.adn--clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.adn--height100-per{
+	height: 100%;
+}
 /* resizing style ends herer */
 
 /* Header goes here */
 
 .adn--layout__header{
 	background: red;
-	height: 80px;
+	height: 100%;
 }
 
 /* header ends here */
@@ -31,12 +46,12 @@ html{
 
 
 .ui.adn--layout>.row>.adn--layout__left-col {
-    width: 196px;
+    width: 200px;
     height: 563px;
     background: green;
 }
 .ui.adn--layout>.row>.adn--layout__right-col {
-    width: calc(100% - 196px);
+    width: calc(100% - 200px);
     background: red;
 }
 
