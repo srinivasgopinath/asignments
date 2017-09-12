@@ -94,7 +94,7 @@ i.icon.adn--header__menu__icon {
 }
 
 
-.ui.adn--button__cancel {
+.ui.adn--button__secondary {
     background: none;
     color: #ff7f00;
     font-weight: 500;
@@ -102,7 +102,7 @@ i.icon.adn--header__menu__icon {
     margin: 0 30px 0 0;
     padding: 12px;
 }
-.ui.adn--button__cancel:hover {
+.ui.adn--button__secondary:hover {
     background: none;
     color: #ff7f00;
     border:1px solid #ff7f00;

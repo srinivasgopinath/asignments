@@ -23,4 +23,15 @@
 border: 1px solid #FF7F00;
 }
 
+
+
+.ui.form.adn--dropdown .ui.selection.active.dropdown .menu { 
+   border-color: #fa7d01;
+}
+
+.text {   
+ color: rgba(0, 0, 0, 0.8);
+}
+
+
 /* global drop down style ends here */
