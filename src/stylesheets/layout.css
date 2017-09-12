@@ -1,0 +1,49 @@
+
+/* resizeing styles */
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html{
+	height: 100%;
+}
+/* resizing style ends herer */
+/* Header goes here */
+
+.adn--header{
+	background: red;
+	height: 80px;
+}
+
+/* header ends here */
+
+
+/* left naviaggation components  goes here */
+
+.adn--navigation--components{
+	width: 100%;
+	height: 600px;
+	background: green;
+}
+
+/* left navigation components ends here */
+
+
+/*right side main content goes here */
+
+.adn--button{
+	height: 60px;
+	background: purple;
+	width: 100%;
+}
+
+
+.adn--content--wrapper{
+	height: 100%
+	background;
+	background: red;
+	height: 540px;
+}
+/* tight side main content ends here */
