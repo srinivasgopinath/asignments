@@ -35,6 +35,10 @@ body {
     padding: 0 !important;
 }
 
+
+.adn--hidden{
+    display: none;
+}
 /* common style ends here */
 
 

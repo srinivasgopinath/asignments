@@ -6,6 +6,7 @@
     <title>layout</title>
     <link rel="stylesheet" type="text/css" href='../../semantic/dist/semantic.min.css'>
     <link rel="stylesheet" href="../stylesheets/layout.css">
+    <link rel="stylesheet" href="../stylesheets/flaticon.css">
         <link rel="stylesheet" href="../stylesheets/button.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -16,7 +17,7 @@
 <body>
 <!--the outer grid goes here-->
 <div class="ui stackable grid adn--layout adn--margin-0 adn--height100-per">
-<div class="row adn--nopadding-0">
+<div class="row adn--nopadding-0 adn--layout__header-wrapper">
      <div class="column adn--nopadding-0">
     <!--header goes here-->
     <div class="adn--layout__header adn--clearfix">
@@ -35,7 +36,7 @@
     </div>
     <div class="adn--layout__header-menu__wrapper adn--fright">
 
-     <div class="ui celled horizontal list">
+     <div class="ui celled horizontal list adn--fright">
           <div class="item"><button class="ui button adn--layout__header-menu__button">Search<i class="search icon"></i></button></div>
           <div class="item"><button class="ui button adn--layout__header-menu__button">Filter<i class="filter icon"></i></button></div>
           <div class="item"><button class="ui button adn--layout__header-menu__button"><i class="sidebar icon"></i></button></div>
@@ -50,7 +51,7 @@
 
 </div>   
 <!--the main content goes here-->
-    <div class="row adn--nopadding-0 adn--height100-per">
+    <div class="row adn--nopadding-0 adn--layout__column-wrapper">
     <!--left navigation starts here-->
         <div class="column adn--layout__left-col adn--nopadding-0">
             <div class="adn--layout__left-col__navigation-components">
@@ -59,7 +60,7 @@
                  <a class="adn--layout__left-col__navigation-components__nav__link" href=""><i class="handshake icon"></i>Clients</a>
                  <a class="adn--layout__left-col__navigation-components__nav__link" href=""><i class="users icon"></i>Initiatives</a>
                  <a class="adn--layout__left-col__navigation-components__nav__link" href=""><i class="users icon"></i>Networks</a>
-                 <a class="adn--layout__left-col__navigation-components__nav__link" href=""><i class="users icon"></i>Data Import</a>
+                 <a class="adn--layout__left-col__navigation-components__nav__link" href=""><i class="flaticon-download"></i>Data Import</a>
             </nav>
                 
             </div>
