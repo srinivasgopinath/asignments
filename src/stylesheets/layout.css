@@ -54,11 +54,12 @@ body{
 
 /* flat icon style ends here  */
 /* Header goes here */
-
+.adn--nopadding-0.adn--layout__header-wrapper {
+    height: 80px;
+}
 .adn--layout__header{
     background: #fff;
-    margin: 0 0 20px 0;
-    height: 80px;
+    height: 100%;
     box-shadow: 0 6px 6px 0 rgba(0,0,0,0.16), 0 10px 20px 0 rgba(0,0,0,0.09);
 }
 .adn--layout__header-link {
@@ -127,7 +128,7 @@ body{
 }
 
 .adn--layout__column-wrapper {
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
 }
 /* header ends here */
 
@@ -139,8 +140,8 @@ body{
 }
 .ui.adn--layout>.row>.adn--layout__left-col {
     width: 200px;
-    height: 100%;
     position: relative;
+    margin: 20px  0 0 0;
 }
 .ui.adn--layout>.row>.adn--layout__right-col {
     width: calc(100% - 280px);
@@ -160,14 +161,12 @@ body{
 .adn--layout__left-col__navigation-components__nav-link.active:after {
     position: absolute;
     height: 30px;
-    top: 8px;
+    top: 15px;
     width: 3px;
     content:'';
-    color: #FF7F00;
     right: -2px;
     background-color: #FF7F00;
-    content: '';
-    border-radius: 1.5px;
+    border-radius: 2px;
     box-shadow: 0 0 4px 0 rgba(255,127,0,0.5);
 }
 
