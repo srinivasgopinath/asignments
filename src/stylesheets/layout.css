@@ -42,10 +42,22 @@ body{
 }
 /* resizing style ends herer */
 
+
+
+/* flaticon style goes here */
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-size: inherit !important;
+    margin-left: 0 !important;
+}
+
+/* flat icon style ends here  */
 /* Header goes here */
 
 .adn--layout__header{
     background: #fff;
+    margin: 0 0 20px 0;
     height: 80px;
     box-shadow: 0 6px 6px 0 rgba(0,0,0,0.16), 0 10px 20px 0 rgba(0,0,0,0.09);
 }
@@ -102,6 +114,11 @@ body{
     padding: 0 0 0 18px;
 }
 
+.adn--layout__header-menu__wrapper .list .adn--layout__header-menu__button .flat-icon {
+    font-size: 19px;
+    padding: 0 0 0 8px;
+}
+
 .adn--layout__header-menu__wrapper .ui.horizontal.celled.list>.item:last-child .adn--layout__header-menu__button i.icon {color: #FF7F00;font-size: 27px;}
 
 .adn--layout__header-menu__wrapper .ui.horizontal.celled.list>.item:last-child{
@@ -110,18 +127,20 @@ body{
 }
 
 .adn--layout__column-wrapper {
-    height: calc(100% - 80px);
+    height: calc(100% - 100px);
 }
 /* header ends here */
 
 
 /* left naviaggation components  goes here */
-
-
+.adn--layout__left-col__navigation-components__nav-link  .flat-icon{
+    margin: 0 17px 0 0;
+    font-size: 25px;
+}
 .ui.adn--layout>.row>.adn--layout__left-col {
     width: 200px;
     height: 100%;
-    border-right: 1px solid rgba(25, 30, 51, 0.29); 
+    position: relative;
 }
 .ui.adn--layout>.row>.adn--layout__right-col {
     width: calc(100% - 280px);
@@ -129,17 +148,19 @@ body{
 }
     
 
-.adn--layout__left-col__navigation-components__nav__link {
+.adn--layout__left-col__navigation-components__nav-link {
     display: block;
+    margin: 0 0 10px 0;
     font-size: 15px;
     color: rgba(25, 30, 51, 0.48);
-    margin: 40px 0 40px 33px;
+    padding: 10px 0 14px 30px;
     position: relative;
 }
 
-.adn--layout__left-col__navigation-components__nav__link.active:after {
+.adn--layout__left-col__navigation-components__nav-link.active:after {
     position: absolute;
     height: 30px;
+    top: 8px;
     width: 3px;
     content:'';
     color: #FF7F00;
@@ -150,23 +171,32 @@ body{
     box-shadow: 0 0 4px 0 rgba(255,127,0,0.5);
 }
 
-.adn--layout__left-col__navigation-components__nav__link.active {
+.adn--layout__left-col__navigation-components__nav-link.active {
 
     color: #FF7F00;
 
 }
-.adn--layout__left-col__navigation-components__nav__link:hover {
+.adn--layout__left-col__navigation-components__nav-link:hover {
 
     color: #FF7F00; 
 
 }
-.adn--layout__left-col__navigation-components__nav__link i.icon {
-    margin-right: 17px;
-}
+
 
 
 .adn--layout__header-menu__wrapper .ui.horizontal.celled.list>.item {
     padding: 0 20px 0 20px;
+}
+
+
+.adn--layout__left-col:before {
+    position: absolute;
+    content: '';
+    height: calc(100% - 30px);
+    width: 1px;
+    right: -1px;
+    top: 0;
+    background-color: rgba(25, 30, 51, 0.33);
 }
 /* left navigation components ends here */
 
