@@ -52,9 +52,15 @@ body{
     margin-left: 0 !important;
 }
 
+.adn--layout__header-menu__button .adn--side-nav__link__icon {
+    font-size: 19px;
+    margin-left: 12px;
+}
+
 /* flat icon style ends here  */
+
 /* Header goes here */
-.adn--nopadding-0.adn--layout__header-wrapper {
+.adn--layout__header-wrapper {
     height: 80px;
 }
 .adn--layout__header{
@@ -115,11 +121,6 @@ body{
     padding: 0 0 0 18px;
 }
 
-.adn--layout__header-menu__wrapper .list .adn--layout__header-menu__button .flat-icon {
-    font-size: 19px;
-    padding: 0 0 0 8px;
-}
-
 .adn--layout__header-menu__wrapper .ui.horizontal.celled.list>.item:last-child .adn--layout__header-menu__button i.icon {color: #FF7F00;font-size: 27px;}
 
 .adn--layout__header-menu__wrapper .ui.horizontal.celled.list>.item:last-child{
@@ -130,35 +131,44 @@ body{
 .adn--layout__column-wrapper {
     height: calc(100% - 80px);
 }
+
 /* header ends here */
 
 
 /* left naviaggation components  goes here */
-.adn--layout__left-col__navigation-components__nav-link  .flat-icon{
+.adn--side-nav__link__title {
+    display: inline-block;
+    vertical-align: middle;
+}
+.adn--side-nav__link .adn--side-nav__link__icon {
     margin: 0 17px 0 0;
     font-size: 25px;
+    display: inline-block;
+    vertical-align: middle;
 }
-.ui.adn--layout>.row>.adn--layout__left-col {
+.ui.adn--layout .adn--layout__column-wrapper .adn--layout__left-col {
     width: 200px;
     position: relative;
-    margin: 20px  0 0 0;
+    height: 100%;
 }
-.ui.adn--layout>.row>.adn--layout__right-col {
+.ui.adn--layout .adn--layout__column-wrapper .adn--layout__right-col {
     width: calc(100% - 280px);
     margin: 0 auto;
+    height: 100%;
 }
     
 
-.adn--layout__left-col__navigation-components__nav-link {
+.adn--side-nav__link{
     display: block;
-    margin: 0 0 10px 0;
+    margin: 0 0 11px 0;
     font-size: 15px;
+    height: 30px;
     color: rgba(25, 30, 51, 0.48);
-    padding: 10px 0 14px 30px;
+    padding: 17px 0 0 30px;
     position: relative;
 }
 
-.adn--layout__left-col__navigation-components__nav-link.active:after {
+.adn--side-nav__link.active:after {
     position: absolute;
     height: 30px;
     top: 15px;
@@ -170,12 +180,12 @@ body{
     box-shadow: 0 0 4px 0 rgba(255,127,0,0.5);
 }
 
-.adn--layout__left-col__navigation-components__nav-link.active {
+.adn--side-nav__link.active {
 
     color: #FF7F00;
 
 }
-.adn--layout__left-col__navigation-components__nav-link:hover {
+.adn--side-nav__link:hover {
 
     color: #FF7F00; 
 
@@ -194,9 +204,14 @@ body{
     height: calc(100% - 30px);
     width: 1px;
     right: -1px;
-    top: 0;
+    top: 15px;
     background-color: rgba(25, 30, 51, 0.33);
 }
+
+.adn--side-nav {
+    margin: 20px 0 0 0;
+}
+
 /* left navigation components ends here */
 
 
