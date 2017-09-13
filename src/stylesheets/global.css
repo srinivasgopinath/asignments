@@ -6,39 +6,59 @@
 }
 
 body {
-    font-weight: 400;
-    background: #f7f8fa;
     font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background: #f7f8fa;
+    font-weight: 400;
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-size: inherit;
+    margin-left: 0;
 }
 
 /* reset style ends here */
-
 
 /* common style starts here */
 
 .adn--fleft {
     float: left;
 }
+
 .adn--fright {
     float: right;
 }
+
 .adn--clearfix:after {
     content: '';
     display: block;
     clear: both;
 }
+
 .adn--height-100per {
     height: 100%;
 }
 
-.adn--padding-0{
+.adn--padding-0 {
     padding: 0 !important;
 }
 
-
-.adn--hidden{
-    display: none;
+.adn--margin-0 {
+    margin: 0 !important;
 }
+
+.adn--hidden {
+    display: none !important;
+}
+
+.adn--overflow-auto {
+    overflow: auto;
+}
+
 /* common style ends here */
 
 

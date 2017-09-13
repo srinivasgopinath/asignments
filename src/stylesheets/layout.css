@@ -1,149 +1,24 @@
+/* ::: LAYOUT STYLES STARTS HERE ::: */
 
-/* resizeing styles */
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-html{
+.adn--layout {
     height: 100%;
 }
 
-
-body{
-    background: #f7f8fa;
-}
-.adn--nopadding-0{
-    padding: 0 !important;
-}
-
-
-.adn--margin-0 {
-    margin: 0 !important;
-
-}
-
-.adn--clearfix:after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-.adn--height100-per{
-    height: 100%;
-}
-
-.adn--fleft{
-    float: left;
-}
-.adn--fright{
-    float:right;
-}
-/* resizing style ends herer */
-
-
-
-/* flaticon style goes here */
-
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-    font-family: Flaticon;
-    font-size: inherit !important;
-    margin-left: 0 !important;
-}
-
-.adn--layout__header-menu__button .adn--side-nav__link__icon {
-    font-size: 19px;
-    margin-left: 12px;
-}
-
-/* flat icon style ends here  */
-
-/* Header goes here */
-.adn--layout__header-wrapper {
-    height: 80px;
-}
-.adn--layout__header{
-    background: #fff;
-    height: 100%;
-    box-shadow: 0 6px 6px 0 rgba(0,0,0,0.16), 0 10px 20px 0 rgba(0,0,0,0.09);
-}
-.adn--layout__header-link {
-    padding: 30px 0 0 30px;
-    width: 200px;
-    display: inline-block;
-    position: relative;
-}
-
-.adn--layout__header-breadcrumb {
-    width: 559px;
-    padding: 32px 0 0 40px;
-}
-.adn--layout__header-menu__wrapper {
-    width: calc(100% - 764px);
-    padding: 24px 0 0 0;
-}
-
-
-.adn--layout__header-link:after {
-    position: absolute;
-    content: '';
-    height: 40px;
-    width: 1px;
-    top: 23px;
-    right: 0;
-    background-color: rgba(25, 30, 51, 0.22);
-
-}
-.adn--layout__header-breadcrumb .ui.breadcrumb a {
-    color: #191E33;
-    font-size: 13px;
-}
-
-
-.ui.adn--layout__header-menu__button {
-    background: none;
-    font-weight: 500;
-    font-size: 13px;
-    color: rgba(25, 30, 51, 0.44);
-}
-.ui.adn--layout__header-menu__button:active,.ui.adn--layout__header-menu__button:focus{
-    background: #fff;
-
-}
-.ui.adn--layout__header-menu__button:hover {
-    background: none;
-
-}
-
-.ui.adn--layout__header-menu__button i.icon {
-    font-size: 19px;
-    padding: 0 0 0 18px;
-}
-
-.adn--layout__header-menu__wrapper .ui.horizontal.celled.list>.item:last-child .adn--layout__header-menu__button i.icon {color: #FF7F00;font-size: 27px;}
-
-.adn--layout__header-menu__wrapper .ui.horizontal.celled.list>.item:last-child{
-    border-right:none;
-    color: #FF7F00;
-}
-
-.adn--layout__column-wrapper {
+.adn--layout__col-wrapper {
     height: calc(100% - 80px);
 }
-
-/* header ends here */
-
-
-/*right side main content goes here */
 
 .adn--layout__right-col__button-wrapper{
     margin: 20px 0 20px 0;
 }
-.ui.adn--layout .adn--layout__column-wrapper .adn--layout__right-col{
+
+.ui.adn--layout .adn--layout__col-wrapper .adn--layout__right-col{
     width: calc(100% - 280px);
     margin:0 auto;
-
 }
 
-/* tight side main content ends here */
+.ui.adn--layout .adn--layout__col-wrapper .adn--layout__left-col {
+    width: 200px;
+}
+
+/* ::: LAYOUT STYLES ENDS HERE ::: */

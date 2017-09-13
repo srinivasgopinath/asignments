@@ -1,37 +1,31 @@
-/* global drop down style starts here */
+/* ::: DROPDOWN STYLES STARTS HERE ::: */
 
-.ui.adn--dropdown .inline.field>label {
-    color: rgba(25, 30, 51, 0.51);
-    font-size: 14px;
-    font-weight: 500;
+.ui.adn--dropdown .inline.field label {
+    color: rgba(25, 30, 51, 0.5);
+    font-size: 13px;
+    font-weight: 300;
+    width: 75px;
 }
 
-
-.ui.form.adn--dropdown .inline.field>.dropdown {
+.ui.form.adn--dropdown .inline.field .dropdown.selection {
+    width: calc(100% - 85px);
     height: 35px;
-    border-width: 1px;
     border-radius: 3px;
     margin: 0 0 20px 0;
     font-size: 13px;
-    color: rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(25, 30, 51, 0.28);
+    border: 1px solid rgba(25, 30, 51, 0.2);
 }
 
-
-
-.ui.form.adn--dropdown .inline.field>.dropdown:focus {
-border: 1px solid #FF7F00;
+.ui.form.adn--dropdown .inline.field > .dropdown:focus {
+    border: 1px solid #FF7F00;
 }
 
-
-
-.ui.form.adn--dropdown .ui.selection.active.dropdown .menu { 
-   border-color: #fa7d01;
+.ui.form.adn--dropdown .ui.selection.active.dropdown .menu {
+    border-color: #fa7d01;
 }
 
-.text {   
- color: rgba(0, 0, 0, 0.8);
+.text {
+    color: rgba(0, 0, 0, 0.8);
 }
 
-
-/* global drop down style ends here */
+/* ::: DROPDOWN STYLES ENDS HERE ::: */

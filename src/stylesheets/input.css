@@ -1,0 +1,26 @@
+/* ::: INPUT-BOX STYLES STARTS HERE ::: */
+
+.ui.form.adn--input {
+    margin-bottom: 20px;
+}
+
+.ui.adn--input .inline.field label {
+    color: rgba(25, 30, 51, 0.5);
+    font-size: 13px;
+    font-weight: 300;
+    width: 75px;
+}
+
+.ui.adn--input .inline.field input {
+    height: 35px;
+    border-radius: 3px;
+    font-size: 13px;
+    border: 1px solid rgba(25, 30, 51, 0.2);
+    font-weight: 400;
+}
+
+.ui.adn--input .inline.field input:focus {
+    border: 1px solid #ff7f00;
+}
+
+/* ::: INPUT-BOX STYLES ENDS HERE ::: */

@@ -1,21 +1,38 @@
-/* global button styles goes here */
+/* ::: BUTTON STYLES START HERE ::: */
 
 .ui.adn--button{
-	color: #fff;
-	padding: 12px;
+	color: #ffffff;
+	padding: 12px 20px;
 	border-radius: 4px;
 	height: 35px;
 	font-weight: 500;
 	font-size: 12px;
-	background: #FF7F00;
-	box-shadow: 0 3px 6px 0px rgba(255, 127, 0, 0.4);
+	background: #ff7f00;
+	box-shadow: 0 3px 6px 0 rgba(255, 127, 0, 0.4);
 }
 
 .ui.adn--button:hover{
 	color: #fff;
 	border-radius: 4px;
 	background: #FF7F00;
-	box-shadow: 0 6px 11px 0px rgba(255, 127, 0, 0.4);
+	box-shadow: 0 6px 11px 0 rgba(255, 127, 0, 0.4);
+}
+
+.ui.adn--button-secondary {
+	height: 35px;
+	background: none;
+	border: 1px solid transparent;
+	color: #ff7f00;
+	font-weight: 500;
+	font-size: 12px;
+	margin-right: 30px;
+	padding: 12px 20px;
+}
+
+.ui.adn--button-secondary:hover {
+	background: none;
+	color: #ff7f00;
+	border: 1px solid #ff7f00;
 }
 
 /* all global button style ends here */

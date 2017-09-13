@@ -1,0 +1,39 @@
+/* ::: CHECKBOX STYLES STARTS HERE ::: */
+
+.ui.checkbox.adn--checkbox label {
+    font-size: 12px;
+    font-weight: 300;
+    padding-left: 24px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ui.checkbox.adn--checkbox label:before {
+    background: none;
+    border: 1px solid #ff7f00;
+    width: 15px;
+    height: 15px;
+    margin-top: 1px;
+}
+
+.ui.checkbox.adn--checkbox input:focus~label:before {
+    border-color: #ff7f00;
+    background: none;
+}
+
+.ui.checkbox.adn--checkbox input:checked~label:before {
+    background: #ff7f00;
+    border: 0;
+}
+
+.ui.checkbox.adn--checkbox input:checked~label:after {
+    color: #ffffff;
+    font-size: 10px;
+    padding-top: 1px;
+    padding-right: 2px;
+}
+
+/* ::: CHECKBOX STYLES ENDS HERE ::: */

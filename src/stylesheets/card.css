@@ -1,0 +1,48 @@
+/* ::: CARD STYLES STARTS HERE ::: */
+
+.adn--card {
+    width: 680px;
+    border-radius: 8px;
+    margin: 26px auto;
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.23), 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.adn--card__header {
+    height: 80px;
+    border-bottom: 1px solid rgba(25, 30, 51, 0.2);
+}
+
+.adn--card__header-title {
+    padding: 30px 30px 0 38px;
+    color: #191E33;
+    font-size: 16px;
+    width: 100%;
+    text-overflow: ellipsis;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.adn--card__content {
+    width: calc(100% - 78px);
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.adn--card__footer {
+    width: calc(100% - 42px);
+    height: 65px;
+}
+
+.adn--card .adn--card__content .adn--dropdown .inline.field label,
+.adn--card .adn--card__content .adn--input .inline label {
+    width: 90px;
+}
+
+.adn--card .adn--card__content .ui.form.adn--dropdown .inline.field .dropdown.selection,
+.adn--card .adn--card__content .adn--input .inline input {
+    width: calc(100% - 110px);
+}
+
+/* ::: CARD STYLES ENDS HERE ::: */

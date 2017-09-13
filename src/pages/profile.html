@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Adtechnacity : Create User</title>
+    <title>Adtechnacity : Profile</title>
 
     <!-- ::: FONT CDN LINKING HERE ::: -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600"
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="../stylesheets/card.css">
     <link rel="stylesheet" href="../stylesheets/layout.css">
     <link rel="stylesheet" href="../stylesheets/header.css">
-    <link rel="stylesheet" href="../stylesheets/dropdown.css">
+    <link rel="stylesheet" href="../stylesheets/profile.css">
 
 </head>
 <body>
@@ -50,82 +50,101 @@
 
             <!--card content wrapper starts here-->
             <div class="adn--card adn--clearfix">
-
                 <!--card title starts here-->
                 <div class="adn--card__header">
-                    <h3 class="adn--card__header-title">CREATE NEW USER</h3>
+                    <h3 class="adn--card__header-title">USER PROFILE</h3>
                 </div>
                 <!--card title ends here-->
 
                 <!--card content stars here-->
                 <div class="adn--card__content adn--clearfix adn--nopadding-0">
 
-                    <!--global input field-->
-                    <div class="ui form adn--input">
-                        <div class="inline field">
-                            <label>Email Id</label>
-                            <input type="text" placeholder="Email Id">
-                        </div>
+                    <!--profile image starts here-->
+                    <div class="adn--card__profile-img__wrapper adn--fleft">
+                        <img src="../images/avatar.png" alt="" class="adn--card__content__profile-img">
                     </div>
-                    <!--global input field-->
-
-                    <!--global input field-->
-                    <div class="ui form adn--input">
-                        <div class="inline field">
-                            <label>First Name</label>
-                            <input type="text" placeholder="First Name">
+                    <!--profile image ends here-->
+                    <div class="adn--card__profile-input__wrapper adn--fright">
+                        <!--global input field-->
+                        <div class="ui form adn--input">
+                            <div class="inline field">
+                                <label>First Name</label>
+                                <input type="text" placeholder="First Name">
+                            </div>
                         </div>
-                    </div>
-                    <!--global input field-->
+                        <!--global input field-->
 
-                    <!--global input field-->
-                    <div class="ui form adn--input">
-                        <div class="inline field">
-                            <label>Last Name</label>
-                            <input type="text" placeholder="Last Name">
+                        <!--global input field-->
+                        <div class="ui form adn--input">
+                            <div class="inline field">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Last Name">
+                            </div>
                         </div>
+                        <!--global input field-->
+
                     </div>
-                    <!--global input field-->
-
-                    <!--global input field-->
-                    <div class="ui form adn--dropdown">
-                        <div class="inline field">
-                            <label>User Role</label>
-
-                            <select class="ui dropdown">
-                                <option value="">Select User Role</option>
-                                <option value="1">Male</option>
-                                <option value="0">Female</option>
-                            </select>
-
-                        </div>
-                    </div>
-                    <!--global input field-->
-
-                    <!--global input field-->
-                    <div class="ui form adn--dropdown">
-                        <div class="inline field">
-                            <label>Client</label>
-                            <select class="ui dropdown">
-                                <option value="">Select Client</option>
-                                <option value="1">Male</option>
-                                <option value="0">Female</option>
-                            </select>
-                        </div>
-                    </div>
-                    <!--global input field-->
-
                 </div>
-                <!--card content ends here-->
+                <!--card content stars here-->
                 <div class="adn--card__footer adn--clearfix">
-
                     <!--global button starts here-->
-                    <button class="ui button adn--button adn--fright">Save User</button>
-                    <button class="ui button adn--button-secondary adn--fright">Cancel</button>
+                    <button class="ui button adn--button adn--fright">Save Changes</button>
                     <!--global button ends here-->
+                </div>
+                <!--card input items ends herer-->
+
+            </div>
+
+            <!--card content wrapper end here-->
+
+            <!--card content wrapper starts here-->
+            <div class="adn--card adn--clearfix">
+                <!--card title starts here-->
+                <div class="adn--card__header">
+                    <h3 class="adn--card__header-title">PASSWORD</h3>
+                </div>
+                <!--card title ends here-->
+
+                <!--card content stars here-->
+                <div class="adn--card__content adn--card__profile-card adn--clearfix adn--nopadding-0">
+
+                    <!--global input field-->
+                    <div class="ui form adn--input">
+                        <div class="inline field">
+                            <label>Current Password</label>
+                            <input type="password" placeholder="Current Password">
+                        </div>
+                    </div>
+                    <!--global input field-->
+
+                    <!--global input field-->
+                    <div class="ui form adn--input">
+                        <div class="inline field">
+                            <label>New Password</label>
+                            <input type="password" placeholder="New Password">
+                        </div>
+                    </div>
+                    <!--global input field-->
+
+
+                    <!--global input field-->
+                    <div class="ui form adn--input">
+                        <div class="inline field">
+                            <label>Repeat Password</label>
+                            <input type="password" placeholder="Repeat Password">
+                        </div>
+                    </div>
+                    <!--global input field-->
+
 
                 </div>
-                <!--card input items ends here-->
+                <!--card content stars here-->
+                <div class="adn--card__footer adn--clearfix">
+                    <!--global button starts here-->
+                    <button class="ui button adn--button adn--fright">Change Password</button>
+                    <!--global button ends here-->
+                </div>
+                <!--card input items ends herer-->
 
             </div>
 
@@ -133,6 +152,7 @@
         </div>
 
     </div>
+
 </div>
 
 <!--::: SCRIPTS GOES HERE -->
@@ -140,14 +160,6 @@
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
 <script src="../../semantic/dist/semantic.min.js"></script>
-
-<script>
-    $(document).ready(function() {
-        $('select.dropdown')
-            .dropdown();
-    });
-
-</script>
 
 </body>
 
