@@ -6,6 +6,7 @@
     <title>layout</title>
     <link rel="stylesheet" type="text/css" href='../../semantic/dist/semantic.min.css'>
     <link rel="stylesheet" href="../stylesheets/layout.css">
+        <link rel="stylesheet" href="../stylesheets/button.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
@@ -19,6 +20,29 @@
      <div class="column adn--nopadding-0">
     <!--header goes here-->
     <div class="adn--layout__header adn--clearfix">
+    <!--logo goese here-->
+    <a href="" class="adn--layout__header-link adn--fleft">
+         <img src="../images/adtechnacity_logo.svg" alt="" class="adn--layout__header-logo__img">
+    </a>
+    <div class="adn--layout__header-breadcrumb adn--fleft">
+    <!--breadcrumb starts here-->
+    <div class="ui breadcrumb">
+    <a class="section">Manage</a>
+     <div class="divider"> / </div>
+        <a class="active section">Users</a>
+    </div>
+     <!--breadcrumb ends here-->
+    </div>
+    <div class="adn--layout__header-menu__wrapper adn--fright">
+
+     <div class="ui celled horizontal list">
+          <div class="item"><button class="ui button adn--layout__header-menu__button">Search<i class="search icon"></i></button></div>
+          <div class="item"><button class="ui button adn--layout__header-menu__button">Filter<i class="filter icon"></i></button></div>
+          <div class="item"><button class="ui button adn--layout__header-menu__button"><i class="sidebar icon"></i></button></div>
+    </div>
+
+    </div>
+     <!--logo goese here-->
         
     </div>
     <!--header ends here-->
@@ -46,7 +70,9 @@
         <div class="column adn--layout__right-col adn--nopadding-0">
             <div class="row">
                 <div class="adn--layout__right-col__button-wrapper">
-                    
+                <!--gloabal button-->
+                <button class="ui button adn--button adn--fright">Create New User</button>
+                 <!--gloabal button ends here-->
                 </div>
             </div>
             <div class="row">
