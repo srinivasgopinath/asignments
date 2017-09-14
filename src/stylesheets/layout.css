@@ -22,9 +22,11 @@
 }
 
 
-.adn--layout__col-header{
-	height: 80px;
-	background: red;
+.adn--layout__header-wrapper{
+    height: 80px;
+    background: #fff;
+    width: calc(100% - 80px);
+    margin: 0 auto;
 }
 
 .adn--layout__col-table__wrapper {

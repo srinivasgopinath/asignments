@@ -1,0 +1,19 @@
+/*  */
+
+.adn--layout__report-header-wrapper{
+    height: 80px;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.adn--layout__report-col-body__wrapper {
+    height: calc(100% - 80px);
+    background: #91919e;
+}
+.adn--report__table-wrapper{
+	height: calc(100% - 60px);
+	overflow: auto;
+}
+.adn--report__pagination-wrapper{
+	height: 60px;
+}
