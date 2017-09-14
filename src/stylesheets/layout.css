@@ -21,4 +21,15 @@
     width: 200px;
 }
 
+
+.adn--layout__col-header{
+	height: 80px;
+	background: red;
+}
+
+.adn--layout__col-table__wrapper {
+    height: calc(100% - 80px);
+    background: #91919e;
+}
+
 /* ::: LAYOUT STYLES ENDS HERE ::: */

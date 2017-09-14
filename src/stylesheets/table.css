@@ -107,7 +107,13 @@ background: #fff;
     height: 59px;
     border-top: 1px solid rgba(25, 30, 51, 0.34);
 }
-.ui.adn--table__pagination .item  {color: #191E33;background: none;font-size: 12px;padding: 10px 9px;}
+.ui.adn--table__pagination .item  {
+    color: #191E33;
+    background: none;
+    font-size: 12px;
+    padding: 10px 9px;
+    min-width: 0;
+}
 
 .ui.adn--table__pagination .pagination.menu .active.item{
     color: #191E33;
@@ -120,6 +126,10 @@ background: #fff;
     background: none;
     font-weight: bold;
     font-size: 12px;
+}
+.ui.menu.adn--table__pagination .item{
+    
+ min-width: 0;
 }
 .ui.menu.adn--table__pagination .item:hover{
     background: none;
