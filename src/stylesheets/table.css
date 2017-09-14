@@ -1,0 +1,134 @@
+/* table styles goes here */
+.adn--layout__right-col__content-wrapper {
+    height: 450px;
+    overflow: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.23), 0 3px 6px 0 rgba(0,0,0,0.16);
+}
+.ui.adn--table{
+    border: none;
+}
+
+
+.ui.adn--table thead tr > th {
+    background-color: #191E33;
+    font-size: 11px;
+    font-weight: 600;
+    color: #FFFFFF;
+    height: 50px;
+    position: relative;
+}
+.ui.adn--table thead tr > th:first-child {
+    text-align: center;
+    vertical-align: bottom;
+}
+.ui.adn--table thead tr > th:after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    background: rgba(255, 255, 255, 0.55);
+    height: 28px;
+    border-radius: 2px;
+    top: 13px;
+    right: 12px;
+}
+.ui.adn--table thead tr > th:last-child:after{
+
+    width: 0px;
+
+}
+.ui.adn--table tbody tr td {
+    color: #191E33;
+    font-size: 13px;
+}
+.ui.adn--table tr td {
+    border-top:none;
+}
+.ui.adn--table tbody tr {
+    background-color: #fafafb;
+}
+.ui.adn--table tbody tr:nth-child(2n) td {
+    background-color: #f3f3f4;
+}
+
+.ui.adn--table tbody tr td:first-child {
+    text-align: center;
+}
+
+
+.ui.adn--table thead tr > th:last-child {
+    text-align: center;
+}
+
+.ui.adn--table tbody tr td:last-child {
+    text-align: center;
+}
+
+
+.ui.adn--table tfoot > tr > th{
+background: #fff;
+}
+
+/* table styles ends here */
+
+
+/* table button style starts here*/
+
+.ui.adn--table__button,.ui.adn--table__button:hover {
+    background: none;
+}
+.ui.adn--table__button:active,.ui.adn--table__button:focus{
+    background: none;
+}
+
+
+/* table button style ends here */
+
+
+/* table icon style starts here */
+
+.adn--table__button__icon:before {
+    font-size: 13px;
+    color: rgba(25, 30, 51, 0.26);
+}
+
+
+.adn--table__button__icon ~ .flaticon-garbage:before {
+    font-size: 14px;
+}
+
+/* table icon style endw hree */
+
+
+/* table footer style starts here */
+
+.ui.adn--table__footer .item {
+    color: #191E33;
+    font-size: 11px;
+
+}
+
+.ui.adn--table__footer.pagination.menu .item.active{
+    color: #191E33;
+     font-size: 12px;
+    font-weight: bold;
+    background: none;
+}
+
+.ui.menu.adn--table__footer .item:before {
+    background: none;
+}
+
+.ui.menu.adn--table__footer {
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+    min-height: 0;
+    background: none;
+}
+
+.ui.adn--table__footer .adn--table__footer__icon {
+    font-size: 13px;
+}
+
+/*  table footer style ends here */
