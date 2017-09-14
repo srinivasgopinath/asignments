@@ -1,14 +1,16 @@
 /* table styles goes here */
+
 .adn--layout__right-col__content-wrapper {
-    height: 450px;
-    overflow: auto;
     border-radius: 8px;
     box-shadow: 0 3px 6px 0 rgba(0,0,0,0.23), 0 3px 6px 0 rgba(0,0,0,0.16);
 }
 .ui.adn--table{
     border: none;
 }
-
+.adn--layout__right-col__table-wrapper{
+    height: 400px;
+    overflow:auto;
+}
 
 .ui.adn--table thead tr > th {
     background-color: #191E33;
@@ -100,35 +102,43 @@ background: #fff;
 /* table icon style endw hree */
 
 
-/* table footer style starts here */
-
-.ui.adn--table__footer .item {
-    color: #191E33;
-    font-size: 11px;
-
+/* table pagination style starts here */
+.adn--table__pagintaion__wrapper {
+    height: 59px;
+    border-top: 1px solid rgba(25, 30, 51, 0.34);
 }
+.ui.adn--table__pagination .item  {color: #191E33;background: none;font-size: 12px;padding: 10px 9px;}
 
-.ui.adn--table__footer.pagination.menu .item.active{
+.ui.adn--table__pagination .pagination.menu .active.item{
     color: #191E33;
      font-size: 12px;
     font-weight: bold;
     background: none;
 }
 
-.ui.menu.adn--table__footer .item:before {
+.ui.menu.adn--table__pagination  .active.item{
+    background: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+.ui.menu.adn--table__pagination .item:hover{
+    background: none;
+}
+.ui.menu.adn--table__pagination .item:before {
     background: none;
 }
 
-.ui.menu.adn--table__footer {
+.ui.menu.adn--table__pagination {
     border: 0;
     box-shadow: none;
     border-radius: 0;
     min-height: 0;
     background: none;
+    padding-top: 10px;
 }
 
-.ui.adn--table__footer .adn--table__footer__icon {
+.ui.adn--table__pagination .adn--table__pagination__icon {
     font-size: 13px;
 }
 
-/*  table footer style ends here */
+/*  table pagination style ends here */ 
