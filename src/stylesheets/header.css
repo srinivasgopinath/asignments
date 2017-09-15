@@ -54,11 +54,14 @@
 
 
 .adn--layout__header__right .ui.celled {
-    margin: 32px 40px 0 0;
+    margin: 26px 0px 0 0;
 }
 
 .adn--layout__header__right .ui.list .item {
     text-align: center;
+    height: 40px;
+    padding: 0 !important;
+    padding: -1px 0 0 0;
     }
 
 .adn--layout__header__right__icon:before {
@@ -73,5 +76,10 @@
     color: #FF7F00;
     color: background-color: #FF7F00;
 }
+
+.adn--layout__header__right .ui.list>.item:last-child .ui.adn--layout__header__right_button{
+   color: #191E33; 
+}
+
 
 /* ::: HEADER STYLES ENDS HERE :::*/
