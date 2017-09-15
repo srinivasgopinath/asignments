@@ -1,4 +1,4 @@
-/*:::report stye goes here */
+/*::: REPORT STYLE GOES HERE :::*/
 
 .adn--layout__report-header-wrapper{
     height: 80px;
@@ -10,56 +10,56 @@
     height: calc(100% - 80px);
 }
 .adn--report__table-wrapper{
-	height: calc(100% - 60px);
-	overflow: auto;
+    height: calc(100% - 60px);
+    overflow: auto;
 }
 .adn--report__pagination-wrapper{
-	height: 60px;
+    height: 60px;
 }
 
 
 .adn--layout__report-header__dropdown .adn--dropdown {
-    margin: 24px 19px 0 0;
- 
+    margin: 24px 30px 0 0;
 }
 
-.adn--layout__report-header__dropdown .adn--dropdown .ui.dropdown {
-	margin: 24px 19px 0 0;
-	height: 33px;
-	width: 144px;
-	font-size: 13px !important;
-	color: rgba(25, 30, 51, 0.46);
+
+.adn--layout__report-header__dropdown .adn--dropdown .inline .ui.dropdown {
+    height: 33px;
+    width: 144px;
+    font-size: 13px !important;
+    color: rgba(25, 30, 51, 0.46);
 }
 
 .ui.adn--layout__header__right_button{
-	background: none;
-	padding: 10px 20px 0 20px;
-	font-size: 13px;
-	display: inline-block;
-	font-weight: 500;
-	color: rgba(25, 30, 51, 0.52);
+    background: none;
+    padding: 10px 20px 0 20px;
+    font-size: 11px;
+    display: flex;
+    line-height: 19px;
+    font-weight: 500;
+    margin: 0;
 }
 
 .ui.adn--layout__header__right_button:active{
-	background: none;
-	
+    background: none;
+    
 }
 
 
 
 .ui.adn--layout__header__right_button:hover{
-	background: none;
-}
-
-
-
-.ui.adn--layout__header__right_button:focus{
-	background: none;
-}
-.adn--layout__header__menu .ui.adn--layout__header__menu__button {
-    margin: 35px 0 0 0;
-    padding: 0 40px 0 40px;
     background: none;
 }
 
-/*:::report stye ends here */
+
+.ui.adn--layout__header__right_button:focus{
+    background: none;
+}
+.adn--layout__header__menu .ui.adn--layout__header__menu__button {
+    margin: 30px 0 0 0;
+    padding: 0 20px 0 20px;
+    background: none;
+    line-height: 19px;
+}
+
+/*::: REPORT STYLE ENDS HERE :::*/

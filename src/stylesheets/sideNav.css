@@ -1,4 +1,4 @@
-/* side nav style goes here */
+/* ::: SIDE NAV STYLE STARTS HERE :::*/
 
 .adn--side-nav__link {
     display: block;
@@ -47,7 +47,7 @@
 .adn--side-nav__link__title{
     color: rgba(25, 30, 51, 0.51);
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 300;
     display: inline-block;
     vertical-align: middle;
     padding-left: 17px;
@@ -65,4 +65,4 @@
     font-size: 22px;
 }
 
-/* side nav style goes here */
+/* ::: SIDE NAV STYLE ENDS HERE :::*/

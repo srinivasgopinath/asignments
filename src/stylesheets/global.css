@@ -1,4 +1,4 @@
-/* reset styles starts here */
+/* ::: RESET STYLES STARTS HERE ::: */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -21,9 +21,9 @@ body {
     margin-left: 0;
 }
 
-/* reset style ends here */
+/*::: RESET STYLE ENDS HERE :::*/
 
-/* common style starts here */
+/*::: COMMON STYLE STARTS HERE :::  */
 
 .adn--fleft {
     float: left;
@@ -59,7 +59,7 @@ body {
     overflow: auto;
 }
 
-/* common style ends here */
+/* :::COMMON STYLES ENDS HERE ::: */
 
 
 

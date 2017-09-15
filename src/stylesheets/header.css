@@ -54,20 +54,18 @@
 
 
 .adn--layout__header__right .ui.celled {
-    margin: 26px 0px 0 0;
+    margin: 20px 0px 0 0;
 }
 
 .adn--layout__header__right .ui.list .item {
     text-align: center;
     height: 40px;
-    padding: 0 !important;
-    padding: -1px 0 0 0;
     }
 
 .adn--layout__header__right__icon:before {
     font-size: 18px;
     padding: 0 0 0 14px;
-    color: rgba(25, 30, 51, 0.54);
+    color: rgba(25, 30, 51, 0.38);
 }
 
 
@@ -77,8 +75,9 @@
     color: background-color: #FF7F00;
 }
 
-.adn--layout__header__right .ui.list>.item:last-child .ui.adn--layout__header__right_button{
-   color: #191E33; 
+.adn--layout__header__right .ui.list>.item.active .ui.adn--layout__header__right_button, .adn--layout__header__right .ui.list>.item.active .adn--layout__header__right__icon:before{
+     color: #191E33; 
+   background: none;
 }
 
 

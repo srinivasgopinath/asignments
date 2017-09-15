@@ -1,18 +1,25 @@
-/* Global tab css goes here */
+/* TAB  STYLES STARTS HERE */
 
 .ui.menu.adn--tab .active.item {
    border-radius: 3px;
-	background-color: #FF7F00;
-	box-shadow: 0 0 4px 0 rgba(255,127,0,0.5);
-	font-size: 13px;
-	font-weight: 600;
-	color: #fff;
+   background-color: #FF7F00;
+   font-size: 12px;
+   font-weight: 600;
+   align-items: center;
+   display: flex;
+   height: 32px;
+   padding: 9px 20px 9px 20px;
+   color: #fff;
 } 
 .ui.menu.adn--tab .item {
  background: none;
  color: rgba(25, 30, 51, 0.51);
- font-size: 13px;
+ font-size: 12px;
  margin: 24px 0 0 30px;
+ height: 32px;
+ border-radius: 3px;
+ display: flex;
+ align-items: center;
 } 
 
 .ui.menu.adn--tab a.item:hover{
@@ -25,4 +32,4 @@ color: #191E33;
     background-color: #FF7F00;
 }
 
-/* global tab css ends here */
+/* TAB STYLES ENDS HERE */

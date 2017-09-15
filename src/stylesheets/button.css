@@ -5,7 +5,7 @@
 	padding: 12px 20px;
 	border-radius: 4px;
 	height: 35px;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 12px;
 	background: #ff7f00;
 	box-shadow: 0 3px 6px 0 rgba(255, 127, 0, 0.4);
@@ -15,6 +15,7 @@
 	color: #fff;
 	border-radius: 4px;
 	background: #FF7F00;
+	font-weight: 500;
 	box-shadow: 0 6px 11px 0 rgba(255, 127, 0, 0.4);
 }
 
@@ -35,4 +36,4 @@
 	border: 1px solid #ff7f00;
 }
 
-/* all global button style ends here */
+/* ::: BUTTON STYLES ENDS HERE ::: */

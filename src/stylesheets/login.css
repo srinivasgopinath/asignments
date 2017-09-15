@@ -1,4 +1,4 @@
-/* left content background style goes here */
+/*::: LEFT CONTENT BACKGROUND STYLE STARTS HERE ::: */
 
 .adn--login__layout-left__col-wrapper {
     background: url(../images/bg.png);
@@ -11,9 +11,9 @@
     align-items: center;
 }
 
-/* left content background style ends here */
+/*::: LEFT CONTENT BACKGROUND STYLE ENDS HERE ::: */
 
-/* logo content style goes here */
+/*::: LOGO CONTENT BACKGROUND STYLE STARTS HERE ::: */
 
 .adn--login__layout_logo-link {
     display: inline-block;
@@ -21,9 +21,9 @@
     margin: 0 0 35px 0;
 }
 
-/* logo content style ends here */
+/*::: LOGO CONTENT  STYLE ENDS HERE ::: */
 
-/* left content pragraph styles goes here */
+/* ::: LEFT CONTENT STYLE GOES HERE ::: */
 
 .adn-login__content-paragraph {
     margin: 0 auto;
@@ -40,9 +40,10 @@
     color: #ff7f00;
 }
 
-/* left content paragraph style ends here */
 
-/* right content goes here */
+/* ::: LEFT CONTENT STYLE ENDS HERE ::: */
+
+/* ::: RIGHT CONTENT STYLE GOES HERE ::: */
 
 .ui.six.wide.column.adn--login__layout-right {
     display: flex;
@@ -50,9 +51,9 @@
     align-items: center;
 }
 
-/* right content ends here */
+/* ::: RIGHT CONTENT STYLE ENDS HERE ::: */
 
-/* right side content title goes here */
+/* ::: RIGHT SIDE CONTENT STYLE GOESE HERE ::: */
 
 .adn--login__layout-right__col-title {
     color: #191E33;
@@ -64,9 +65,9 @@
     border-bottom: 1px solid rgba(25, 30, 51, 0.2);
 }
 
-/* right side content title ends here */
+/* ::: RIGHT SIDE CONTENT STYLE ENDS HERE ::: */
 
-/* right side paragraph content starts  here */
+/* ::: RIGHT SIDE CONTENT PARAGRAPH STYLE STARTS  HERE ::: */
 
 .adn--login__layout-right__col-paragraph {
     color: rgba(25, 30, 51, 0.7);
@@ -77,9 +78,10 @@
     line-height: 26px;
 }
 
-/* right side paragraph content ends here */
+/* ::: RIGHT SIDE CONTENT PARAGRAPH STYLE ENDS HERE ::: */
 
-/* right side form contet goes here */
+/* ::: RIGHT SIDE FORM CONTENT PARAGRAPH STYLE STARTS HERE ::: */
+
 .adn--input {
     margin: 0 0 19px 0;
 }
@@ -113,9 +115,9 @@
     margin: 35px 0 0 0;
 }
 
-/* right side form content ends here */
+/* ::: RIGHT SIDE FORM CONTENT PARAGRAPH STYLE ENDS HERE ::: */
 
-/* copyright starts here */
+/* ::: COPYRIGHTS STYLE STARTS HERE ::: */
 
 .adn--copyright {
     position: absolute;
@@ -125,4 +127,4 @@
     font-weight: 100;
 }
 
-/* copyright ends here */
+/* ::: COPYRIGHTS STYLE ENDS HERE ::: */
