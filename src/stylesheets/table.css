@@ -34,6 +34,18 @@
     top: 13px;
     right: 12px;
 }
+
+.adn--report__table-wrapper .ui.adn--table thead tr > th:after{
+       position: absolute;
+    content: '';
+    width: 1px;
+    background: rgba(255, 255, 255, 0.55);
+    height: 28px;
+    border-radius: 2px;
+    top: 13px;
+    right: 4px;
+}
+
 .ui.adn--table thead tr > th:last-child:after{
 
     width: 0px;
@@ -69,6 +81,11 @@
 
 .ui.adn--table tfoot > tr > th{
 background: #fff;
+}
+
+
+.adn--report__table-wrapper .ui.adn--table tbody tr:last-child td{
+    background-color: rgba(255,127,0,0.05);
 }
 
 /* table styles ends here */
