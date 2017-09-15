@@ -46,4 +46,32 @@
     font-size: 13px;
 }
 
+
+.adn--layout__header__right .ui.celled .item {
+    font-size: 13px;
+    color: rgba(25, 30, 51, 0.5);
+}
+
+
+.adn--layout__header__right .ui.celled {
+    margin: 32px 40px 0 0;
+}
+
+.adn--layout__header__right .ui.list .item {
+    text-align: center;
+    }
+
+.adn--layout__header__right__icon:before {
+    font-size: 18px;
+    padding: 0 0 0 14px;
+    color: rgba(25, 30, 51, 0.27);
+}
+
+
+.adn--layout__header__menu .ui.button i.icon {
+    font-size: 25px;
+    color: #FF7F00;
+    color: background-color: #FF7F00;
+}
+
 /* ::: HEADER STYLES ENDS HERE :::*/

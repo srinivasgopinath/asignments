@@ -1,4 +1,4 @@
-/*  */
+/*:::report stye goes here */
 
 .adn--layout__report-header-wrapper{
     height: 80px;
@@ -8,7 +8,6 @@
 
 .adn--layout__report-col-body__wrapper {
     height: calc(100% - 80px);
-    background: #91919e;
 }
 .adn--report__table-wrapper{
 	height: calc(100% - 60px);
@@ -17,3 +16,50 @@
 .adn--report__pagination-wrapper{
 	height: 60px;
 }
+
+
+.adn--layout__report-header__dropdown .adn--dropdown {
+    margin: 24px 19px 0 0;
+ 
+}
+
+.adn--layout__report-header__dropdown .adn--dropdown .ui.dropdown {
+	margin: 24px 19px 0 0;
+	height: 33px;
+	width: 144px;
+	font-size: 13px !important;
+	color: rgba(25, 30, 51, 0.46);
+}
+
+.ui.adn--layout__header__right_button{
+	background: none;
+	padding: 0 40px 0 40px;
+	font-size: 13px;
+	display: inline-block;
+	font-weight: 500;
+	color: rgba(25, 30, 51, 0.52);
+}
+
+.ui.adn--layout__header__right_button:active{
+	background: none;
+	
+}
+
+
+
+.ui.adn--layout__header__right_button:hover{
+	background: none;
+}
+
+
+
+.ui.adn--layout__header__right_button:focus{
+	background: none;
+}
+.adn--layout__header__menu .ui.adn--layout__header__menu__button {
+    margin: 35px 0 0 0;
+    padding: 0 40px 0 40px;
+    background: none;
+}
+
+/*:::report stye ends here */

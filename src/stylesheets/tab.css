@@ -1,0 +1,28 @@
+/* Global tab css goes here */
+
+.ui.menu.adn--tab .active.item {
+   border-radius: 3px;
+	background-color: #FF7F00;
+	box-shadow: 0 0 4px 0 rgba(255,127,0,0.5);
+	font-size: 13px;
+	font-weight: 600;
+	color: #fff;
+} 
+.ui.menu.adn--tab .item {
+ background: none;
+ color: rgba(25, 30, 51, 0.51);
+ font-size: 13px;
+ margin: 24px 0 0 30px;
+} 
+
+.ui.menu.adn--tab a.item:hover{
+background: none;
+color: rgba(25, 30, 51, 0.51);
+}
+
+.ui.menu.adn--tab .active.item:hover{
+	color: #FF7F00;
+	background: #fff;
+}
+
+/* global tab css ends here */

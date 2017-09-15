@@ -12,6 +12,9 @@
     <!-- ::: SEMANTIC UI STYLESHEET ::: -->
     <link rel="stylesheet" type="text/css" href='../../semantic/dist/semantic.min.css'>
 
+     <!-- ::: FLATICON STYLES ::: -->
+    <link rel="stylesheet" href="../fonts/flaticons/flaticon.css">
+
     <!-- ::: COMPONENT STYLES ::: -->
     <link rel="stylesheet" href="../stylesheets/global.css">
     <link rel="stylesheet" href="../stylesheets/button.css">
@@ -20,6 +23,9 @@
     <link rel="stylesheet" href="../stylesheets/header.css">
     <link rel="stylesheet" href="../stylesheets/table.css">
     <link rel="stylesheet" href="../stylesheets/report.css">
+    <link rel="stylesheet" href="../stylesheets/tab.css">
+    <link rel="stylesheet" href="../stylesheets/dropdown.css">
+    <link rel="stylesheet" href="../stylesheets/checkbox.css">
 
 </head>
 <body>
@@ -36,6 +42,17 @@
                          alt=""
                          class="adn--layout__header-logo__img">
                 </a>
+                  <div class="adn--layout__header__menu adn--fright">
+                        <button class="ui button adn--layout__header__menu__button"><i class="sidebar icon"></i></button>
+                </div>
+                <div class="adn--layout__header__right adn--fright">
+                    <div class="ui celled horizontal list">
+                          <div class="item"><button class="ui button adn--layout__header__right_button">search<span class="adn--layout__header__right__icon flaticon-search"></span></button></div>
+                          <div class="item"><button class="ui button adn--layout__header__right_button">filter<span class="adn--layout__header__right__icon flaticon-tool   "></span></button></div>
+                           <div class="item"><button class="ui button adn--layout__header__right_button">Aug 20016 -Aug 20017<span class="adn--layout__header__right__icon flaticon-calendar"></span></button></div>
+                    </div>
+                </div>
+              
             </div>
 
         </div>
@@ -51,15 +68,71 @@
             <div class="row adn--layout__report-header-wrapper">
 
                 <div class="column adn--padding-0">
-           
+                    <div class="adn--layout__report-header__tab  adn--fleft">
+                       <div class="ui secondary  menu adn--tab">
+                          <a class="item active">INITIATIVES</a>
+                          <a class="item">MEDIA SOURCES</a>
+                          <a class="item">PUBLISHIERS</a>
+                        </div>
+                    </div>
+                    <div class="adn--layout__report-header__dropdown adn--fright">
+                     <!--global input field-->
+                    <div class="ui form adn--dropdown adn--fleft">
+                        <div class="inline field">
+                            <select class="ui dropdown">
+                                <option value="">Select User Role</option>
+                                <option value="1">Male</option>
+                                <option value="0">Female</option>
+                            </select>
 
+                        </div>
+                    </div>
+                    <!--global input field-->
+                     <!--global input field-->
+                    <div class="ui form adn--dropdown adn--fleft">
+                        <div class="inline field">
+                            <select class="ui dropdown">
+                                <option value="">Select User Role</option>
+                                <option value="1">Male</option>
+                                <option value="0">Female</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <!--global input field-->
+                     <!--global input field-->
+                    <div class="ui form adn--dropdown adn--fleft">
+                        <div class="inline field">
+                            <select class="ui dropdown">
+                                <option value="">Select User Role</option>
+                                <option value="1">Male</option>
+                                <option value="0">Female</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <!--global input field-->
+                     <!--global input field-->
+                    <div class="ui form adn--dropdown adn--fleft">
+                        <div class="inline field">
+                            <select class="ui dropdown">
+                                <option value="">Select User Role</option>
+                                <option value="1">Male</option>
+                                <option value="0">Female</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <!--global input field-->
+                        
+                    </div>
                 </div>
   
             </div>
         
             <div class="row adn--layout__report-col-body__wrapper">
 
-                <div class="column adn--padding-0">
+                <div class="column adn--padding-0 adn--height-100per">
                     
                     <div class="adn--report__table-wrapper">
                          <table class="ui striped table adn--table">
@@ -71,10 +144,20 @@
                                                 <label></label>
                                             </div>
                                         </th>
-                                        <th>EMAIL</th>
-                                        <th>NAME</th>
-                                        <th>STATUS</th>
-                                        <th>ROLE</th>
+                                        <th>CLIENT</th>
+                                        <th>INITIATIVE</th>
+                                        <th>CLICKS</th>
+                                        <th>VISITS</th>
+                                        <th>DISCS</th>
+                                        <th>PVs</th>
+                                        <th>CPC</th>
+                                        <th>eCPc</th>
+                                        <th>CPPY</th>
+                                        <th>CTTR</th>
+                                        <th>IMPS</th>
+                                        <th>MEDIA</th>
+                                        <th>SPEND</th>
+                                        <th>MARCH</th>
                                         <th>ACTIONS</th>
                                     </tr>
                                 </thead>
@@ -86,10 +169,20 @@
                                                 <label></label>
                                             </div>
                                         </td>
-                                        <td>Ismail.dac@gmail.com</td>
-                                        <td>Ismael Dach</td>
-                                        <td>Active</td>
-                                        <td>Admin</td>
+                                        <td>KBB</td>
+                                        <td>Hundaye Santane Fe Sport</td>
+                                        <td>17,568</td>
+                                        <td>9311</td>
+                                        <td>47.37%</td>
+                                        <td>19,563</td>
+                                        <td>0.0059</td>
+                                        <td>0.88</td>
+                                        <td>0.0505</td>
+                                        <td>1.24%</td>
+                                        <td>1,421,84</td>
+                                        <td>987.04</td>
+                                        <td>15,539.92</td>
+                                        <td>14,552,88</td>
                                         <td>
                                             <button class="ui button adn--table__button flaticon-pencil-edit-button adn--table__button__icon"></button>
                                             <button class="ui button adn--table__button flaticon-garbage adn--table__button__icon"></button>
@@ -102,10 +195,20 @@
                                                 <label></label>
                                             </div>
                                         </td>
-                                        <td>Ismail.dac@gmail.com</td>
-                                        <td>Ismael Dach</td>
-                                        <td>Active</td>
-                                        <td>Admin</td>
+                                        <td>KBB</td>
+                                        <td>Hundaye Santane Fe Sport</td>
+                                        <td>17,568</td>
+                                        <td>9311</td>
+                                        <td>47.37%</td>
+                                        <td>19,563</td>
+                                        <td>0.0059</td>
+                                        <td>0.88</td>
+                                        <td>0.0505</td>
+                                        <td>1.24%</td>
+                                        <td>1,421,84</td>
+                                        <td>987.04</td>
+                                        <td>15,539.92</td>
+                                        <td>14,552,88</td>
                                         <td>
                                             <button class="ui button adn--table__button flaticon-pencil-edit-button adn--table__button__icon"></button>
                                             <button class="ui button adn--table__button flaticon-garbage adn--table__button__icon"></button>
@@ -118,10 +221,20 @@
                                                 <label></label>
                                             </div>
                                         </td>
-                                        <td>Ismail.dac@gmail.com</td>
-                                        <td>Ismael Dach</td>
-                                        <td>Active</td>
-                                        <td>Admin</td>
+                                        <td>KBB</td>
+                                        <td>Hundaye Santane Fe Sport</td>
+                                        <td>17,568</td>
+                                        <td>9311</td>
+                                        <td>47.37%</td>
+                                        <td>19,563</td>
+                                        <td>0.0059</td>
+                                        <td>0.88</td>
+                                        <td>0.0505</td>
+                                        <td>1.24%</td>
+                                        <td>1,421,84</td>
+                                        <td>987.04</td>
+                                        <td>15,539.92</td>
+                                        <td>14,552,88</td>
                                         <td>
                                             <button class="ui button adn--table__button flaticon-pencil-edit-button adn--table__button__icon"></button>
                                             <button class="ui button adn--table__button flaticon-garbage adn--table__button__icon"></button>
@@ -134,10 +247,20 @@
                                                 <label></label>
                                             </div>
                                         </td>
-                                        <td>Ismail.dac@gmail.com</td>
-                                        <td>Ismael Dach</td>
-                                        <td>Active</td>
-                                        <td>Admin</td>
+                                        <td>KBB</td>
+                                        <td>Hundaye Santane Fe Sport</td>
+                                        <td>17,568</td>
+                                        <td>9311</td>
+                                        <td>47.37%</td>
+                                        <td>19,563</td>
+                                        <td>0.0059</td>
+                                        <td>0.88</td>
+                                        <td>0.0505</td>
+                                        <td>1.24%</td>
+                                        <td>1,421,84</td>
+                                        <td>987.04</td>
+                                        <td>15,539.92</td>
+                                        <td>14,552,88</td>
                                         <td>
                                             <button class="ui button adn--table__button flaticon-pencil-edit-button adn--table__button__icon"></button>
                                             <button class="ui button adn--table__button flaticon-garbage adn--table__button__icon"></button>
@@ -150,10 +273,20 @@
                                                 <label></label>
                                             </div>
                                         </td>
-                                        <td>Ismail.dac@gmail.com</td>
-                                        <td>Ismael Dach</td>
-                                        <td>Active</td>
-                                        <td>Admin</td>
+                                        <td>KBB</td>
+                                        <td>Hundaye Santane Fe Sport</td>
+                                        <td>17,568</td>
+                                        <td>9311</td>
+                                        <td>47.37%</td>
+                                        <td>19,563</td>
+                                        <td>0.0059</td>
+                                        <td>0.88</td>
+                                        <td>0.0505</td>
+                                        <td>1.24%</td>
+                                        <td>1,421,84</td>
+                                        <td>987.04</td>
+                                        <td>15,539.92</td>
+                                        <td>14,552,88</td>
                                         <td>
                                             <button class="ui button adn--table__button flaticon-pencil-edit-button adn--table__button__icon"></button>
                                             <button class="ui button adn--table__button flaticon-garbage adn--table__button__icon"></button>
@@ -166,10 +299,20 @@
                                                 <label></label>
                                             </div>
                                         </td>
-                                        <td>Ismail.dac@gmail.com</td>
-                                        <td>Ismael Dach</td>
-                                        <td>Active</td>
-                                        <td>Admin</td>
+                                        <td>KBB</td>
+                                        <td>Hundaye Santane Fe Sport</td>
+                                        <td>17,568</td>
+                                        <td>9311</td>
+                                        <td>47.37%</td>
+                                        <td>19,563</td>
+                                        <td>0.0059</td>
+                                        <td>0.88</td>
+                                        <td>0.0505</td>
+                                        <td>1.24%</td>
+                                        <td>1,421,84</td>
+                                        <td>987.04</td>
+                                        <td>15,539.92</td>
+                                        <td>14,552,88</td>
                                         <td>
                                             <button class="ui button adn--table__button flaticon-pencil-edit-button adn--table__button__icon"></button>
                                             <button class="ui button adn--table__button flaticon-garbage adn--table__button__icon"></button>
@@ -182,10 +325,20 @@
                                                 <label></label>
                                             </div>
                                         </td>
-                                        <td>Ismail.dac@gmail.com</td>
-                                        <td>Ismael Dach</td>
-                                        <td>Active</td>
-                                        <td>Admin</td>
+                                        <td>KBB</td>
+                                        <td>Hundaye Santane Fe Sport</td>
+                                        <td>17,568</td>
+                                        <td>9311</td>
+                                        <td>47.37%</td>
+                                        <td>19,563</td>
+                                        <td>0.0059</td>
+                                        <td>0.88</td>
+                                        <td>0.0505</td>
+                                        <td>1.24%</td>
+                                        <td>1,421,84</td>
+                                        <td>987.04</td>
+                                        <td>15,539.92</td>
+                                        <td>14,552,88</td>
                                         <td>
                                             <button class="ui button adn--table__button flaticon-pencil-edit-button adn--table__button__icon"></button>
                                             <button class="ui button adn--table__button flaticon-garbage adn--table__button__icon"></button>
@@ -198,106 +351,20 @@
                                                 <label></label>
                                             </div>
                                         </td>
-                                        <td>Ismail.dac@gmail.com</td>
-                                        <td>Ismael Dach</td>
-                                        <td>Active</td>
-                                        <td>Admin</td>
-                                        <td>
-                                            <button class="ui button adn--table__button flaticon-pencil-edit-button adn--table__button__icon"></button>
-                                            <button class="ui button adn--table__button flaticon-garbage adn--table__button__icon"></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="ui checkbox adn--checkbox">
-                                                <input type="checkbox" name="example">
-                                                <label></label>
-                                            </div>
-                                        </td>
-                                        <td>Ismail.dac@gmail.com</td>
-                                        <td>Ismael Dach</td>
-                                        <td>Active</td>
-                                        <td>Admin</td>
-                                        <td>
-                                            <button class="ui button adn--table__button flaticon-pencil-edit-button adn--table__button__icon"></button>
-                                            <button class="ui button adn--table__button flaticon-garbage adn--table__button__icon"></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="ui checkbox adn--checkbox">
-                                                <input type="checkbox" name="example">
-                                                <label></label>
-                                            </div>
-                                        </td>
-                                        <td>Ismail.dac@gmail.com</td>
-                                        <td>Ismael Dach</td>
-                                        <td>Active</td>
-                                        <td>Admin</td>
-                                        <td>
-                                            <button class="ui button adn--table__button flaticon-pencil-edit-button adn--table__button__icon"></button>
-                                            <button class="ui button adn--table__button flaticon-garbage adn--table__button__icon"></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="ui checkbox adn--checkbox">
-                                                <input type="checkbox" name="example">
-                                                <label></label>
-                                            </div>
-                                        </td>
-                                        <td>Ismail.dac@gmail.com</td>
-                                        <td>Ismael Dach</td>
-                                        <td>Active</td>
-                                        <td>Admin</td>
-                                        <td>
-                                            <button class="ui button adn--table__button flaticon-pencil-edit-button adn--table__button__icon"></button>
-                                            <button class="ui button adn--table__button flaticon-garbage adn--table__button__icon"></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="ui checkbox adn--checkbox">
-                                                <input type="checkbox" name="example">
-                                                <label></label>
-                                            </div>
-                                        </td>
-                                        <td>Ismail.dac@gmail.com</td>
-                                        <td>Ismael Dach</td>
-                                        <td>Active</td>
-                                        <td>Admin</td>
-                                        <td>
-                                            <button class="ui button adn--table__button flaticon-pencil-edit-button adn--table__button__icon"></button>
-                                            <button class="ui button adn--table__button flaticon-garbage adn--table__button__icon"></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="ui checkbox adn--checkbox">
-                                                <input type="checkbox" name="example">
-                                                <label></label>
-                                            </div>
-                                        </td>
-                                        <td>Ismail.dac@gmail.com</td>
-                                        <td>Ismael Dach</td>
-                                        <td>Active</td>
-                                        <td>Admin</td>
-                                        <td>
-                                            <button class="ui button adn--table__button flaticon-pencil-edit-button adn--table__button__icon"></button>
-                                            <button class="ui button adn--table__button flaticon-garbage adn--table__button__icon"></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="ui checkbox adn--checkbox">
-                                                <input type="checkbox" name="example">
-                                                <label></label>
-                                            </div>
-                                        </td>
-                                        <td>Ismail.dac@gmail.com</td>
-                                        <td>Ismael Dach</td>
-                                        <td>Active</td>
-                                        <td>Admin</td>
+                                        <td>Total</td>
+                                        <td></td>
+                                        <td>17,568</td>
+                                        <td>9311</td>
+                                        <td>47.37%</td>
+                                        <td>19,563</td>
+                                        <td>0.0059</td>
+                                        <td>0.88</td>
+                                        <td>0.0505</td>
+                                        <td>1.24%</td>
+                                        <td>1,421,84</td>
+                                        <td>987.04</td>
+                                        <td>15,539.92</td>
+                                        <td>14,552,88</td>
                                         <td>
                                             <button class="ui button adn--table__button flaticon-pencil-edit-button adn--table__button__icon"></button>
                                             <button class="ui button adn--table__button flaticon-garbage adn--table__button__icon"></button>
