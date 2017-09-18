@@ -1,30 +1,37 @@
 /* ::: TABLE STYLE GOES HERE ::: */
 
 .adn--layout__right-col__content-wrapper {
-    border-radius: 8px;
+        border-radius: 8px;
     box-shadow: 0 3px 6px 0 rgba(0,0,0,0.23), 0 3px 6px 0 rgba(0,0,0,0.16);
 }
 .ui.adn--table{
     border: none;
+    table-layout: fixed;
+    margin: 0;
 }
 .adn--layout__right-col__table-wrapper{
     height: 382px;
     overflow:auto;
 }
-
+.ui.adn--table thead tr:first-child > th:nth-child(1),
+ .ui.adn--table thead tr:first-child > th:last-child {
+    border-radius: 0;
+    background: #191f34;
+}
 .ui.adn--table thead tr > th {
     background-color: #191E33;
     font-size: 11px;
     font-weight: 600;
     color: #FFFFFF;
+    padding: 0 0 0 0;
     height: 50px;
-    padding: 8px 0 0 19px;
+    vertical-align: middle;
     position: relative;
 }
 .ui.adn--table thead tr > th:first-child {
     text-align: center;
     vertical-align: middle;
-    padding: 7px 0 0 21px;
+    box-sizing: border-box;
 }
 .ui.adn--table thead tr > th:after {
     position: absolute;
@@ -45,7 +52,6 @@
        height: 28px;
        border-radius: 2px;
        top: 11px;
-       px;
        right: 0px;
 }
 
@@ -57,7 +63,8 @@
 .ui.adn--table tbody tr td {
     color: #191E33;
     font-size: 11px;
-    padding: 8px 0 0 20px;
+    padding: 0 0 0 1px;
+    height: 45px;
 }
 .ui.adn--table tr td {
     border-top:none;
@@ -66,9 +73,29 @@
     background-color: #fafafb;
 }
 
-.ui.adn--table tbody tr:hover{
+.ui.adn--table tbody tr:hover {
     color: #343434;
     font-weight: 500;
+}
+
+
+.ui.adn--table tbody tr:last-child {
+    color: #343434;
+    font-weight: 500;
+}
+.ui.adn--table tbody tr:last-child .adn--table__button__icon:before {
+    color: #343434;
+    font-weight: 500;
+}
+
+
+.ui.adn--table tbody tr:hover .adn--table__button__icon:before {
+
+    color: #343434;
+}
+
+.ui.adn--table__button.adn--table__button__icon:hover:before {
+    color: #FF7F00 !important;
 }
 
 .ui.adn--table tbody tr td .ui.adn--table tbody tr td .ui.adn--table__button__icon:hover{
@@ -82,17 +109,21 @@
 
 .ui.adn--table tbody tr td:first-child {
     text-align: center;
+    padding: 0;
 }
 
 
 .ui.adn--table thead tr > th:last-child {
-    text-align: center;
+    text-align: left;
 }
 
 .ui.adn--table tbody tr td:last-child {
     text-align: center;
+    padding: 0;
 }
-
+.ui.adn--table tbody tr td:nth-child(2), .ui.adn--table tbody tr td:nth-child(3) {
+    padding: 0;
+}
 
 .ui.adn--table tfoot > tr > th{
 background: #fff;
@@ -115,7 +146,9 @@ background: #fff;
     background: none;
 }
 
-
+.ui.adn--table__button {
+    padding: 0 6px 0 0;
+}
 /* ::: TABLE BUTTON STYLE ENDS HERE ::: */
 
 
@@ -136,6 +169,15 @@ background: #fff;
     color: #ee7e12;
 }
 
+.adn--layout__header__right .ui.list>.item .ui.adn--layout__header__right_button:hover{
+    color: #191E33;
+    font-weight: 500;
+}
+.adn--layout__header__right .ui.list>.item .ui.adn--layout__header__right_button:hover, .adn--layout__header__right__icon:hover:before {
+    color: #191E33;
+    font-weight: 500;
+}
+    }
 
 /* ::: TABLE ICON STYLE ENDS HERE ::: */
 

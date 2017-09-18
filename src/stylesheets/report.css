@@ -1,3 +1,14 @@
+/* :::resiting property goese here */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}   
+
+/* :::resiting property ends here */
+
 /*::: REPORT STYLE GOES HERE :::*/
 
 .adn--layout__report-header-wrapper{
@@ -10,8 +21,9 @@
     height: calc(100% - 80px);
 }
 .adn--report__table-wrapper{
-    height: calc(100% - 60px);
+    height: calc(100% - 110px);
     overflow: auto;
+    word-wrap: break-word;
 }
 .adn--report__pagination-wrapper{
     height: 60px;
@@ -19,10 +31,12 @@
 
 
 .adn--layout__report-header__dropdown .adn--dropdown {
-    margin: 24px 30px 0 0;
+    margin: 24px 0px 0 19px;
 }
 
-
+.adn--layout__report-header__dropdown.adn--fright {
+    margin: 0 30px 0 0;
+}
 .adn--layout__report-header__dropdown .adn--dropdown .inline .ui.dropdown {
     height: 33px;
     width: 144px;
@@ -61,5 +75,14 @@
     background: none;
     line-height: 19px;
 }
-
 /*::: REPORT STYLE ENDS HERE :::*/
+
+/*:::REPORT STYLE FOR DROP DOWN GOES HERE :::*/
+
+.ui.form.adn--dropdown .inline.field .dropdown.selection {
+    height: 35px;
+    min-width: 141px;
+}
+/* ::: REPORT STYLE FOR DROP DOWN GOES HERE ::: */
+
+
