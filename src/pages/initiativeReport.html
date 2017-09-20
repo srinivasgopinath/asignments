@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="../stylesheets/card.css">
     <link rel="stylesheet" href="../stylesheets/dropdown.css">
     <link rel="stylesheet" href="../stylesheets/checkbox.css">
+    <link rel="stylesheet" href="../stylesheets/dcalendar.picker.css">
 
 </head>
 <body>
@@ -94,8 +95,8 @@
 
                                 <select class="ui dropdown">
                                     <option value="">Select the status</option>
-                                    <option value="1">Male</option>
-                                    <option value="0">Female</option>
+                                    <option value="1">First name</option>
+                                    <option value="0">Last Name</option>
                                 </select>
 
                             </div>
@@ -117,6 +118,65 @@
                             <button class="ui button adn--layout__header__right_button">Aug 2016 -Aug 2017
                                 <span class="adn--layout__header__right__icon flaticon-calendar"></span>
                             </button>
+                            <div class="adn--layout__header__right__calender">
+                                <div class="adn--layout__header__right__calender__field adn--fleft">
+                                	<div class="adn--layoput__header__right__calender__wrapper adn--clearfix">
+                                		<div class="adn--layout__header__right__calender__startdate adn--fleft">
+                                           <table id="start" class="calendar"></table>
+                                    	</div>
+                                    	<div class="adn--layout__header__right__calender__startdate adn--fright">
+                                           <table id="end" class="calendar"></table>
+                                    	</div>
+                                	</div>	
+
+                                    <div class="adn--layout__header__right__calender__date-fields__wrapper adn--clearfix">
+                                    <div class="adn--layout__header__right__calender__date__start-wrapper adn--fleft">
+                                	<!--global input field-->
+				                    <div class="ui form adn--input adn--fleft">
+				                        <div class="inline field">
+				                            <label>Start Date</label>
+				                            <input type="text" placeholder="Start Date">
+				                        </div>
+				                    </div>
+                    				<!--global input field-->
+                                    </div>
+
+				                    <div class="adn--layout__header__right__calender__date__end-wrapper adn--fright">
+                                	<!--global input field-->
+				                    <div class="ui form adn--input adn--fleft">
+				                        <div class="inline field">
+				                            <label>End Date</label>
+				                            <input type="text" placeholder="End Date">
+				                        </div>
+				                    </div>
+                    				<!--global input field-->
+                                    </div>
+                                   		 	
+                                   </div>
+                                </div>
+                                <div class="adn--layout__header__right__calender__wrapper adn--fright">
+                                    <div class="adn--layout__header__right__calender__range">
+                                         <div class="ui list">
+                                              <div class="item"><a href="">Today</a></div>
+                                              <div class="item"><a href="">Yesterday</a></div>
+                                              <div class="item"><a href="">Last 7 days</a></div>
+                                              <div class="item"><a href="">Last 30 days</a></div>
+                                              <div class="item"><a href="">This Month</a></div>
+                                              <div class="item active"><a href="">Custom Range</a></div>
+                                        </div>
+                                        <div class="adn--layout__header__right__calender__action-wrapper adn--clearfix">
+                                               <!--global button starts here-->
+                                         <button class="ui button adn--button-secondary adn--fleft">Cancel</button>
+                                            <button class="ui button adn--button adn--fleft">Apply	</button>
+                                            
+                                             <!--global button ends here-->
+                                        </div>
+                                      
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -149,8 +209,8 @@
                         <div class="inline field">
                             <select class="ui dropdown">
                                 <option value="">Actions</option>
-                                <option value="1">Male</option>
-                                <option value="0">Female</option>
+                                <option value="1">first name</option>
+                                <option value="0">last name</option>
                             </select>
 
                         </div>
@@ -161,8 +221,8 @@
                         <div class="inline field">
                             <select class="ui dropdown">
                                 <option value="">Breakdown</option>
-                                <option value="1">Male</option>
-                                <option value="0">Female</option>
+                                <option value="1">first name</option>
+                                <option value="0">last name</option>
                             </select>
 
                         </div>
@@ -173,8 +233,8 @@
                         <div class="inline field">
                             <select class="ui dropdown">
                                 <option value="">Columns</option>
-                                <option value="1">Male</option>
-                                <option value="0">Female</option>
+                                <option value="1">first name</option>
+                                <option value="0">last name</option>
                             </select>
 
                         </div>
@@ -185,8 +245,8 @@
                         <div class="inline field">
                             <select class="ui dropdown">
                                 <option value="">Report</option>
-                                <option value="1">Male</option>
-                                <option value="0">Female</option>
+                                <option value="1">first name</option>
+                                <option value="0">last name</option>
                             </select>
 
                         </div>
@@ -597,12 +657,22 @@
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
 <script src="../../semantic/dist/semantic.min.js"></script>
+<script src="../js/dcalendar.picker.js"></script>
 
 <script>    
 $('select.dropdown')
   .dropdown()
 ;
 
+
+
+</script>
+
+<script>
+
+$('#start').dcalendar(); 
+$('#end').dcalendar();//creates the calendar
+$('#test').dcalendar(); //creates the calendar
 </script>
 </body>
 

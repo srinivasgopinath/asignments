@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Adtechnacity : Users</title>
+    <title>Adtechnacity : Clints</title>
 
     <!-- ::: FONT CDN LINKING HERE ::: -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600" rel="stylesheet">
@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="../stylesheets/input.css">
     <link rel="stylesheet" href="../stylesheets/layout.css">
     <link rel="stylesheet" href="../stylesheets/header.css">
-    <link rel="stylesheet" href="../stylesheets/report.css">
     <link rel="stylesheet" href="../stylesheets/sideNav.css">
     <link rel="stylesheet" href="../stylesheets/table.css">
     <link rel="stylesheet" href="../stylesheets/checkbox.css">
@@ -33,92 +32,27 @@
         <div class="row adn--padding-0 adn--layout__header-wrapper">
             <div class="column adn--padding-0">
 
-               <div class="adn--layout__header adn--clearfix">
-                <a href=""
-                   class="adn--layout__header-link adn--fleft">
-                    <img src="../images/adtechnacity_logo.svg"
-                         alt=""
-                         class="adn--layout__header-logo__img">
-                </a>
-                  <!--breadcrumb starts here-->
+                <!--header goes here-->
+                <div class="adn--layout__header adn--clearfix">
+
+                    <!--logo goes here-->
+                    <a href="" class="adn--layout__header-link adn--fleft">
+                        <img src="../images/adtechnacity_logo.svg" alt="" class="adn--layout__header-logo__img">
+                    </a>
+                    <!--logo goes here-->
+
+                    <!--breadcrumb starts here-->
                     <div class="adn--layout__header-breadcrumb adn--fleft">
                         <div class="ui breadcrumb">
-                            <a class="section">Reports</a>
+                            <a class="section">Manage</a>
                             <div class="divider"> /</div>
-                            <a class="active section">Users</a>
+                            <a class="active section">Clints</a>
                         </div>
                     </div>
                     <!--breadcrumb ends here-->
-                  <div class="adn--layout__header__menu adn--fright">
-                        <button class="ui button adn--layout__header__menu__button">
-                            <i class="sidebar icon adn--margin-0"></i>
-                        </button>
-                </div>
-                <div class="adn--layout__header__right adn--fright">
-                    <div class="ui celled horizontal list">
-                        <div class="item adn--padding-0">
-                            <button class="ui button adn--layout__header__right_button">Search
-                                <span class="adn--layout__header__right__icon flaticon-tool-1"></span>
-                            </button>
-                        </div>
-                        <div class="item adn--padding-0">
-                        <button class="ui button adn--layout__header__right_button">Filter
-                            <span class="adn--layout__header__right__icon flaticon-tool"></span>
-                        </button>
-                        <div class="adn--layout__header__right__filter-card">
-                               <!--global input field-->
-                            <div class="ui form adn--input adn--layout__header__right__filter-card__field">
-                                <div class="inline field">
-                                    <label>Name</label>
-                                    <input type="text" placeholder="Enter the name here">
-                                </div>
-                            </div>
-                    <!--global input field-->
-
-                    <!--global input field-->
-                            <div class="ui form adn--input adn--input adn--layout__header__right__filter-card__field">
-                                <div class="inline field">
-                                    <label>Email Id</label>
-                                    <input type="text" placeholder="Entetr the mail Id here">
-                                </div>
-                            </div>
-                    <!--global input field-->
-
-                    <!--global input field-->
-                    <div class="ui form adn--dropdown adn--input adn--layout__header__right__filter-card__dropdown">
-                            <div class="inline field">
-                                <label>Status</label>
-
-                                <select class="ui dropdown">
-                                    <option value="">Select the status</option>
-                                    <option value="1">Male</option>
-                                    <option value="0">Female</option>
-                                </select>
-
-                            </div>
-                    </div>
-                    <!--global input field-->
-                    <!--card content ends here-->
-                <div class="adn--card__footer adn--clearfix">
-
-                    <!--global button starts here-->
-                    <button class="ui button adn--button adn--fright">Save User</button>
-                    <button class="ui button adn--button-secondary adn--fright">Cancel</button>
-                    <!--global button ends here-->
 
                 </div>
-                <!--card input items ends here-->
-                        </div>
-                        </div>
-                        <div class="item adn--padding-0  active">
-                            <button class="ui button adn--layout__header__right_button">Aug 2016 -Aug 2017
-                                <span class="adn--layout__header__right__icon flaticon-calendar"></span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-              
-            </div>
+                <!--header ends here-->
             </div>
 
         </div>
@@ -128,12 +62,12 @@
             <div class="column adn--layout__left-col adn--padding-0">
                 <nav class="adn--side-nav">
 
-                    <a class="adn--side-nav__link active" href="">
+                    <a class="adn--side-nav__link" href="">
                         <span class="adn--side-nav__link__icon flaticon-profile-1"></span>
                         <span class="adn--side-nav__link__title">Users</span>
                     </a>
 
-                    <a class="adn--side-nav__link" href="">
+                    <a class="adn--side-nav__link active" href="">
                         <span class="adn--side-nav__link__icon flaticon-handshake-1"></span>
                         <span class="adn--side-nav__link__title">Clients</span>
                     </a>
@@ -163,7 +97,7 @@
                     <div class="adn--layout__right-col__button-wrapper adn--clearfix">
 
                         <!--gloabal button-->
-                        <button class="ui button adn--button adn--fright">Create New User</button>
+                        <button class="ui button adn--button adn--fright">Create New Clint</button>
                         <!--gloabal button ends here-->
 
                     </div>
@@ -176,12 +110,11 @@
                         <!--table component goes here-->
                          <table class="ui striped table adn--table">
                             <colgroup>
-                                <col style="width: 16.66%"></col>
-                                <col style="width: 16.66%"></col>
-                                <col style="width: 16.66%"></col>
-                                <col style="width: 16.66%"></col>
-                                <col style="width: 16.66%"></col>
-                                <col style="width: 16.66%"></col>
+                                <col style="width: 20%"></col>
+                                <col style="width: 20%"></col>
+                                <col style="width: 20%"></col>
+                                <col style="width: 20%"></col>
+                                <col style="width: 20%"></col>
                             </colgroup>
                                 <thead>
                                     <tr>
@@ -191,22 +124,20 @@
                                                 <label></label>
                                             </div>
                                         </th>
-                                        <th>EMAIL</th>
+                                        <th>ID</th>
                                         <th>NAME</th>
                                         <th>STATUS</th>
-                                        <th>ROLE</th>
                                         <th>ACTIONS</th>
                                     </tr>
                                 </thead>
                             </table>
                         <div class="adn--layout__right-col__table-wrapper">
                             <table class="ui striped table adn--table">
-                                <col style="width: 16.66%"></col>
-                                <col style="width: 16.66%"></col>
-                                <col style="width: 16.66%"></col>
-                                <col style="width: 16.66%"></col>
-                                <col style="width: 16.66%"></col>
-                                <col style="width: 16.66%"></col>
+                                <col style="width: 20%"></col>
+                                <col style="width: 20%"></col>
+                                <col style="width: 20%"></col>
+                                <col style="width: 20%"></col>
+                                <col style="width: 20%"></col>
                                 <tbody>
                                     <tr>
                                         <td>
@@ -215,7 +146,7 @@
                                                 <label></label>
                                             </div>
                                         </td>
-                                        <td>Ismail.dac@gmail.com</td>
+                                        
                                         <td>Ismael Dach</td>
                                         <td>Active</td>
                                         <td>Admin</td>
@@ -231,7 +162,7 @@
                                                 <label></label>
                                             </div>
                                         </td>
-                                        <td>Ismail.dac@gmail.com</td>
+                                        
                                         <td>Ismael Dach</td>
                                         <td>Active</td>
                                         <td>Admin</td>
@@ -247,7 +178,7 @@
                                                 <label></label>
                                             </div>
                                         </td>
-                                        <td>Ismail.dac@gmail.com</td>
+                                        
                                         <td>Ismael Dach</td>
                                         <td>Active</td>
                                         <td>Admin</td>
@@ -263,7 +194,7 @@
                                                 <label></label>
                                             </div>
                                         </td>
-                                        <td>Ismail.dac@gmail.com</td>
+                                        
                                         <td>Ismael Dach</td>
                                         <td>Active</td>
                                         <td>Admin</td>
@@ -279,7 +210,7 @@
                                                 <label></label>
                                             </div>
                                         </td>
-                                        <td>Ismail.dac@gmail.com</td>
+                                        
                                         <td>Ismael Dach</td>
                                         <td>Active</td>
                                         <td>Admin</td>
@@ -295,7 +226,7 @@
                                                 <label></label>
                                             </div>
                                         </td>
-                                        <td>Ismail.dac@gmail.com</td>
+                                        
                                         <td>Ismael Dach</td>
                                         <td>Active</td>
                                         <td>Admin</td>
@@ -311,7 +242,7 @@
                                                 <label></label>
                                             </div>
                                         </td>
-                                        <td>Ismail.dac@gmail.com</td>
+                                        
                                         <td>Ismael Dach</td>
                                         <td>Active</td>
                                         <td>Admin</td>
@@ -327,7 +258,7 @@
                                                 <label></label>
                                             </div>
                                         </td>
-                                        <td>Ismail.dac@gmail.com</td>
+                                        
                                         <td>Ismael Dach</td>
                                         <td>Active</td>
                                         <td>Admin</td>
@@ -343,7 +274,7 @@
                                                 <label></label>
                                             </div>
                                         </td>
-                                        <td>Ismail.dac@gmail.com</td>
+                                        
                                         <td>Ismael Dach</td>
                                         <td>Active</td>
                                         <td>Admin</td>
@@ -359,7 +290,7 @@
                                                 <label></label>
                                             </div>
                                         </td>
-                                        <td>Ismail.dac@gmail.com</td>
+                                        
                                         <td>Ismael Dach</td>
                                         <td>Active</td>
                                         <td>Admin</td>
@@ -375,7 +306,7 @@
                                                 <label></label>
                                             </div>
                                         </td>
-                                        <td>Ismail.dac@gmail.com</td>
+                                        
                                         <td>Ismael Dach</td>
                                         <td>Active</td>
                                         <td>Admin</td>
@@ -391,7 +322,7 @@
                                                 <label></label>
                                             </div>
                                         </td>
-                                        <td>Ismail.dac@gmail.com</td>
+                                        
                                         <td>Ismael Dach</td>
                                         <td>Active</td>
                                         <td>Admin</td>
@@ -407,7 +338,7 @@
                                                 <label></label>
                                             </div>
                                         </td>
-                                        <td>Ismail.dac@gmail.com</td>
+                                        
                                         <td>Ismael Dach</td>
                                         <td>Active</td>
                                         <td>Admin</td>
@@ -423,7 +354,7 @@
                                                 <label></label>
                                             </div>
                                         </td>
-                                        <td>Ismail.dac@gmail.com</td>
+                                        
                                         <td>Ismael Dach</td>
                                         <td>Active</td>
                                         <td>Admin</td>

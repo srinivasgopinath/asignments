@@ -34,4 +34,28 @@
     background: #91919e;
 }
 
+.adn--table__pagintaion__wrapper {
+    border-top: 1px solid rgba(25, 30, 51, 0.33);
+}
+
+
+.adn--layout__right-col__content-wrapper .ui.adn--table__button {
+    padding: 0 0px 0 15px;
+}
+
+.adn--layout__right-col__content-wrapper .ui.adn--table thead tr > th:last-child {
+    text-align: center;
+}
+
+.adn--layout__right-col__content-wrapper .ui.adn--table thead tr:first-child > th:nth-child(1){
+    border-top-left-radius: 8px;
+    background: #191f34;
+}
+
+.adn--layout__right-col__content-wrapper .ui.adn--table thead tr:first-child > th:last-child {
+    border-top-right-radius: 8px;
+    background: #191f34;
+}
+
+
 /* ::: LAYOUT STYLES ENDS HERE ::: */
