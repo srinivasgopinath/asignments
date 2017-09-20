@@ -31,8 +31,9 @@
 }
 
 .adn--card__footer {
-    width: calc(100% - 42px);
+    width: calc(100% - 80px);
     height: 65px;
+    margin: 0 auto;
 }
 
 .adn--card .adn--card__content .adn--dropdown .inline.field label,

@@ -60,6 +60,10 @@ body {
     overflow: auto;
 }
 
+
+.adn--width100-per{
+    width: 100% !important;
+}
 /* :::COMMON STYLES ENDS HERE ::: */
 
 
