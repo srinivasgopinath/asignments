@@ -61,9 +61,6 @@
     }
 
 
-/*.adn--layout__header__right .ui.list .item:hover .adn--layout__header__right__filter-card {
-    opacity: 1;
-}*/
 .adn--layout__header__right .ui.list .item {
     position: relative;
     text-align: left;
@@ -209,7 +206,6 @@
 .adn--layout__header__menu__line {
     width: 100%;
     display: inline-block;
-    /* vertical-align: middle; */
     margin: 0 10px;
     height: 1px;
     background: rgba(25, 30, 51, 0.33);
@@ -512,6 +508,7 @@
     right: 105px;
     border-style: solid;
 }
+
 
 /* ::: CALENDER STYLE ENDS HERE ::: */
 

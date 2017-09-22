@@ -1,0 +1,8 @@
+/* ::: filter style goes here ::: */
+
+.adn--layout__header__right .ui.list .item:nth-child(2), .adn--layout__header__right .ui.list .item:last-child {
+    position: relative;
+    border-right: none !important;
+}
+
+/* filter style ends here */

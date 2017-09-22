@@ -17,9 +17,6 @@ $('#calender').click(function(){
 });
 
 
-
-
-
  $(document).ready(function(){
     $('#start').dcalendarpicker({format: 'mm-dd-yyy'}).on('datechanged', function(e){
        $('#startDate').val(e.date);
@@ -45,7 +42,7 @@ $('#filter').click(function(){
     if($('#calender').css('display') == 'none')
     $('.adn--layout__header__right__filter-card').addClass('adn--layout__header__right__calender-edit');
 
-});
+})
 
 //::: SCRIPT FOR FILTER ::: //   
 

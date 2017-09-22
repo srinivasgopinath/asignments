@@ -13,12 +13,14 @@
 }
 
 .ui.adn--layout .adn--layout__col-wrapper .adn--layout__right-col{
-    width: calc(100% - 280px);
-    margin:0 auto;
+    width: calc(100% - 200px);
+    overflow: auto;
+    padding: 0 40px 0 40px !important;
 }
 
 .ui.adn--layout .adn--layout__col-wrapper .adn--layout__left-col {
     width: 200px;
+    overflow-x: hidden;
 }
 
 
@@ -36,6 +38,7 @@
 
 .adn--table__pagintaion__wrapper {
     border-top: 1px solid rgba(25, 30, 51, 0.33);
+    height: 60px;
 }
 
 

@@ -1,4 +1,6 @@
 /* ::: RESET STYLES STARTS HERE ::: */
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -64,6 +66,8 @@ body {
 .adn--width100-per{
     width: 100% !important;
 }
+
+
 /* :::COMMON STYLES ENDS HERE ::: */
 
 
