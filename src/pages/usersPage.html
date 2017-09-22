@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="../stylesheets/sideNav.css">
     <link rel="stylesheet" href="../stylesheets/table.css">
     <link rel="stylesheet" href="../stylesheets/checkbox.css">
-
+    <link rel="stylesheet" href="../stylesheets/datePicker.css">
+    <link rel="stylesheet" href="../stylesheets/dcalendar.picker.css">
 </head>
 
 <body>
@@ -33,7 +34,8 @@
         <div class="row adn--padding-0 adn--layout__header-wrapper">
             <div class="column adn--padding-0">
 
-               <div class="adn--layout__header adn--clearfix">
+               
+            <div class="adn--layout__header adn--clearfix">
                 <a href=""
                    class="adn--layout__header-link adn--fleft">
                     <img src="../images/adtechnacity_logo.svg"
@@ -45,7 +47,7 @@
                         <div class="ui breadcrumb">
                             <a class="section">Reports</a>
                             <div class="divider"> /</div>
-                            <a class="active section">Users</a>
+                            <a class="active section">Initiatives</a>
                         </div>
                     </div>
                     <!--breadcrumb ends here-->
@@ -53,16 +55,75 @@
                         <button class="ui button adn--layout__header__menu__button">
                             <i class="sidebar icon adn--margin-0"></i>
                         </button>
+                        <div class="adn--layout__header__menu__links-wrapper">
+                            <div class="ui list">
+                              <div class="item">
+                                <div class="content">
+                                  <div class="header"><a href="">ISAREL</a></div>
+                                    <div class="description">
+                                     <a href="">
+                                        <span class="adn--layout__header__menu__icon flaticon-profile-1"></span>User Profile
+                                     </a>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="content">
+                                  <div class="header">
+                                    <a href="" class="">MANAGE</a>
+                                </div>
+                                  <div class="description">
+                                    <a href="" class="active">
+                                        <span class="adn--layout__header__menu__icon flaticon-handshake-1 "></span>Clients
+                                    </a>
+                                </div>
+                                  <div class="description">
+                                    <a href="">
+                                        <span class="adn--layout__header__menu__icon flaticon-light-bulb-on"></span>Initiatives
+                                    </a>
+                                </div>
+                                <div class="description">
+                                    <a href="">
+                                        <span class="adn--layout__header__menu__icon flaticon-connection"></span>Network
+                                    </a>
+                                </div>
+                                <div class="description">
+                                    <a href=""><span class="adn--layout__header__menu__icon flaticon-profile-1"></span>Users
+                                    </a>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="content">
+                                  <div class="header">
+                                    <a href="" class="">IMPORTS</a>
+                                    
+                                </div>
+                                  <div class="description">
+                                    <a href="">
+                                    <span class="adn--layout__header__menu__icon flaticon-download"></span>Data Approval
+                                    </a>
+                                </div>
+                                  <div class="description">
+                                    <a href=""><span class="adn--layout__header__menu__icon flaticon-profile-1"></span>Link AdGroups
+                                    </a>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="adn--layout__header__menu__link__button">
+                                <button class="ui button adn--button adn--menu-btn">Sign Out</button>
+                            </div>
+                        </div>
                 </div>
                 <div class="adn--layout__header__right adn--fright">
                     <div class="ui celled horizontal list">
                         <div class="item adn--padding-0">
-                            <button class="ui button adn--layout__header__right_button">Search
-                                <span class="adn--layout__header__right__icon flaticon-tool-1"></span>
-                            </button>
+                            <input class="adn--layout__header__right__search" placeholder="Search"/>
+                            <span class="adn--layout__header__right__icon flaticon-tool-1"></span>
                         </div>
                         <div class="item adn--padding-0">
-                        <button class="ui button adn--layout__header__right_button">Filter
+                        <button class="ui button adn--layout__header__right_button" id="filter">Filters
                             <span class="adn--layout__header__right__icon flaticon-tool"></span>
                         </button>
                         <div class="adn--layout__header__right__filter-card">
@@ -79,7 +140,7 @@
                             <div class="ui form adn--input adn--input adn--layout__header__right__filter-card__field">
                                 <div class="inline field">
                                     <label>Email Id</label>
-                                    <input type="text" placeholder="Entetr the mail Id here">
+                                    <input type="text" placeholder="Enter the mail Id here">
                                 </div>
                             </div>
                     <!--global input field-->
@@ -91,8 +152,8 @@
 
                                 <select class="ui dropdown">
                                     <option value="">Select the status</option>
-                                    <option value="1">Male</option>
-                                    <option value="0">Female</option>
+                                    <option value="1">First name</option>
+                                    <option value="0">Last Name</option>
                                 </select>
 
                             </div>
@@ -111,9 +172,68 @@
                         </div>
                         </div>
                         <div class="item adn--padding-0  active">
-                            <button class="ui button adn--layout__header__right_button">Aug 2016 -Aug 2017
+                            <button class="ui button adn--layout__header__right_button adn--hidden" id="calender">Aug 2016 -Aug 2017
                                 <span class="adn--layout__header__right__icon flaticon-calendar"></span>
                             </button>
+                            <div class="adn--layout__header__right__calender">
+                                <div class="adn--layout__header__right__calender__field adn--fleft">
+                                    <div class="adn--layoput__header__right__calender__wrapper adn--clearfix">
+                                        <div class="adn--layout__header__right__calender__startdate adn--fleft">
+                                           <table id="start" class="calendar"></table>
+                                        </div>
+                                        <div class="adn--layout__header__right__calender__startdate adn--fright">
+                                           <table id="end" class="calendar"></table>
+                                        </div>
+                                    </div>  
+
+                                    <div class="adn--layout__header__right__calender__date-fields__wrapper adn--clearfix">
+                                    <div class="adn--layout__header__right__calender__date__start-wrapper adn--fleft">
+                                    <!--global input field-->
+                                    <div class="ui form adn--input adn--fleft">
+                                        <div class="inline field">
+                                            <label>Start Date</label>
+                                            <input type="text" placeholder="Start Date" id="startDate">
+                                        </div>
+                                    </div>
+                                    <!--global input field-->
+                                    </div>
+
+                                    <div class="adn--layout__header__right__calender__date__end-wrapper adn--fright">
+                                    <!--global input field-->
+                                    <div class="ui form adn--input adn--fleft">
+                                        <div class="inline field">
+                                            <label>End Date</label>
+                                            <input type="text" placeholder="End Date" id="endDate">
+                                        </div>
+                                    </div>
+                                    <!--global input field-->
+                                    </div>
+                                            
+                                   </div>
+                                </div>
+                                <div class="adn--layout__header__right__calender__wrapper adn--fright">
+                                    <div class="adn--layout__header__right__calender__range">
+                                         <div class="ui list">
+                                              <div class="item"><a href="">Today</a></div>
+                                              <div class="item"><a href="">Yesterday</a></div>
+                                              <div class="item"><a href="">Last 7 days</a></div>
+                                              <div class="item"><a href="">Last 30 days</a></div>
+                                              <div class="item"><a href="">This Month</a></div>
+                                              <div class="item active"><a href="">Custom Range</a></div>
+                                        </div>
+                                        <div class="adn--layout__header__right__calender__action-wrapper adn--clearfix">
+                                               <!--global button starts here-->
+                                         <button class="ui button adn--button-secondary adn--fleft">Cancel</button>
+                                            <button class="ui button adn--button adn--fleft">Apply  </button>
+                                            
+                                             <!--global button ends here-->
+                                        </div>
+                                      
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -474,8 +594,12 @@
     <!--the outer frid ends here-->
 
     <!--::: SCRIPTS GOES HERE -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="../../semantic/dist/semantic.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+<script src="../../semantic/dist/semantic.min.js"></script>
+<script src="../js/dcalendar.picker.js"></script>
+<script src="../js/script.js"></script>
 
 </body>
 

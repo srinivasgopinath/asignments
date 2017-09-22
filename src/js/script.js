@@ -41,7 +41,9 @@ $('#calender').click(function(){
 
 $('#filter').click(function(){                                                                   
 
-    $(".adn--layout__header__right__filter-card").toggle();   
+    $(".adn--layout__header__right__filter-card").toggle();
+    if($('#calender').css('display') == 'none')
+    $('.adn--layout__header__right__filter-card').addClass('adn--layout__header__right__calender-edit');
 
 });
 

@@ -111,7 +111,7 @@ i.icon.adn--header__menu__icon {
 /* footer style goes here*/
 
 .adn--card__footer {
-    width: calc(100% - 42px);
+    width: calc(100% - 80px);
     height: 65px;
 }
 

@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="../stylesheets/table.css">
     <link rel="stylesheet" href="../stylesheets/dropdown.css">
     <link rel="stylesheet" href="../stylesheets/checkbox.css">
+    <link rel="stylesheet" href="../stylesheets/datePicker.css">
+    <link rel="stylesheet" href="../stylesheets/dcalendar.picker.css">
 
 </head>
 
@@ -171,7 +173,7 @@
                         </div>
                         </div>
                         <div class="item adn--padding-0  active">
-                            <button class="ui button adn--layout__header__right_button" id="calender">Aug 2016 -Aug 2017
+                            <button class="ui button adn--layout__header__right_button adn--hidden" id="calender">Aug 2016 -Aug 2017
                                 <span class="adn--layout__header__right__icon flaticon-calendar"></span>
                             </button>
                             <div class="adn--layout__header__right__calender">
@@ -592,38 +594,13 @@
     <!--the outer frid ends here-->
 
     <!--::: SCRIPTS GOES HERE -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+<script src="../../semantic/dist/semantic.min.js"></script>
+<script src="../js/dcalendar.picker.js"></script>
+<script src="../js/script.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="../../semantic/dist/semantic.min.js"></script>
-
-<script>
-    
-    $('select.dropdown')
-  .dropdown()
-;
-
-</script>
-<script> 
-
-$('#filter').click(function(){                                                                   
-
-    $(".adn--layout__header__right__filter-card").toggle();   
-
-});
-
- </script>  
-
-
-<!--::: SCRIPT FOR HEADER MENU :::-->
-<script>
-    $('.adn--layout__header__menu__button').click(function(){                                                                   
-
-    $(".adn--layout__header__menu__links-wrapper").toggle();   
-
-});
-
-</script>
-<!--::: SCRIPT FOR HEADER MENU ENDS HERE :::-->
 </body>
 
 </html>
