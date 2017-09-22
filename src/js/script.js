@@ -16,9 +16,10 @@ $('#calender').click(function(){
     $(".adn--layout__header__right__calender").toggle();     
 });
 
-$('.adn--layout__header__right__icon.flaticon-tool-1').click(function(){                                                                   
-  $('.adn--layout__header__right__search').trigger( "focus" );     
-});
+
+
+
+
  $(document).ready(function(){
     $('#start').dcalendarpicker({format: 'mm-dd-yyy'}).on('datechanged', function(e){
        $('#startDate').val(e.date);
@@ -55,6 +56,17 @@ $('.adn--layout__header__menu__button').click(function(){
 });
 
 //::: SCRIPT FOR HAMBURGER ::: //   
+
+
+//::: SCRIPT FOR SEARCH MENU ::://
+
+
+$('.adn--layout__header__right__icon.flaticon-tool-1').click(function(){                                                                   
+  $('.adn--layout__header__right__search').trigger( "focus" );     
+});
+
+
+//::: SCRIPT FOR SEARCH MENU :://
 
 
 
