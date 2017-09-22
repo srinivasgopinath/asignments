@@ -63,6 +63,7 @@
 .ui.adn--table tbody tr td {
     color: #191E33;
     font-size: 11px;
+    word-wrap: break-word;
     padding: 0 0 0 1px;
     height: 45px;
 }
@@ -74,16 +75,6 @@
 }
 
 .ui.adn--table tbody tr:hover {
-    color: #343434;
-    font-weight: 500;
-}
-
-
-.ui.adn--table tbody tr:last-child {
-    color: #343434;
-    font-weight: 500;
-}
-.ui.adn--table tbody tr:last-child .adn--table__button__icon:before {
     color: #343434;
     font-weight: 500;
 }
@@ -138,7 +129,12 @@ background: #fff;
 
 
 /* ::: TABLE BUTTON STYLE GOES HERE ::: */
-
+.ui.adn--table thead tr th .adn--checkbox {
+    vertical-align: middle;
+}
+.ui.adn--table tbody tr td:first-child.adn--checkbox{
+       vertical-align: middle;
+}
 .ui.adn--table__button,.ui.adn--table__button:hover {
     background: none;
 }

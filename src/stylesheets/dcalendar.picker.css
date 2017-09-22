@@ -21,9 +21,8 @@
 .calendar-wrapper {
 	font-family: Roboto;
 	font-size: 14px;
-	/* position: relative; */
-	height: 208px;
-	/* width: 280px; */
+	position: relative;
+	width: 280px;
 }
 	.calendar-wrapper.picker {
 		position: absolute;
@@ -59,7 +58,7 @@
 		}
 .calendar-head-card {
 	font-size: 18px;
-	padding: 11px 6px 0 10px;
+	padding: 16px;
 }
 	.calendar-head-card .calendar-year,
 	.calendar-head-card .calendar-date-wrapper { 
@@ -72,32 +71,25 @@
 	}
 		.calendar-head-card .calendar-date-wrapper:hover { color: #fff; }
 .calendar-container {
-	/* background-color: #fff; */
+	background-color: #fff;
 	padding: 10px;
-	height: 100%;
-	width: 216px;
-	/* user-select: none; */
-	/* -webkit-user-select: none; */
+	user-select: none;
+	-webkit-user-select: none;
 	-ms-user-select: none;
 	-moz-user-select: none;
 }
 .calendar-top-selector {
 	display: table;
 	width: 100%;
-	background-color: #191E33;
-	height: 73px;
-	border-radius: 10px 10px 0px 0px;
-	/* color: rgb(50,50,50); */
+	color: rgb(50,50,50);
 }
 	.calendar-top-selector span {
 		display: table-cell;
 		text-align: center;
-		color: #fff;
 		font-weight: bold;
 		cursor: pointer;
-		vertical-align: middle;
 	}
-	.calendar-top-selector .calendar-curr-month {padding-bottom: 4px;/* display: flex; */color: #fff;vertical-align: middle;}
+	.calendar-top-selector .calendar-curr-month { padding-bottom: 4px; }
 .calendar-next, .calendar-prev {
 	font-family: 'Times New Roman';
 	font-size: 24px;
@@ -115,10 +107,7 @@
 	.calendar-grid .calendar-labels {
 		display: table;
 		width: 100%;
-		/* color: #fff; */
 		visibility: visible;
-		border: 0.5px solid rgba(255, 255, 255, 0.36);
-		background: #191f34;
 		opacity: 1;
 		transition: opacity .25s ease;
 		-o-transition: opacity .25s ease;
@@ -130,12 +119,12 @@
 			display: table-cell;
 			width: 14%;
 			text-align: center;
-			color: #fff;
-			font-size: 9px;
+			color: rgb(50,50,50);
+			font-size: 11px;
 			padding: 8px 0 4px 0;
 			vertical-align: middle;
 		}
-	.calendar-grid .calendar-date-holder {
+	.calendar-grid .calendar-date-holder { 
 		position: relative;
 		width: 260px;
 		height: 213px;
@@ -144,16 +133,12 @@
 .calendar-date-holder .calendar-dates {
 	position: absolute;
 	display: table;
-	border-radius: 0 0px 9px 10px;
-	/* padding: 0; */
-	/* font-size: 11px; */
-	width: 196px;
-	/* left: 0; */
-	border: 1px solid rgba(25, 30, 51, 0.26);
-	/* transition: margin-left .3s cubic-bezier(0.4, 0.0, 0.2, 1), transform .3s ease, opacity .3s ease; */
+	left: 0;
+	width: 100%;
+	transition: margin-left .3s cubic-bezier(0.4, 0.0, 0.2, 1), transform .3s ease, opacity .3s ease;
 	-o-transition: margin-left .3s cubic-bezier(0.4, 0.0, 0.2, 1), transform .3s ease, opacity .3s ease;
 	-moz-transition: margin-left .3s cubic-bezier(0.4, 0.0, 0.2, 1), transform .3s ease, opacity .3s ease;
-	/* -webkit-transition: margin-left .3s cubic-bezier(0.4, 0.0, 0.2, 1), transform .3s ease, opacity .3s ease; */
+	-webkit-transition: margin-left .3s cubic-bezier(0.4, 0.0, 0.2, 1), transform .3s ease, opacity .3s ease;
 }
 	.calendar-date-holder .calendar-dates.hasmonths {
 		position: absolute;
@@ -192,9 +177,8 @@
 			text-decoration: none;
 			display: block;
 			color: inherit;
-			font-size: 10px;
-			padding: 0;
-			margin: 1px;
+			padding: 6px;
+		    margin: 1px;
 			outline: none;
 			border: 2px solid transparent;
 			transition: all .3s;
@@ -221,9 +205,9 @@
 /* Color theme */
 .calendar-wrapper[data-theme='blue'] .calendar-head-card { background-color: #1565c0; }
 .calendar-wrapper[data-theme='blue'] .calendar-date-holder .calendar-dates .date.current a { color: #1976d2; }
-.calendar-wrapper[data-theme='blue'] .calendar-date-holder .calendar-dates .date.selected a {/* border-color: #1976d2; */}
+.calendar-wrapper[data-theme='blue'] .calendar-date-holder .calendar-dates .date.selected a { border-color: #1976d2; }
 .calendar-wrapper[data-theme='blue'] .calendar-date-holder .calendar-dates .date.selected a:hover { border-color: #0d47a1; }
-.calendar-wrapper[data-theme='blue'] .calendar-date-holder .calendar-dates .date.selected.current a {color: #fff;background: #ee7e12;padding: 5px 0 0 0;width: 17px;height: 17px;display: inline-block;border-radius: 15px;}
+.calendar-wrapper[data-theme='blue'] .calendar-date-holder .calendar-dates .date.selected.current a { color: #1976d2; }
 
 .calendar-wrapper[data-theme='red'] .calendar-head-card { background-color: #c62828; }
 .calendar-wrapper[data-theme='red'] .calendar-date-holder .calendar-dates .date.current a { color: #d32f2f; }

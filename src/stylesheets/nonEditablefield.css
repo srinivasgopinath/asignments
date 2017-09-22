@@ -1,12 +1,12 @@
 /* ::: NON EDITABLE CSS GOES HERE ::: */
 
 
-.adn--non-editable-field__content {
+.adn--non-editable-field {
     height: 56px;
     display: table;
     border-bottom: 1px solid rgba(25, 30, 51, 0.22);
 }
-.adn--non-editable-field__content span{
+.adn--non-editable-field span{
     display: table-cell;
     vertical-align: middle;
 }
@@ -15,7 +15,7 @@
     font-size: 13px;
     width: 72px;
 }
-.adn--non-editable-field__content .adn--non-editable__label-edit{
+.adn--non-editable-field .adn--non-editable__label-edit{
     width: 114px;
     color: rgba(25, 30, 51, 0.46);
     font-size: 13px;
@@ -33,16 +33,36 @@
 .adn--row-header__title {
     color: #191E33;
     font-size: 16px;
+    white-space: nowrap;
     font-weight: 500;
-    width: 155px;
     display: inline-block;
 }
 
 .adn--row-header__line {
-    width: calc(100% - 360px);
+    width: 100%;
     background: rgba(25, 30, 51, 0.19);
     height: 2px;
     vertical-align: middle;
+    margin: 0 20px;
     display: inline-block;
 }
+
+.adn--row-header {
+    display: flex;
+    align-items: center;
+}
+.adn--table-edit {
+    height: 110px;
+    overflow: auto;
+}
+
+.adn--table-edit-two{
+    height: 181px;
+    overflow: auto;
+}
+.adn--table-wrapper {
+    margin: 20px 0 20px 0;
+}
+
+
 /* ::: NON EDITABLE CSS ENDS HERE ::: */

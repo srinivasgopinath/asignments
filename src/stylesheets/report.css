@@ -76,6 +76,19 @@ body {
 
 /*::: REPORT STYLE ENDS HERE :::*/
 
+/* ::: REPORT STYLE STARTS HERE ::: */
+
+.adn--report__table-wrapper .ui.adn--table tbody tr:last-child {
+    color: #343434;
+    font-weight: 500;
+}
+.adn--report__table-wrapper .ui.adn--table tbody tr:last-child .adn--table__button__icon:before {
+    color: #343434;
+    font-weight: 500;
+}
+
+/* ::: REPORT STYLE ENDS HERE  ::: */
+
 /*:::REPORT STYLE FOR DROP DOWN GOES HERE :::*/
 
 .ui.form.adn--dropdown .inline.field .dropdown.selection {
@@ -84,147 +97,6 @@ body {
 }
 
 /* ::: REPORT STYLE FOR DROP DOWN GOES HERE ::: */
-
-
-/* ::: CALENDER STYLE STARTS HERE   ::: */
-
-.adn--layout__header__right__calender {
-    width: 737px;
-    background-color: #FFFFFF;
-    box-shadow: 0 6px 6px 0 rgba(0,0,0,0.16), 0 10px 20px 0 rgba(0,0,0,0.09);
-    border-radius: 8px;
-    position: absolute;
-    margin: 34px 0 0 0;
-    left: -363px;
-}
-
-
-.adn--layout__header__right__calender__range .ui.list {
-    width: 218px;
-    margin: 0 auto;
-    padding: 18px 0 0 0;
-}
-
-.adn--layout__header__right__calender__field {
-    width: calc(100% - 219px);
-    border-right: 1px solid rgba(25, 30, 51, 0.27);
-}
-
-.adn--layout__header__right .adn--layout__header__right__calender__wrapper 
-.adn--layout__header__right__calender__range .ui.list .item a {
-    color: rgba(25, 30, 51, 0.46);
-    font-size: 11px;
-    top: 10px;
-    position: relative;
-}
-
-.adn--layout__header__right 
-.adn--layout__header__right__calender__wrapper .adn--layout__header__right__calender__range
-.ui.list .item a {
-    color: rgba(25, 30, 51, 0.46);
-    font-size: 11px;
-    text-align: left;
-}
-
-.adn--layout__header__right .adn--layout__header__right__calender__wrapper
- .adn--layout__header__right__calender__range .ui.list .item {
-    position: relative;
-    height: 30px;
-    text-align: left;
-    padding-left: 40px;
-    border-left: none;
-}
-.adn--layout__header__right .adn--layout__header__right__calender__wrapper
- .adn--layout__header__right__calender__range .ui.list .item:last-child {
-   border-right: none;
-}
-.adn--layout__header__right .adn--layout__header__right__calender__wrapper
- .adn--layout__header__right__calender__range .ui.list .item.active:before {
-    position: absolute;
-    content: '';
-    width: 2px;
-    left: -2px;
-    height: 30px;
-    box-shadow: 0 0 4px 0 rgba(255,127,0,0.5);
-    border-radius: 2px;
-    background-color: #FF7F00;
-}
-
-
-.adn--layout__header__right__calender__action-wrapper .adn--button-secondary {
-    margin: 0 9px 0 22px;
-}
-
-.adn--layout__header__right__calender__wrapper.adn--fright {
-    border-right: none;
-}
-
-.adn--layout__header__right__calender:after {
-    position: absolute;
-    content: '';
-    border-width: 6px;
-    right: 93px;
-    border-color: transparent transparent #fff transparent;
-    top: -12px;
-    border-style: solid;
-}
-
-.adn--layout__header__right__calender__date__start-wrapper {
-    width: 217px;
-}
-
-.adn--layout__header__right__calender__date__end-wrapper {
-    width: calc(100% - 217px);
-}
-
-
-.adn--layoput__header__right__calender__wrapper {
-    height: 208px;
-    width: 440px;
-    padding-top: 14px;
-    margin: 0 auto;
-}
-
-
-.adn--layout__header__right__calender__date-fields__wrapper.adn--clearfix {
-    width: 440px;
-    margin: 0 auto;
-}
-
-.adn--layout__header__right__calender__date-fields__wrapper
-.adn--layout__header__right__calender__date__start-wrapper 
-.ui.adn--input .inline.field label
-{
-    width: 55px;
-    font-size: 11px;
-}
-
-.adn--layout__header__right__calender__date-fields__wrapper
-.adn--layout__header__right__calender__date__end-wrapper 
-.ui.adn--input .inline.field label
-{
-    width: 55px;
-    font-size: 11px;
-}
-
-.adn--layout__header__right__calender__date-fields__wrapper
-.adn--layout__header__right__calender__date__start-wrapper 
-.ui.adn--input .inline.field input
-
-{
-    width: calc(100% - 89px);
-        height: 33px;
-}
-
-.adn--layout__header__right__calender__date-fields__wrapper
-.adn--layout__header__right__calender__date__end-wrapper 
-.ui.adn--input .inline.field input
-{
-    width: calc(100% - 93px);
-    height: 33px;
-}
-/* ::: CALENDER STYLE ENDS HERE ::: */
-
 
 
 

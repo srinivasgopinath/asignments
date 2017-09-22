@@ -10,6 +10,8 @@
 .ui.form.adn--dropdown .inline.field .dropdown.selection {
     width: calc(100% - 85px);
     height: 35px;
+    font-weight: 300;
+    font-family: inherit;
     border-radius: 3px;
     margin: 0 0 20px 0;
     font-size: 13px;
@@ -28,4 +30,10 @@
     color: rgba(0, 0, 0, 0.8);
 }
 
+
+.adn--card .adn--card__content .ui.form.adn--dropdown .inline.field .ui.dropdown .menu .item {
+    font-family: inherit;
+    font-weight: 300;
+    color: rgba(25, 30, 51, 0.5);
+}   
 /* ::: DROPDOWN STYLES ENDS HERE ::: */

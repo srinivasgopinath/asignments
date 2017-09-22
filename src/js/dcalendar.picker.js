@@ -14,7 +14,7 @@ if (typeof jQuery === 'undefined') { throw new Error('DCalendar.Picker: This plu
 
 	Date.prototype.getDays = function() { return new Date(this.getFullYear(), this.getMonth() + 1, 0).getDate(); };
 
-	var months = ['January','February','March','April','May','June','July','August','September','October','November','December'],
+	var months = ['Jan','Feb','Mar','April','May','June','July','Aug','Sep','Oct','Nov','Dec'],
 		short_months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
 		daysofweek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
 		short_days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
@@ -443,11 +443,14 @@ if (typeof jQuery === 'undefined') { throw new Error('DCalendar.Picker: This plu
 		hide : function (callback) {
 			var that = this;
 			that.calendar.addClass('load');
-			that.calendar.parent().fadeOut(function () {
-				$('body').removeAttr('datepicker-display');
-				if(callback) callback();
-				if(that.elem.is('input')) that.elem.focus();
-			});
+			$('body').removeAttr('datepicker-display');
+			if(callback) callback();
+			if(that.elem.is('input')) that.elem.focus();
+			// that.calendar.parent().fadeOut(function () {
+			// 	$('body').removeAttr('datepicker-display');
+			// 	if(callback) callback();
+			// 	if(that.elem.is('input')) that.elem.focus();
+			// });
 		}
 	};
 
@@ -499,10 +502,10 @@ if (typeof jQuery === 'undefined') { throw new Error('DCalendar.Picker: This plu
 			}).on('keydown', function(e){
 				if(ex_keys.indexOf(e.which) < 0 && that.data(DCAL_DATA).options.readOnly) return false; 
 			});
-			$(document).on('keydown', function (e) {
-				if(e.keyCode != 27) return;
-				that.data(DCAL_DATA).hide();
-			});
+			// $(document).on('keydown', function (e) {
+			// 	if(e.keyCode != 27) return;
+			// 	that.data(DCAL_DATA).hide();
+			// });
 		});
 	};
 }(jQuery);

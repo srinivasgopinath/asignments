@@ -1,0 +1,64 @@
+/* ::: date picker style goes here ::: */
+.calendar-wrapper[data-theme='blue'] .calendar-date-holder .calendar-dates .date.selected.current a {
+    color: #fff;
+    background: #ee7e12;
+    padding: 5px 0 0 0;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+
+.calendar-top-selector {
+    display: table;
+    width: 100%;
+    background-color: #191E33;
+    height: 73px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.calendar-container {
+    padding: 10px;
+    height: 100%;
+    width: 216px;
+    -ms-user-select: none;
+    -moz-user-select: none;
+}
+
+.calendar-date-holder .calendar-dates {
+    position: absolute;
+    display: table;
+    border-radius: 0 0px 9px 10px;
+    width: 196px;
+    border: 1px solid rgba(25, 30, 51, 0.26);
+    -o-transition: margin-left .3s cubic-bezier(0.4, 0.0, 0.2, 1), transform .3s ease, opacity .3s ease;
+    -moz-transition: margin-left .3s cubic-bezier(0.4, 0.0, 0.2, 1), transform .3s ease, opacity .3s ease;
+
+}
+
+
+.calendar-top-selector .calendar-curr-month {
+    padding-bottom: 4px;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.calendar-next, .calendar-prev {
+    font-family: 'Times New Roman';
+    font-size: 24px;
+    width: 14%;
+    color: rgb(50,50,50);
+}
+
+.calendar-top-selector span {
+    display: table-cell;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+/* ::: date picker style end here */

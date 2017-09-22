@@ -3,80 +3,195 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Create New Network</title>
-    <link rel="stylesheet" type="text/css" href='../../semantic/dist/semantic.min.css'>
-    <link rel="stylesheet" href="../stylesheets/global.css">
-    <link rel="stylesheet" href="../stylesheets/button.css">
-    <link rel="stylesheet" href="../stylesheets/checkbox.css">
-    <link rel="stylesheet" href="../stylesheets/inputfield.css">
-    <link rel="stylesheet" href="../stylesheets/network.css">    
-    <link rel="stylesheet" href="../stylesheets/header.css">    
-    <link rel="stylesheet" href="../stylesheets/dropdown.css">
+    <title>Adtechnacity : Create User</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="../../semantic/dist/semantic.min.js"></script>
+    <!-- ::: FONT CDN LINKING HERE ::: -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600"
+          rel="stylesheet">
+
+    <!-- ::: SEMANTIC UI STYLESHEET ::: -->
+    <link rel="stylesheet" type="text/css" href='../../semantic/dist/semantic.min.css'>
+
+    <!-- ::: COMPONENT STYLES ::: -->
+    <link rel="stylesheet" href="../stylesheets/global.css">
+    <link rel="stylesheet" href="../stylesheets/button.css">    
+    <link rel="stylesheet" href="../stylesheets/input.css">
+    <link rel="stylesheet" href="../stylesheets/card.css">
+    <link rel="stylesheet" href="../stylesheets/layout.css">
+    <link rel="stylesheet" href="../stylesheets/header.css">
+    <link rel="stylesheet" href="../stylesheets/network.css">
+    <link rel="stylesheet" href="../stylesheets/dropdown.css">
 
 </head>
 <body>
-<div class="ui grid">
-    <div class="sixteen wide column">
 
-        <!-- header starts here-->
-        <div class="ui segment adn--header">
-            <a href="" class="adn--header__logo-link"><img src="../images/adtechnacity_logo.svg"
-                                                           class="adn--header__logo-img"></a>
-            <button class="adn-header__menu adn--fright"><i class="sidebar icon  adn--header__menu__icon"></i></button>
-        </div>
-        <!-- header ends here-->
+<div class="ui stackable grid adn--layout adn--margin-0">
 
-        <!--card content wrapper starts here-->
-        <div class="adn--card adn--clearfix">
+    <div class="row adn--padding-0 adn--layout__header-wrapper">
 
-            <!--card title starts here-->
-            <div class="adn--card__header">
-                <h3 class="adn--card__header-title">CREATE NEW NETWORK </h3>
-            </div>
-            <!--card title ends here-->
+        <div class="column adn--padding-0">
 
-            <!--card content stars here-->
-            <div class="adn--card__content adn--clearfix adn--nopadding-0">
-
-                <!--global input field-->
-                <div class="ui form adn--input">
-                    <div class="inline field">
-                        <label>Name</label>
-                        <input type="text" placeholder="Enter the network name">
-                    </div>
+              <div class="adn--layout__header adn--clearfix">
+                <a href=""
+                   class="adn--layout__header-link adn--fleft">
+                    <img src="../images/adtechnacity_logo.svg"
+                         alt=""
+                         class="adn--layout__header-logo__img">
+                </a>
+                  <div class="adn--layout__header__menu adn--fright">
+                        <button class="ui button adn--layout__header__menu__button">
+                            <i class="sidebar icon adn--margin-0"></i>
+                        </button>
+                        <div class="adn--layout__header__menu__links-wrapper">
+                            <div class="ui list">
+                              <div class="item">
+                                <div class="content">
+                                  <div class="header"><a href="">ISAREL</a></div>
+                                    <div class="description">
+                                     <a href="">
+                                        <span class="adn--layout__header__menu__icon flaticon-profile-1"></span>User Profile
+                                     </a>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="content">
+                                  <div class="header">
+                                    <a href="" class="">MANAGE</a>
+                                </div>
+                                  <div class="description">
+                                    <a href="" class="active">
+                                        <span class="adn--layout__header__menu__icon flaticon-handshake-1 "></span>Clients
+                                    </a>
+                                </div>
+                                  <div class="description">
+                                    <a href="">
+                                        <span class="adn--layout__header__menu__icon flaticon-light-bulb-on"></span>Initiatives
+                                    </a>
+                                </div>
+                                <div class="description">
+                                    <a href="">
+                                        <span class="adn--layout__header__menu__icon flaticon-connection"></span>Network
+                                    </a>
+                                </div>
+                                <div class="description">
+                                    <a href=""><span class="adn--layout__header__menu__icon flaticon-profile-1"></span>Users
+                                    </a>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="content">
+                                  <div class="header">
+                                    <a href="" class="">IMPORTS</a>
+                                    
+                                </div>
+                                  <div class="description">
+                                    <a href="">
+                                    <span class="adn--layout__header__menu__icon flaticon-download"></span>Data Approval
+                                    </a>
+                                </div>
+                                  <div class="description">
+                                    <a href=""><span class="adn--layout__header__menu__icon flaticon-profile-1"></span>Link AdGroups
+                                    </a>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="adn--layout__header__menu__link__button">
+                                <button class="ui button adn--button adn--menu-btn">Sign Out</button>
+                            </div>
+                        </div>
                 </div>
-                <!--global input field-->
-                   <!--global input field-->
-                <div class="ui form adn--input">
-                    <div class="inline field">
-                        <label>Poll Time</label>
-                        <input type="text" placeholder="Enter The Poll Time">
-                    </div>
-                </div>
-                <!--global input field-->
+              
             </div>
-            <!--card content ends here-->
-            <div class="adn--card__footer adn--clearfix">
 
-                <!--global button starts here-->
-                <button class="ui button adn--button">Save Network</button>
-                <button class="ui button adn--button--secondary">Cancel</button>
-                <!--global button ends here-->
-
-            </div>
-            <!--card input items ends here-->
 
         </div>
 
-        <!--card content wrapper end here-->
+    </div>
+
+    <!--the main content goes here-->
+    <div class="row adn--padding-0 adn--layout__col-wrapper adn--overflow-auto">
+
+        <div class="column adn--padding-0">
+
+            <!--card content wrapper starts here-->
+            <div class="adn--card adn--clearfix">
+
+                <!--card title starts here-->
+                <div class="adn--card__header">
+                    <h3 class="adn--card__header-title">CREATE NEW NETWORK</h3>
+                </div>
+                <!--card title ends here-->
+
+                <!--card content stars here-->
+                <div class="adn--card__content adn--clearfix adn--nopadding-0">
+
+                    <!--global input field-->
+                    <div class="ui form adn--input">
+                        <div class="inline field">
+                            <label>Name</label>
+                            <input type="text" placeholder="Enter the name">
+                        </div>
+                    </div>
+                    <!--global input field-->
+
+                    <!--global input field-->
+                    <div class="ui form adn--input">
+                        <div class="inline field">
+                            <label>Poll Time</label>
+                            <input type="text" placeholder="Enter the pool time">
+                        </div>
+                    </div>
+                    <!--global input field-->
+
+                </div>
+                <!--card content ends here-->
+                <div class="adn--card__footer adn--clearfix">
+
+                    <!--global button starts here-->
+                    <button class="ui button adn--button adn--fright">Save Network</button>
+                    <button class="ui button adn--button-secondary adn--fright">Cancel</button>
+                    <!--global button ends here-->
+
+                </div>
+                <!--card input items ends here-->
+
+            </div>
+
+            <!--card content wrapper end here-->
+        </div>
 
     </div>
 </div>
+
+<!--::: SCRIPTS GOES HERE -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+<script src="../../semantic/dist/semantic.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('select.dropdown')
+            .dropdown();
+    });
+
+</script>
+
+
+
+<!--::: SCRIPT FOR HEADER MENU :::-->
+<script>
+    $('.adn--layout__header__menu__button').click(function(){                                                                   
+
+    $(".adn--layout__header__menu__links-wrapper").toggle();   
+
+});
+
+</script>
+<!--::: SCRIPT FOR HEADER MENU ENDS HERE :::-->
 
 </body>
 

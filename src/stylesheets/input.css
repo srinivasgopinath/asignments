@@ -14,9 +14,10 @@
 .ui.adn--input .inline.field input {
     height: 35px;
     border-radius: 3px;
+    font-family: inherit;
     font-size: 13px;
     border: 1px solid rgba(25, 30, 51, 0.2);
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .ui.adn--input .inline.field input:focus {

@@ -6,7 +6,9 @@
 	border-radius: 4px;
 	height: 35px;
 	font-weight: 400;
+	font-family: inherit;
 	font-size: 12px;
+	white-space: nowrap;
 	background: #ff7f00;
 	box-shadow: 0 3px 6px 0 rgba(255, 127, 0, 0.4);
 }
