@@ -9,10 +9,7 @@
     table-layout: fixed;
     margin: 0;
 }
-.adn--layout__right-col__table-wrapper{
-    height: 382px;
-    overflow:auto;
-}
+
 .ui.adn--table thead tr:first-child > th:nth-child(1),
  .ui.adn--table thead tr:first-child > th:last-child {
     border-radius: 0;

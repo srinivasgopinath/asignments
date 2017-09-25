@@ -78,7 +78,7 @@
 
 .adn--layout__header__right .ui.list .item:first-child .adn--layout__header__right__icon{
     position: absolute;
-    right: 10px;
+    right: 14px;
     top: 10px;
 }
 
@@ -88,6 +88,7 @@
     width: 80px;
     transition: all 0.5s;
     padding: 13px 25px 10px 10px;
+    font-family: inherit;
     font-size: 11px;
     vertical-align: middle;
     margin: 0 17px 0 20px;
@@ -227,7 +228,7 @@
     position: absolute;
     content: '';
     border-width: 6px;
-    right: 21px;
+    right: 42px;
     border-color: transparent transparent #fff transparent;
     top: -12px;
     border-style: solid;
@@ -257,7 +258,7 @@
 
 .ui.adn--layout__header__menu__button i.icon {
     font-size: 24px;
-    color: #ee7e12;
+    color: #FF7F00;
 }
 
 
@@ -457,12 +458,6 @@
 }
 
 
-.adn--layout__header__menu .ui.adn--layout__header__menu__button {
-    margin: 30px 0 0 0;
-    padding: 0 20px 0 20px;
-    background: none;
-    line-height: 19px;
-}
 
 
 .ui.adn--layout__header__right_button{
@@ -489,7 +484,7 @@
 
 .adn--layout__header__menu .ui.adn--layout__header__menu__button {
     margin: 30px 0 0 0;
-    padding: 0 20px 0 20px;
+    padding: 0 40px 0 40px;
     background: none;
     line-height: 19px;
 }
@@ -515,3 +510,4 @@
 
 
 
+    

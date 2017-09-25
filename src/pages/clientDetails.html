@@ -31,7 +31,7 @@
         <div class="row adn--padding-0 adn--layout__header-wrapper">
             <div class="column adn--padding-0">
 
-               <div class="adn--layout__header adn--clearfix">
+                <div class="adn--layout__header adn--clearfix">
                 <a href=""
                    class="adn--layout__header-link adn--fleft">
                     <img src="../images/adtechnacity_logo.svg"
@@ -42,6 +42,66 @@
                         <button class="ui button adn--layout__header__menu__button">
                             <i class="sidebar icon adn--margin-0"></i>
                         </button>
+                        <div class="adn--layout__header__menu__links-wrapper">
+                            <div class="ui list">
+                              <div class="item">
+                                <div class="content">
+                                  <div class="header"><a href="">ISAREL</a></div>
+                                    <div class="description">
+                                     <a href="">
+                                        <span class="adn--layout__header__menu__icon flaticon-profile-1"></span>User Profile
+                                     </a>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="content">
+                                  <div class="header">
+                                    <a href="" class="">MANAGE</a>
+                                </div>
+                                  <div class="description">
+                                    <a href="" class="active">
+                                        <span class="adn--layout__header__menu__icon flaticon-handshake-1 "></span>Clients
+                                    </a>
+                                </div>
+                                  <div class="description">
+                                    <a href="">
+                                        <span class="adn--layout__header__menu__icon flaticon-light-bulb-on"></span>Initiatives
+                                    </a>
+                                </div>
+                                <div class="description">
+                                    <a href="">
+                                        <span class="adn--layout__header__menu__icon flaticon-connection"></span>Network
+                                    </a>
+                                </div>
+                                <div class="description">
+                                    <a href=""><span class="adn--layout__header__menu__icon flaticon-profile-1"></span>Users
+                                    </a>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="content">
+                                  <div class="header">
+                                    <a href="" class="">IMPORTS</a>
+                                    
+                                </div>
+                                  <div class="description">
+                                    <a href="">
+                                    <span class="adn--layout__header__menu__icon flaticon-download"></span>Data Approval
+                                    </a>
+                                </div>
+                                  <div class="description">
+                                    <a href=""><span class="adn--layout__header__menu__icon flaticon-profile-1"></span>Link AdGroups
+                                    </a>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="adn--layout__header__menu__link__button">
+                                <button class="ui button adn--button adn--menu-btn">Sign Out</button>
+                            </div>
+                        </div>
                 </div>
               
             </div>
@@ -51,7 +111,9 @@
         <!--the main content goes here-->
         <div class="row adn--padding-0 adn--layout__col-wrapper">
             <!--left navigation starts here-->
-            <div class="column adn--layout__left-col adn--padding-0">
+            <div class="column adn--layout__left-col adn--padding-0 adn--nav__wrapper">
+            	<span class="adn--nav__header">Manage</span>
+
                 <nav class="adn--side-nav">
 
                     <a class="adn--side-nav__link" href="">
@@ -77,6 +139,17 @@
                     <a class="adn--side-nav__link" href="">
                         <span class="adn--side-nav__link__icon flaticon-download"></span>
                         <span class="adn--side-nav__link__title">Data Import</span>
+                    </a>
+                </nav>
+                <span class="adn--nav__header">Data Import</span>
+                <nav class="adn--side-nav">
+                    <a class="adn--side-nav__link" href="">
+                        <span class="adn--side-nav__link__icon flaticon-download"></span>
+                        <span class="adn--side-nav__link__title">Data Approval</span>
+                    </a>
+                     <a class="adn--side-nav__link" href="">
+                        <span class="adn--side-nav__link__icon flaticon-download"></span>
+                        <span class="adn--side-nav__link__title">Link Ad Groups</span>
                     </a>
                 </nav>
 
@@ -153,9 +226,13 @@
     </div>
     <!--the outer frid ends here-->
 
-    <!--::: SCRIPTS GOES HERE -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="../../semantic/dist/semantic.min.js"></script>
+      <!--::: SCRIPTS GOES HERE -->
+            <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+<script src="../../semantic/dist/semantic.min.js"></script>
+<script src="../js/dcalendar.picker.js"></script>
+<script src="../js/script.js"></script>
 
 </body>
 

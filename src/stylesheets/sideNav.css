@@ -8,6 +8,17 @@
     padding: 5px 0 0 30px;
 }
 
+
+.adn--nav__header {
+    display: inline-block;
+    padding: 17px 0 0 16px;
+    width: 100%;
+    font-weight: 400;
+    word-wrap: break-word;
+    color: rgb(25, 30, 51);
+}
+
+
 .adn--side-nav {
     margin: 20px 0 0 0;
 }
@@ -16,21 +27,24 @@
     position: relative;
 }
 
-.adn--layout__left-col:after {
+.adn--layout__left-col:before {
     position: absolute;
     content: '';
     height: calc(100% - 30px);
     background-color: rgba(25, 30, 51, 0.2);
-    right: 0;
+    right: 1px;
     width: 1px;
+    z-index: 0;
     top: 15px;
 }
 
 .adn--side-nav__link.active:after {
     position: absolute;
     content: '';
-    width: 3px;
+    width: 4px;
+    z-index: 10;
     height: 30px;
+    top: 0;
     right: -1px;
     box-shadow: 0 0 4px 0 rgba(255,127,0,0.5);
     border-radius:2px;
