@@ -1,7 +1,7 @@
 /* ::: TABLE STYLE GOES HERE ::: */
 
 .adn--layout__right-col__content-wrapper {
-        border-radius: 8px;
+    border-radius: 8px;
     box-shadow: 0 3px 6px 0 rgba(0,0,0,0.23), 0 3px 6px 0 rgba(0,0,0,0.16);
 }
 .ui.adn--table{
@@ -225,4 +225,15 @@ background: #fff;
     font-size: 13px;
 }
 
+.adn--layout__right-col__table-wrapper {
+    height: calc(100% - 110px);
+    overflow: auto;
+
+}
+
+
+.adn--layout__right-col__table__content{
+        height: calc(100% - 82px);
+        min-height: 300px;
+}
 /* ::: TABLE PAGINATION STYLE ENDS HERE ::: */      

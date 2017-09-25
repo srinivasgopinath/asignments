@@ -79,4 +79,9 @@
     font-size: 22px;
 }
 
+.adn--left-col__wrapper {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 /* ::: SIDE NAV STYLE ENDS HERE :::*/
